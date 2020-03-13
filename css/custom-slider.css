@@ -87,11 +87,11 @@
 
 /*Custom changes to show buy now option on hover in today's deal section*/
 
-.product_deals .item:hover:hover .change-view {
+/*.product_deals .item:hover:hover .change-view {
   display: none;
 }
 .product_deals.item:hover:hover .price_box {
   display: block;
-}
+}*/
 
 /*End of Custom changes to show buy now option on hover in today's deal section*/
