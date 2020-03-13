@@ -491,8 +491,10 @@ header{
 }*/
 .products .product-item .flash_sale_time > .sale_time{
     text-align: right;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     padding: 0.3rem 0;
+    color: red;
+    font-weight: 600;
 }
 .products .product-item .flash_sale_time > div img{
     width: 100px;
@@ -687,9 +689,10 @@ header{
 .unit_pending{
     display: block;
     position: relative;
-    color:#db191a;
+    color:green;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
+    font-weight: 600;
     /*margin-top:-2rem;*/
 }
 
