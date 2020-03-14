@@ -17,14 +17,15 @@ $('document').ready(function(){
         $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(300);
     });   
     
-    /* owl-carousel */   
+    /* Slider */
+    // Product Slider   
     $('.product-slider').owlCarousel({
         loop:true,
         margin:10,
         responsiveClass:true,
         dots: false,
         nav:true,
-        loop:false,
+        autoplay: true,
         responsive:{
             0:{
                 items:1,
@@ -37,11 +38,14 @@ $('document').ready(function(){
             },
             1000:{
                 items:4,
+            },
+            1400:{
+                items:5,
             }
         }
     });
 
-    /* Services Slider */   
+    // Services Slider   
     $('.services_sec').owlCarousel({
         loop:false,
         responsiveClass:true,
@@ -63,6 +67,59 @@ $('document').ready(function(){
                 mouseDrag:false,
                 touchDrag:false,
                 autoplay: false
+            }
+        }
+    });
+
+    // Blog Slider   
+    $('.blog-slider').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        dots: true,
+        nav:true,
+        autoplay: true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            576:{
+                items:2
+            },
+            768:{
+                items:3,
+                margin:20
+            },
+            1000:{
+                margin: 40
+            },
+            1400:{
+                items: 4,
+                margin:60
+            }
+        }
+    });
+
+    // Instagram Slider   
+    $('.instagram-slider').owlCarousel({
+        loop:true,
+        margin:10,
+        dots: false,
+        nav:true,
+        autoplay: true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            576:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            1400:{
+                items: 4,
+                margin: 20
             }
         }
     });
