@@ -9,6 +9,19 @@
 }
 
 @media (min-width: 375px) and (max-width: 575px) {
+    .product-slider .unit_pending {
+        font-size: 1.2rem;
+        margin-right: 0;
+    }
+    .product-slider .product-item .hover-content {
+        flex-wrap: wrap;
+    }
+    .product-slider .product-item .hover-content > div + div {
+        border-left: none;
+        border-top: 1px solid #fff;
+        margin-top: 3px;
+        padding-top: 3px;
+    }
     .product-item .add_to_cart_buttons {
         flex-wrap: wrap;
     }
