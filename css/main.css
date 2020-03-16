@@ -230,7 +230,7 @@ header{
     height: auto;
     position: relative;
 }
-.navigation ul{
+.navigation > ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -238,36 +238,165 @@ header{
     min-height: 8rem;
     margin-bottom: 0;
 }
-
-
 .navigation ul li{
     padding: 0 3.8rem;
     display: block;
     position: relative;
 }
-
-
 .navigation ul li a > span{
     display: block;
     position: relative;
     text-align: center;
     font-size: 3.2rem;
 }
-
-
 .navigation ul li a{
     color:#333333;
     text-decoration: none;
     line-height: 2.7rem;
     display: block;
 }
-
-
-.navigation ul li a:hover,.navigation ul li a:visited, .navigation ul li a > span:hover, .navigation ul li:hover{
+.navigation ul li a:hover{
     color: #db5450;
 }
-
-
+/*Mega Menu*/
+.navigation {
+    position: relative;
+}
+.navigation ul li.mega-menu {
+    position: static;
+}
+.navigation ul li > ul {
+    background-color: #fff;
+    width: 100%;
+    -webkit-box-shadow: 0px 1px 24px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 1px 24px 0px rgba(0, 0, 0, 0.09);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 20px;
+    padding: 10px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+.navigation ul li.mega-menu > ul {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.navigation ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 8px;
+}
+.navigation ul li > ul > li {
+    min-width: 15%;
+    width: 100%;
+    padding: 5px 10px;
+}
+.navigation ul li > ul li a {
+    display: inline-block;
+    width: 100%;
+    color: #333;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0;
+    position: relative;
+}
+.navigation ul li.mega-menu > ul li a {
+    font-size: 16px;
+}
+.navigation ul li > ul.sub-mega-menu {
+    padding: 0;
+    border: 1px solid #dfdfdf;
+}
+.sub-mega-menu .nav {
+    width: 240px;
+    background-color: #f7f7f7;
+    border-right: 1px solid #dfdfdf;
+    margin-top: -1px;
+}
+.sub-mega-menu .nav-pills .nav-link {
+    font-size: 14px;
+    border-radius: 0;
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: calc(100% + 1px);
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+.sub-mega-menu .nav-pills .nav-link.active, .sub-mega-menu .show>.nav-pills .nav-link {
+    color: #dc121e;
+    background-color: #fff;
+    border-color: #dfdfdf;
+}
+.sub-mega-menu .tab-content {
+    width: calc(100% - 240px);
+}
+.sub-mega-menu .tab-content .tab-pane {
+    padding: 10px 20px;
+}
+.sub-mega-menu .tab-content .tab-pane ul li {
+    padding: 0;
+    line-height: 2;
+}
+.sub-mega-menu .tab-content .tab-pane ul li.menu-title {
+    text-transform: uppercase;
+    color: #dc121e;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.sub-mega-menu .tab-content .tab-pane ul li a {
+    text-align: left;
+    color: #333;
+    font-weight: 400;
+    font-size: 14px;
+}
+.sub-mega-menu .tab-content .tab-pane ul li a:hover {
+    color: #dc121e;
+}
+.navigation ul li.mega-menu.img-text > ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+}
+.navigation ul li > ul li a img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+.navigation ul li.mega-menu.img-text > ul li a span {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    bottom: 20px;
+    left: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    right: 10px;
+}
+.navigation ul li.mega-menu.offer > ul li + li {
+    border-left: 1px solid #ccc;
+}
+.navigation ul li.mega-menu.offer > ul li a img {
+    width: 40px;
+    height: 40px;
+}
+.navigation ul li.mega-menu.offer > ul li a span {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #000;
+}
 .navigation ul li.search input[type="text"]{
     border-top:none;
     border-left: none;
@@ -280,8 +409,6 @@ header{
     width:32rem;
     outline: none;
 }
-
-
 .navigation ul li.search input[type="submit"]{
     font-family: 'Line Awesome Free';
     font-weight: 900;
@@ -291,11 +418,8 @@ header{
     position: absolute;
     right:1.5rem;
     top:-0.2rem;
-    outline: none;
-    
+    outline: none;   
 }
-
-
 .navigation ul li.dropdown-cart strong{
     font-size: 1rem;
     font-weight: 700;
@@ -371,13 +495,11 @@ header{
     margin: 1rem 0
 }
 
-
-
 #service_sec_1{
     display: block;
     position: relative;
     margin:-8rem 0 0 0;
-    z-index: 999;
+    z-index: 99;
 }
 #service_sec_1 .services_sec{
     background: #ffffff;
