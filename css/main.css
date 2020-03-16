@@ -2525,3 +2525,384 @@ to {
 
 
 
+
+
+
+/* sourabh dhiman start */
+.form-tab {
+    background: url(../img/loginbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 100px 0;
+    background-color: #f2f2f2;
+}
+.form-tab .main-tab-container {
+    max-width: 480px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    background-color: #fff;
+    margin: auto;
+    padding: 15px 15px 60px 15px;
+}
+.form-tab ul.nav.nav-tabs li a {
+    color: #f54747;
+    font-size: 18px;
+    padding: 10px 15px 10px 15px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-weight: bold;
+}
+
+.form-tab ul.nav.nav-tabs li a:hover,
+.form-tab ul.nav.nav-tabs li a.active{
+      border-bottom: 2px solid #f54747;
+}
+.form-tab .nav-tabs {
+    border-bottom: none !important;
+    margin-bottom: 15px;
+}
+.form-tab button.btn.log-otp {
+    background: #f54747;
+    color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    padding: 5px 15px;
+    font-size: 10px;
+    font-weight: bold;
+    border: 2px solid #f54747;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.form-tab button.btn.log-otp:hover{
+    background: transparent;
+    color: #f54747;
+}
+.form-tab input.form-control.common-input {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    font-size: 15px;
+    padding: 25px 0 15px 0;
+    display: block;
+}
+.form-tab input.form-control.common-input:focus{
+    outline: none;
+}
+.form-tab input.form-control.common-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+.form-tab a.left-show {
+    float: left;
+    font-size: 15px;
+}
+.form-tab a.left-show input[type="checkbox"] {
+    position: relative;
+    top: 2px;
+}
+.form-tab a.left-show span {
+    margin-left: 10px;
+    display: inline-block;
+}
+.form-tab a.right-show {
+    float: right;
+    font-size: 15px;
+}
+.form-tab button.btn.lo-gin {
+    display: block;
+    background: #f54747;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+    font-weight: bold;
+    border: 2px solid #f54747;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.form-tab button.btn.lo-gin:hover{
+    background: transparent;
+    color: #f54747;
+}
+.form-tab p.con {
+    color: black;
+    margin: 10px 0 20px 0;
+    font-size: 15px;
+}
+.form-tab a.left-icon {
+    float: left;
+    border-radius: 10px;
+    border: 1px solid #415aa7;
+    width: 49%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: #415aa7;
+    font-size: 15px;
+    text-decoration: none;
+}
+.form-tab a.rgt-icon {
+    float: right;
+    border-radius: 10px;
+    border: 1px solid #ec3032;
+    width: 49%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: #ec3032;
+    font-size: 15px;
+    text-decoration: none;
+}
+.form-tab p.con1 {
+    color: #495057;
+    font-size: 15px;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+.form-tab .google-plus i {
+    font-size: 25px;
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+}
+.form-tab a.rgt-icon i {
+    top: 4px;
+}
+.form-tab .spn-line {
+    width: 80%;
+    margin: 20px auto 16px;
+    text-align: center;
+    color: #c8c8c8;
+}
+.form-tab .spn-line span:before {
+    width: 42%;
+    margin-right: 5px;
+}
+.form-tab .spn-line span:after {
+    width: 43%;
+    margin-left: 5px;
+}
+.form-tab .spn-line span:after, .spn-line span:before {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    border-top: 1px solid #d3d4d5;
+    position: relative;
+    top: 6px;
+}
+.form-tab p.safe {
+    color: #5a5a5a;
+    font-size: 15px;
+    margin: 0;
+}
+.form-tab .ch-x input[type="checkbox"] {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+.form-tab .ch-x {
+    position: relative;
+    margin-top: 15px;
+}
+.form-tab .ch-x span {
+    color: #5a5a5a;
+    font-size: 15px;
+    display: block;
+    margin-left: 20px;
+}
+
+
+
+
+
+.custom-dasboard {
+    position: relative;
+    width: 100%;
+    padding-left: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.side-bar {
+    position: absolute;
+    width: 250px;
+    background: #fff;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    overflow: auto;
+    border-right: 1px solid #ccc;
+}
+.side-bar h3.my-order {
+    padding: 40px 25px;
+}
+.side-bar ul.side-ul li a:hover,
+.side-bar ul.side-ul li a.active {
+    background: #dc1222;
+    color: #fff;
+}
+.side-bar ul.side-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.side-bar ul.side-ul li a {
+    padding: 8px 25px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+.side-bar ul.side-ul li a i {
+    display: inline-block;
+    padding: 0 10px 0 30px;
+    font-size: 16px;
+    position: relative;
+    top: 1px;
+}
+.side-bar a.log-out {
+    color: #dc1222;
+    padding: 30px 50px;
+    display: block;
+    text-decoration: none;
+}
+.common-under-section .common-order {
+    padding: 30px;
+    /*-webkit-box-shadow: 1px 0px 16px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 0px 16px -4px rgba(0,0,0,0.75);
+    box-shadow: 1px 0px 16px -4px rgba(0,0,0,0.75);*/
+    margin-bottom: 25px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+}
+.common-under-section p.ordr-p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.common-under-section p.blaze {
+    font-size: 16px;
+    font-weight: bold;
+    color: #dc1222;
+    max-width: 310px;
+    line-height: 22px;
+}
+.common-under-section .dabba {
+    text-align: center;
+}
+.common-under-section .dabba img {
+    max-width: 100%;
+}
+.common-under-section p.hindi-word {
+    font-size: 16px;
+}
+.common-under-section ul.track-package {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.common-under-section ul.track-package li a {
+    display: block;
+    border: 1px solid #dc1222;
+    margin-bottom: 5px;
+    padding: 5px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+.common-under-section ul.track-package li a:hover,
+.common-under-section ul.track-package li a.active{
+    background: #dc1222;
+    color: #fff;
+}
+.common-under-section p.ordr-p img {
+    margin-right: 7px;
+}
+.common-under-section p.del {
+    float: left;
+    font-size: 15px;
+}
+.common-under-section ul.del-ul {
+    float: left;
+    margin: 0 0 0 15px;
+    list-style: none;
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    width: 70%;
+}
+.common-under-section ul.del-ul li {
+    font-size: 15px;
+}
+.common-under-section .rgt-pro {
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    width: 80%;
+    text-align: center;
+    font-size: 35px;
+}
+.common-under-section .mar{
+    margin-top: 25px;
+}
+.common-under-section .bor-bottom{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 0 0 7px 0;
+}
+.common-under-section .form-common label {
+    font-size: 15px;
+    color: #6c757d!important;
+}
+.common-under-section .p_g {
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+}
+.common-under-section .c-c {
+    border: 1px solid #ccc;
+    height: 35px;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.common-under-section button.btn.savee {
+    background: #dc1222;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 15px;
+    height: 35px;
+}
+.common-under-section .text-muted {
+    color: #6c757d!important;
+    margin-top: -25px;
+}
+
+
+
+@media (max-width:767px) {
+    .custom-dasboard {
+        padding-left: 0;
+    }
+    .side-bar {
+        position: static;
+        width: 100%;
+        border-right: none;
+    }
+    .common-under-section ul.del-ul {
+        margin: 0 0 30px 0;
+        width: 100%;
+    }
+    .common-under-section .rgt-pro {
+        width: 100%;
+    }
+}
+@media (max-width:360px) {
+.form-tab a.left-show {
+    font-size: 12px;
+}
+.form-tab a.right-show {
+    font-size: 12px;
+}
+}
+/* sourabh dhiman end */
