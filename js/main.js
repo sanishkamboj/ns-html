@@ -47,7 +47,7 @@ $('document').ready(function(){
 
     // Services Slider   
     $('.services_sec').owlCarousel({
-        loop:false,
+        loop:true,
         responsiveClass:true,
         nav:false,
         dots: false,
@@ -66,7 +66,8 @@ $('document').ready(function(){
                 items:5,
                 mouseDrag:false,
                 touchDrag:false,
-                autoplay: false
+                autoplay: false,
+                loop: false
             }
         }
     });
