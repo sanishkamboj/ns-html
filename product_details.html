@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link href="css/owl/owl.carousel.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/owl/owl.theme.default.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Home Page</title>
@@ -214,280 +216,589 @@
 
 
 <!--Product Details Page Code Here-->
-<section id="product_details">
+<section class="product-details">
     <div class="container">
-        
-        
-            <div class="product_s_1">
-                
-                    <div class="product_l_1">
-                       
-                       <!--product-->
-                        <div class="product_des_box">
-                           
-                           <div class="product_image">
-                               <img src="img/Product_details.png" alt=""/>
-                           </div>
-                           
-                           
-                           <div class="product_des">
-                             
-                             <div class="wishlist_icon">
-                                   <span class="lar la-heart"></span>
-                               </div>  
-                              
-                               <h4>A <span>Prosupps</span> Product</h4>
-                               
-                               <h1>ProSupps Dr. Jekyll <br> Pump Liquid Shots</h1>
-                               
-                               <p>All The Power of a  Big Pump Product in a quick consumption Shot!</p>
-                               
-                               
-                               <ul class="content_list">
-                                   <li><span></span>All The Power of a  Big Pump Product in a</li>
-                                   <li><span></span>All The Power of a  Big Pump Product in a</li>
-                                   <li><span></span>All The Power of a  Big Pump Product in a</li>
-                                   <li><span></span>All The Power of a  Big Pump Product in a</li>
-                               </ul>
-                               
-                               
-                               <div class="share_star">
-                                  
-                                      <!--star rating-->
-                                      <div class="star_rating">
-                                         <ul>
-                                             <li><span class="las la-star"></span></li>
-                                             <li><span class="las la-star"></span></li>
-                                             <li><span class="las la-star"></span></li>
-                                             <li><span class="las la-star"></span></li>
-                                             <li><span class="las la-star-half-alt"></span></li>
-                                            <li class="review"><p>(1182 Review)</p></li>
-                                         </ul>
-                                     </div>
-                                     <!--star rating-->
-                                     
-                                     <div class="share">
-                                         <span></span> Share
-                                     </div>
-                                   
-                               </div>
-                               
-                               <div class="pin_code">
-                                   <img src="img/map.png" alt=""/>
-                                   <p>Shipping Area : Noida 201301 <a href="#"> Change</a> </p>
-                                   
-                               </div>
-                               
-                               
-                                <div class="pin_code">
-                                   <img src="img/bottle.png" alt=""/>
-                                   <p>Order in next 5 mins & get a shaker free <a href="#"> Time Left - 03:15</a> </p>
-                                   
-                               </div>
-                               
-                               
-                               
-                               
-                           </div>
-                        
-                           
-                           </div>
-                           <!--/product-->
-                           
-                           <div class="product_b_l">
-                              
-                               <div>
-                                      <div class="l_m">
-                                         <img src="img/coin-stack.svg"/> 
-                                      </div>
-                                      
-                                      <div class="l_c">
-                                          <p>Earn Points on <br> everthing</p>
-                                      </div>                                 
-                               </div>
-                               
-                               
-                               <div>
-                                      <div class="l_m">
-                                         <img src="img/bottle.svg"/> 
-                                      </div>
-                                      
-                                      <div class="l_c">
-                                          <p>Order in next 5 mins & 
-get a shaker free</p>
-                                      </div>                                 
-                               </div>
-                               
-                               
-                                <div>
-                                      <div class="l_m">
-                                         <img src="img/delivery-truck.svg"/> 
-                                      </div>
-                                      
-                                      <div class="l_c">
-                                          <p>Sample <br> text</p>
-                                      </div>                                 
-                               </div>
-                               
-                               
-                                <div>
-                                      <div class="l_m">
-                                         <img src="img/credit-card.svg"/> 
-                                      </div>
-                                      
-                                      <div class="l_c">
-                                          <p>Sample <br> text</p>
-                                      </div>                                 
-                               </div>
-                           </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row gutters-1">
+                            <div class="col-sm-4">
+                                <div class="product-details-image text-center">
+                                    <figure class="mb-4">
+                                        <img src="img/Product_details.png" class="img-fluid" alt=""/>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="product-details-content">
+                                   <h4>A <a href="#">Prosupps</a> Product</h4>
+                                   <h1>ProSupps Dr. Jekyll Pump Liquid Shots</h1>
+                                   <p>All The Power of a  Big Pump Product in a quick consumption Shot!</p>
+                                   <ul class="content_list">
+                                       <li><span></span>All The Power of a  Big Pump Product in a</li>
+                                       <li><span></span>All The Power of a  Big Pump Product in a</li>
+                                       <li><span></span>All The Power of a  Big Pump Product in a</li>
+                                       <li><span></span>All The Power of a  Big Pump Product in a</li>
+                                   </ul>
+                                   <div class="share_star">
+                                          <!--star rating-->
+                                          <div class="star_rating">
+                                             <ul>
+                                                 <li><span class="las la-star"></span></li>
+                                                 <li><span class="las la-star"></span></li>
+                                                 <li><span class="las la-star"></span></li>
+                                                 <li><span class="las la-star"></span></li>
+                                                 <li><span class="las la-star-half-alt"></span></li>
+                                                <li class="review"><p>(1182 Review)</p></li>
+                                             </ul>
+                                         </div>
+                                         <!--star rating-->
+                                         <div class="share">Share</div>
+                                   </div>
+                                   <div class="pin_code">
+                                       <img src="img/map.png" alt=""/>
+                                       <p>Shipping Area : Noida 201301 <a href="#"> Change</a> </p>
+                                   </div>
+                                    <div class="pin_code">
+                                       <img src="img/bottle.png" alt=""/>
+                                       <p>Order in next 5 mins & get a shaker free <a href="#"> Time Left - 03:15</a></p>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_b_l">
+                            <div>
+                                <span class="media align-items-center">
+                                    <span class="d-flex mr-3">
+                                        <img src="img/coin-stack.svg"/>
+                                    </span>
+                                    <span class="media-body">
+                                        <span>Earn Points on everthing</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div>
+                                <span class="media align-items-center">
+                                    <span class="d-flex mr-3">
+                                        <img src="img/bottle.svg"/>
+                                    </span>
+                                    <span class="media-body">
+                                        <span>Order in next 5 mins & get a shaker free</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div>
+                                <span class="media align-items-center">
+                                    <span class="d-flex mr-3">
+                                        <img src="img/delivery-truck.svg"/>
+                                    </span>
+                                    <span class="media-body">
+                                        <span>Sample text</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div>
+                                <span class="media align-items-center">
+                                    <span class="d-flex mr-3">
+                                        <img src="img/credit-card.svg"/>
+                                    </span>
+                                    <span class="media-body">
+                                        <span>Sample text</span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    
-                    
-                    <div class="product_r_1">
-                       <div class="buy_options">
-                           
-                           <h2>BUYING OPTIONS</h2>
-                           
-                           
-                           <div class="sec_buy_1">
-                              
-                                  <div class="sec_stock">
-                                         <p class="in_stock">In Stock</p> 
-                                  </div>
-                                  
-                                  
-                                  <div class="price_sec">
-                                     
-                                      <div class="p_sec_1">
-                                         <h1><span class="las la-rupee-sign"></span>3,999</h1>
-                                         
-                                         <p><span class="las la-rupee-sign"></span>5,749</p>
-                                          
-                                      </div>
-                                      
-                                      <div class="btn_sec_1">
-                                          <button type="btn btn_red">30% off</button>
-                                      </div>
-                                      
-                                      
-                                  </div>
-                               
-                               
-                           </div>
-                           
-                           
-                           
-                       </div>
-                    </div>
-                
+                </div>
             </div>
-        
-        
+            <div class="col-lg-4 mt-5 mt-lg-0">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="buy_options">
+                            <h2>BUYING OPTIONS</h2>
+                            <div class="sec_buy_1">
+                                <div class="sec_stock">
+                                    <p class="in_stock">In Stock</p>
+                                </div>
+                                <div class="price_sec">
+                                    <div class="p_sec_1">
+                                        <h1><span class="las la-rupee-sign"></span>3,999</h1>
+                                        <p><span class="las la-rupee-sign"></span>5,749</p>
+                                    </div>
+                                    <div class="btn_sec_1">
+                                        <button type="btn btn_red">30% off</button>
+                                    </div>
+                                </div>
+                                <div class="configurable-wrap mt-4">
+                                    <form class="form">
+                                        <div class="form-group">
+                                            <label for="flavor">Flavor</label>
+                                            <select class="form-control" id="flavor">
+                                                <option>Pick your Flavor</option>
+                                                <option value="option-1">Option 1</option>
+                                                <option value="option-2">Option 2</option>
+                                                <option value="option-3">Option 3</option>
+                                                <option value="option-4">Option 4</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="weight">Weight</label>
+                                            <select class="form-control" id="weight">
+                                                <option>Select Weight</option>
+                                                <option value="option-1">Option 1</option>
+                                                <option value="option-2">Option 2</option>
+                                                <option value="option-3">Option 3</option>
+                                                <option value="option-4">Option 4</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group product-quantity">
+                                            <label for="weight">Weight</label>
+                                            <div class="input-group">
+                                                <span class="input-group-prepend">
+                                                    <button class="input-group-text" type="button">-</button>
+                                                </span>
+                                                <input type="text" name="" class="form-control" value="1">
+                                                <span class="input-group-append">
+                                                    <button class="input-group-text" type="button">+</button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row gutters-1">
+                                            <div class="col-6">
+                                                <a href="#" class="btn btn-outline-primary btn-block">Add to Cart</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="#" class="btn btn-outline-primary btn-block">Wishlist</a>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <a href="#" class="btn btn-primary btn-block">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-8">
+                <section>
+                    <div class="deal-header">
+                        <h1>Todays Deal</h1>
+                        <a href="#" class="btn btn-view-all">View All</a>
+                    </div>
+                    <div class="product_deals products">
+                        <!--owl-carousel item -->
+                        <div class="product-detail-slider owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="product-item">
+                                    <!--sale-top-->
+                                    <div class="flash_sale_time">
+                                        <div><img src="img/sale/sale_1.png" alt=""/></div>
+                                        <div class="sale_time">
+                                            <span class="unit_pending"> 20 Unit Left</span>
+                                            <span>30:09:11</span>
+                                        </div>
+                                    </div>
+                                    <!--.sale-top-->
+                                    <!--product image-->
+                                    <div class="product-thumb-wrap">
+                                        <div class="verified">
+                                            <img src="img/sale/sale_2.png" alt="" />
+                                        </div>
+                                        <img src="img/products.png" alt="" class="product-thumb" />
+                                        <div class="wishlist_icon">
+                                            <span class="lar la-heart"></span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div>
+                                                <span>NS Points</span>
+                                                <h2>20</h2>
+                                            </div>
+                                            <div>
+                                                <span>Cashback</span>
+                                                <h2>30%</h2>
+                                            </div>
+                                            <div>
+                                                <span>Donated</span>
+                                                <h2>170</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--product image-->
+                                    <h3 class="product_title">MuscleBlaze Whey Gold Protein,<br> 4 lb Rich Milk Chocolate</h3>
+                                    <div class="change-view">
+                                        <div class="price_box">
+                                            <div class="price">
+                                                <span class="sale_price"><span class="las la-rupee-sign"></span>3,999</span>
+                                                <span class="real_price"><span class="las la-rupee-sign"></span>5749</span>
+                                            </div>
+                                            <div class="discount">30% off</div>
+                                        </div>
+                                        <div class="star_rating">
+                                            <ul>
+                                                <li><span class="las la-star"></span></li>
+                                                <li><span class="las la-star"></span></li>
+                                                <li><span class="las la-star"></span></li>
+                                                <li><span class="las la-star"></span></li>
+                                                <li><span class="las la-star-half-alt"></span></li>
+                                                <li class="review">
+                                                    <p>(1182 Review)</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="add_to_cart_buttons">
+                                        <div><a href="#" class="btn btn-buy-now">Buy Now</a></div>
+                                        <div><a href="#" class="btn btn-add-to-cart">Add to Cart</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--owl-carousel item -->
+                    </div>
+                </section>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="product-desc">
+                            <h2 class="title">Product Description</h2>
+                            <img src="https://via.placeholder.com/1200x600" class="img-fluid" alt="">
+                            <h3>Lorem ipsum doler sit amet</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <h3>Lorem ipsum doler sit amet</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <h3>Lorem ipsum doler sit amet</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="video">
+                                <img src="https://via.placeholder.com/1200x700" class="img-fluid" alt="">
+                                <div class="video-button">
+                                    <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                                        <i class="fa fa-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="review-rating">
+                            <div class="title">
+                                <h2>Rating & Review</h2>
+                                <a href="#" class="btn btn-outline-white">Add Your Review</a>
+                            </div>
+                            <div class="rating-block">
+                                <div class="overall-rating">
+                                    <h4>Overall Rating</h4>
+                                    <div class="mb-3">
+                                        <span class="fa fa-star active" aria-hidden="true"></span>
+                                        <span class="fa fa-star active" aria-hidden="true"></span>
+                                        <span class="fa fa-star active" aria-hidden="true"></span>
+                                        <span class="fa fa-star active" aria-hidden="true"></span>
+                                        <span class="fa fa-star" aria-hidden="true"></span>
+                                    </div>
+                                    <p class="text-muted"><span>4.0</span> star out of <span>5</span></p>
+                                    <p>250 Reviews & 145 Rating</p>
+                                </div>
+                                <div class="border-right d-none d-sm-block"></div>
+                                <div class="rating">
+                                    <h4>Review Graph</h4>
+                                    <div class="rating-item">
+                                        <span>5 Star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 100%;">
+                                            </div>
+                                        </div>
+                                        <span>423</span>
+                                    </div>
+                                    <div class="rating-item">
+                                        <span>4 Star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 65%;">
+                                            </div>
+                                        </div>
+                                        <span>423</span>
+                                    </div>
+                                    <div class="rating-item">
+                                        <span>3 Star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%;">
+                                            </div>
+                                        </div>
+                                        <span>423</span>
+                                    </div>
+                                    <div class="rating-item">
+                                        <span>2 Star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 30%;">
+                                            </div>
+                                        </div>
+                                        <span>423</span>
+                                    </div>
+                                    <div class="rating-item">
+                                        <span>1 Star</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 20%;">
+                                            </div>
+                                        </div>
+                                        <span>423</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <div class="review-item">
+                                    <div class="review-title">
+                                        <h4>Perfect Product</h4>
+                                        <div class="review-star">
+                                            <span class="fa fa-star active" aria-hidden="true"></span>
+                                            <span class="fa fa-star active" aria-hidden="true"></span>
+                                            <span class="fa fa-star active" aria-hidden="true"></span>
+                                            <span class="fa fa-star active" aria-hidden="true"></span>
+                                            <span class="fa fa-star" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <div class="review-img">
+                                        <img src="https://via.placeholder.com/50x50"/>
+                                        <span class="review-name">Oleh Chabanov <span>19 Jan, 2018</span></span>
+                                    </div>
+                                </div>
+                                <div class="review-item">
+                                    <div class="review-title">
+                                        <h4>Perfect Product</h4>
+                                        <div class="review-star">
+                                            <span class="fa fa-star active" aria-hidden="true"></span>
+                                            <span class="fa fa-star active" aria-hidden="true"></span>
+                                            <span class="fa fa-star active" aria-hidden="true"></span>
+                                            <span class="fa fa-star active" aria-hidden="true"></span>
+                                            <span class="fa fa-star" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <div class="review-img">
+                                        <img src="https://via.placeholder.com/50x50"/>
+                                        <span class="review-name">Oleh Chabanov <span>19 Jan, 2018</span></span>
+                                    </div>
+                                </div>
+                                <div class="review-item">
+                                    <div class="review-title">
+                                        <h4>Perfect Product</h4>
+                                        <div class="review-star">
+                                            <span class="fa fa-star active" aria-hidden="true"></span>
+                                            <span class="fa fa-star active" aria-hidden="true"></span>
+                                            <span class="fa fa-star active" aria-hidden="true"></span>
+                                            <span class="fa fa-star active" aria-hidden="true"></span>
+                                            <span class="fa fa-star" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <div class="review-img">
+                                        <img src="https://via.placeholder.com/50x50"/>
+                                        <span class="review-name">Oleh Chabanov <span>19 Jan, 2018</span></span>
+                                    </div>
+                                </div>
+                                <div class="review-item">
+                                    <div class="review-title">
+                                        <h4>Perfect Product</h4>
+                                        <div class="review-star">
+                                            <span class="fa fa-star active" aria-hidden="true"></span>
+                                            <span class="fa fa-star active" aria-hidden="true"></span>
+                                            <span class="fa fa-star active" aria-hidden="true"></span>
+                                            <span class="fa fa-star active" aria-hidden="true"></span>
+                                            <span class="fa fa-star" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <div class="review-img">
+                                        <img src="https://via.placeholder.com/50x50"/>
+                                        <span class="review-name">Oleh Chabanov <span>19 Jan, 2018</span></span>
+                                    </div>
+                                </div>
+                                <div class="text-right mt-5">
+                                    <a href="#" class="btn btn-outline-primary py-2">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5 mt-md-0">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="nutritions-info">
+                            <div class="title">Nutrition Info</div>
+                            <form class="form">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option value="">Prosupps Dr.</option>
+                                        <option value="option-1">Option 1</option>
+                                        <option value="option-2">Option 2</option>
+                                        <option value="option-3">Option 3</option>
+                                        <option value="option-4">Option 4</option>
+                                    </select>
+                                </div>
+                            </form>
+                            <hr class="my-4">
+                            <h3>Prosupps Dr.</h3>
+                            <div class="text-muted">
+                                <p class="mb-0">Serving Size: 1 Scoop (37g)</p>
+                                <p>Serving Per Container: 10 Savings</p>
+                            </div>
+                            <hr class="my-4">
+                            <table class="table table-borderless mb-5">
+                                <tbody>
+                                    <tr>
+                                        <td class="text-muted">Amount Per Saving</td>
+                                        <th class="text-right">Amt</th>
+                                        <th class="text-right">%DV</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">Amount Per Saving</td>
+                                        <th class="text-right">Amt</th>
+                                        <th class="text-right">%DV</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">Amount Per Saving</td>
+                                        <th class="text-right">Amt</th>
+                                        <th class="text-right">%DV</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">Amount Per Saving</td>
+                                        <th class="text-right">Amt</th>
+                                        <th class="text-right">%DV</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">Amount Per Saving</td>
+                                        <th class="text-right">Amt</th>
+                                        <th class="text-right">%DV</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">Amount Per Saving</td>
+                                        <th class="text-right">Amt</th>
+                                        <th class="text-right">%DV</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">Amount Per Saving</td>
+                                        <th class="text-right">Amt</th>
+                                        <th class="text-right">%DV</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted">Amount Per Saving</td>
+                                        <th class="text-right">Amt</th>
+                                        <th class="text-right">%DV</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="product-desc">
+                                <h4>Ingridents</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <h4>Ingridents</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <h4>Ingridents</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <img src="https://via.placeholder.com/600x1000" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <section id="deal_section">
+                    <div class="deal-header">
+                        <h1>Trending in Whey protien</h1>
+                        <a href="#" class="btn btn-view-all">View All</a>
+                    </div>
+                    <div class="product_deals products">
+                        <!--owl-carousel item -->
+                        <div class="product-slider owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="product-item">
+                                    <!--sale-top-->
+                                    <div class="flash_sale_time">
+                                        <div><img src="img/sale/sale_1.png" alt=""/></div>
+                                        <div class="sale_time">
+                                            <span class="unit_pending"> 20 Unit Left</span>
+                                            <span>30:09:11</span>
+                                        </div>
+                                    </div>
+                                    <!--.sale-top-->
+                                    <!--product image-->
+                                    <div class="product-thumb-wrap">
+                                        <div class="verified">
+                                            <img src="img/sale/sale_2.png" alt="" />
+                                        </div>
+                                        <img src="img/products.png" alt="" class="product-thumb" />
+                                        <div class="wishlist_icon">
+                                            <span class="lar la-heart"></span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div>
+                                                <span>NS Points</span>
+                                                <h2>20</h2>
+                                            </div>
+                                            <div>
+                                                <span>Cashback</span>
+                                                <h2>30%</h2>
+                                            </div>
+                                            <div>
+                                                <span>Donated</span>
+                                                <h2>170</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--product image-->
+                                    <h3 class="product_title">MuscleBlaze Whey Gold Protein,<br> 4 lb Rich Milk Chocolate</h3>
+                                    <div class="change-view">
+                                        <div class="price_box">
+                                            <div class="price">
+                                                <span class="sale_price"><span class="las la-rupee-sign"></span>3,999</span>
+                                                <span class="real_price"><span class="las la-rupee-sign"></span>5749</span>
+                                            </div>
+                                            <div class="discount">30% off</div>
+                                        </div>
+                                        <div class="star_rating">
+                                            <ul>
+                                                <li><span class="las la-star"></span></li>
+                                                <li><span class="las la-star"></span></li>
+                                                <li><span class="las la-star"></span></li>
+                                                <li><span class="las la-star"></span></li>
+                                                <li><span class="las la-star-half-alt"></span></li>
+                                                <li class="review">
+                                                    <p>(1182 Review)</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="add_to_cart_buttons">
+                                        <div><a href="#" class="btn btn-buy-now">Buy Now</a></div>
+                                        <div><a href="#" class="btn btn-add-to-cart">Add to Cart</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--owl-carousel item -->
+                    </div>
+                </section>
+            </div>
+        </div>
     </div>
 </section>
 <!--Product Details Page Code end Here-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--footer-->
 <footer>
     <div class="container">
-        
-        
         <div class="footer_content">
            
             <div class="footer_links">
-                
+            
                 <div class="links">
                     
                     <p class="link_title">Nutritions Systems</p>
@@ -653,6 +964,7 @@ get a shaker free</p>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js" ></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
