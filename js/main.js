@@ -45,6 +45,27 @@ $('document').ready(function(){
         }
     });
 
+    // Product Slider   
+    $('.product-detail-slider').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        dots: false,
+        nav:true,
+        autoplay: true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            375:{
+                items:2
+            },
+            768:{
+                items:3,
+            }
+        }
+    });
+
     // Services Slider   
     $('.services_sec').owlCarousel({
         loop:true,
@@ -160,5 +181,5 @@ $('document').ready(function(){
     });
     $('.dropdown-toggle-category').click(function(){
        $(this).next('.dropdown-category').slideToggle("fast");
-    });  
+    });
 });
