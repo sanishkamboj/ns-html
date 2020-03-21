@@ -141,16 +141,32 @@ a:focus,button:focus {
     padding-right: 10px;
     padding-left: 10px;
 }
+label {
+    color: #777;
+}
+.form-group {
+    margin-bottom: 16px;
+}
 .form-control {
     font-size: 14px;
     padding: 5px 10px;
     height: 34px;
 }
-.form-group {
-    margin-bottom: 16px;
+.form-control:focus {
+    box-shadow: none;
 }
-label {
-    color: #777;
+.form-control-placeholder {
+    position: absolute;
+    top: 10px;
+    padding: 0 5px;
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
+}
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+    font-size: 90%;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
 }
 .input-group-text {
     width: 34px;
@@ -158,6 +174,9 @@ label {
     justify-content: center;
     color: #77838f;
     font-size: 16px;
+}
+input:-webkit-autofill, input:focus-within:-webkit-autofill, input:focus:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 100px #fff inset;
 }
 .owl-theme .owl-dots {
     margin-top: 10px;
@@ -240,6 +259,7 @@ label {
     margin-right: 10px;
     width: 100%;
     position: relative;
+    color: inherit;
 }
 .custom-checkbox-block .checkboxes, .custom-radio-block .radio {
     display: block;
@@ -261,11 +281,7 @@ label {
     border-radius: 50%;
     cursor: pointer;
 }
-.custom-checkbox .form-icon {
-    border-radius: 3px;
-    top: 2px;
-}
-.form-icon:before {
+.custom-radio .form-icon:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -281,6 +297,10 @@ label {
 }
 .custom-checkbox .checkboxes input:checked~.form-icon, .custom-radio .radio input:checked~.form-icon {
     background-color: #dc1222;
+}
+.custom-checkbox .form-icon {
+    border-radius: 2px;
+    top: 2px;
 }
 
 /*Button*/
@@ -1134,7 +1154,7 @@ header{
     font-size: 20px;
     margin-bottom: 15px;
 }
-.cart-option .title span {
+.number {
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -1143,6 +1163,8 @@ header{
     background-color: #DD121F;
     color: #fff;
     border-radius: 50px;
+}
+.cart-option .title .number {
     margin-right: 5px;
 }
 .address-block {
@@ -1236,6 +1258,55 @@ header{
 }
 .cart-option .continue:hover {
     background-color: #000;
+}
+.checkout-block .card-header,
+.checkout-block .card-footer {
+    background-color: #f0f0f0;
+}
+.checkout-block .card-header h2 {
+    text-transform: uppercase;
+}
+.checkout-block .card-header .number {
+    margin-right: 5px;
+}
+.billing .form .form-control {
+    border-width: 0;
+    border-bottom-width: 1px;
+    padding: 5px;
+    border-radius: 0;
+}
+.billing .form select.form-control {
+    padding: 5px 0;
+}
+.checkout-block .custom-radio .form-icon {
+    transform: scale(0.8);
+}
+.checkout-block input[type=number] {
+    text-align: center;
+    padding: 0;
+    height: 30px;
+}
+.checkout-block input[type=number]::-webkit-inner-spin-button, 
+.checkout-block input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1;
+   height: 30px;
+}
+.checkout-block .billing .checkboxes {
+    background-color: #ebebeb;
+    padding: 8px 5px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.checkout-block .billing .checkboxes + .checkboxes {
+    margin-top: 10px;
+}
+.checkout-block .billing .checkboxes label {
+    margin: 0;
+}
+.checkout-block .billing .form-icon {
+    border-radius: 0;
+    background-color: #fff;
+    border: 1.5px solid #ccc;
 }
 #discount_section{
     padding: 0 0 2.5rem 0;
