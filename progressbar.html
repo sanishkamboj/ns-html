@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/margin_padding_helper.css">
+    <!-- icons -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- Stylesheet -->
+    <link href="css/owl/owl.carousel.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/owl/owl.theme.default.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/progresbar.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/custom-slider.css">
+    <title>Home Page</title>
+    <!-- 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" /> -->
+    <style>
+    </style>
+</head>
+
+<!-- <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/progresbar.css">
+   
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head> -->
+
+<body>
+    <!--header-->
+    <header class="Sticky">
+        <div class="container-fluid">
+            <div id="header">
+                <!--logo-->
+                <div class="logo">
+                    <h1 class="navbar-brand navbar-brand_"><a href="#"><img src="img/logo.png" alt=""
+                                width="164px" /></a></h1>
+                </div>
+                <!--.logo-->
+                <!--Navigation-->
+                <div class="navigation">
+                    <ul>
+                        <li><a href="#"><span class="las la-store"></span> Store</a></li>
+                        <li><a href="#"><span class="las la-bullseye"></span> Goal</a></li>
+                        <li><a href="#"><span class="las la-store"></span> Brand</a></li>
+                        <li><a href="#"><span class="las la-bullseye"></span> Offer</a></li>
+                        <li><a href="#"><span class="las la-question"></span> Why us</a></li>
+                        <li><a href="#"><span class="lar la-edit"></span> i-Nutrition</a></li>
+                        <li><a href="#"><span class="lab la-whatsapp"></span> Whatsapp</a></li>
+                        <li class="search">
+                            <div class="search-box">
+                                <form method="post">
+                                    <input type="text" name="search" id="search" class="search"
+                                        placeholder="search for products, Brand and more" />
+                                    <input type="submit" value="&#xf002" />
+                                </form>
+                            </div>
+                        </li>
+                        <li><a href="#"><span class="lar la-user"></span> Profile</a></li>
+                        <li class="dropdown dropdown-cart"><a href="#"><span class="las la-shopping-bag"></span> Cart
+                                <strong>2</strong></a>
+                            <div class="dropdown-menu">
+                                <div class="small_cart">
+                                    <div class="product_image">
+                                        <a href="#">
+                                            <figure><img src="img/products.png" alt="" width="50" height="50"
+                                                    class="lazy"></figure>
+                                        </a>
+                                    </div>
+                                    <div class="product_des">
+                                        <span>1x MuscleBlaze Whey Protein </span>
+                                        <p>900.00</p>
+                                        <a href="#0" class="action"><span class="lar la-trash-alt"></span></a>
+                                    </div>
+                                </div>
+                                <div class="small_cart">
+                                    <div class="product_image">
+                                        <a href="#">
+                                            <figure><img src="img/products.png" alt="" width="50" height="50"
+                                                    class="lazy"></figure>
+                                        </a>
+                                    </div>
+                                    <div class="product_des">
+                                        <span>1x MuscleBlaze Whey Protein </span>
+                                        <p>900.00</p>
+                                        <a href="#0" class="action"><span class="lar la-trash-alt"></span></a>
+                                    </div>
+                                </div>
+                                <div class="total_drop">
+                                    <div class="clearfix total_value">
+                                        <span>Total</span>
+                                        <span class="align-right">$200.00</span>
+                                    </div>
+                                    <div class="checkout">
+                                        <a href="cart.html" class="btn_1 outline">View Cart</a>
+                                        <a href="checkout.html" class="btn_1 checkout">Checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--.Navigation-->
+
+                <div class="mobile_cart">
+                    <ul>
+                        <li class="search">
+                            <div class="search-box">
+                                <form method="post">
+                                    <input type="text" name="search" id="search" class="search"
+                                        placeholder="search for products, Brand and more" />
+                                    <input type="submit" value="&#xf002" />
+                                </form>
+                            </div>
+                        </li>
+                        <li><a href="#"><span class="lar la-user"></span> Profile</a></li>
+                        <li class="dropdown dropdown-cart"><a href="#"><span class="las la-shopping-bag"></span> Cart
+                                <strong>2</strong></a>
+                            <div class="dropdown-menu">
+                                <div class="small_cart">
+                                    <div class="product_image">
+                                        <a href="#">
+                                            <figure><img src="img/products.png" alt="" width="50" height="50"
+                                                    class="lazy"></figure>
+                                        </a>
+                                    </div>
+                                    <div class="product_des">
+                                        <span>1x MuscleBlaze Whey Protein </span>
+                                        <p>900.00</p>
+                                        <a href="#0" class="action"><span class="lar la-trash-alt"></span></a>
+                                    </div>
+                                </div>
+                                <div class="small_cart">
+                                    <div class="product_image">
+                                        <a href="#">
+                                            <figure><img src="img/products.png" alt="" width="50" height="50"
+                                                    class="lazy"></figure>
+                                        </a>
+                                    </div>
+                                    <div class="product_des">
+                                        <span>1x MuscleBlaze Whey Protein </span>
+                                        <p>900.00</p>
+                                        <a href="#0" class="action"><span class="lar la-trash-alt"></span></a>
+                                    </div>
+                                </div>
+                                <div class="total_drop">
+                                    <div class="clearfix total_value">
+                                        <span>Total</span>
+                                        <span class="align-right">$200.00</span>
+                                    </div>
+                                    <div class="checkout">
+                                        <a href="cart.html" class="btn_1 outline">View Cart</a>
+                                        <a href="checkout.html" class="btn_1 checkout">Checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Mobile Navigation-->
+        <div class="mobile_navigation">
+            <div class="mobile_navbar navbar">
+                <div class="navbar-header">
+                    <div class="mobile_bar">
+                        <!--mobile left -->
+                        <div class="mobile_left">
+                            <button data-toggle="collapse-side" data-target=".side-collapse"
+                                data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-right">
+                                <span class="las la-bars"></span></button>
+                            <div class="navbar-inverse side-collapse in">
+                                <h1>Hello, User</h1>
+                                <div class="user_btns">
+                                    <a href="#" class="btn btn-sign-in">Sign in</a>
+                                    <a href="#" class="btn btn-sign-up">Sign up</a>
+                                </div>
+                                <nav role="navigation" class="navbar-collapse">
+                                    <ul>
+                                        <li><a href="#"><span class="las la-store"></span> Store</a></li>
+                                        <li><a href="#"><span class="las la-bullseye"></span> Goal</a></li>
+                                        <li><a href="#"><span class="las la-store"></span> Brand</a></li>
+                                        <li><a href="#"><span class="las la-bullseye"></span> Offer</a></li>
+                                        <li><a href="#"><span class="las la-question"></span> Why us</a></li>
+                                        <li><a href="#"><span class="lar la-edit"></span> i-Nutrition</a></li>
+                                    </ul>
+                                </nav>
+                                <span class="las la-times close_btn"></span>
+                            </div>
+                        </div>
+                        <!--mobile left -->
+                        <div class="center_mobile_logo">
+                            <!--mobile logo-->
+                            <div class="logo">
+                                <h1 class="navbar-brand navbar-brand_"><a href="#"><img src="img/logo.png" alt=""
+                                            width="150px" /></a>
+                                </h1>
+                            </div>
+                            <!--.mobile logo-->
+                        </div>
+                        <div class="left_side_toogle_menu">
+                            <ul>
+                                <li><a href="#"><span class="lar la-user"></span></a></li>
+                                <li><a href="#"><span class="las la-shopping-bag"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/Mobile Navigation-->
+    </header>
+    <!--header end here-->
+    <div class="main-container">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-11 col-sm-9 col-md-8 col-lg-8 col-xl-8 text-center">
+                    <div class="form-container">
+                        <form id="msform">
+                            <!-- fieldsets -->
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="heading">Tell us about yourself</h2>
+                                    <h4 class="sub-heading">Help us prepare your personalised health chart</h4>
+                                    <h4 class="form-title">Your Gender</h4>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5 col-sm-3">
+                                            <img src="img/Female.png" class="fit-image">
+                                            <input type="button" name="female" class="female-button" value="Female" />
+                                        </div>
+                                        <div class="col-5 col-sm-3">
+                                            <img src="img/Male.png" class="fit-image">
+                                            <input type="button" name="male" class="male-button" value="Male" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" name="next" class="next next-button" value="Next" />
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="heading">Start your journey</h2>
+                                    <h4 class="form-title">Your Height?</h4>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5 col-sm-3">
+                                            <img src="img/height.png" class="fit-image">
+                                            <img src="img/Group 1169.png" class="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" name="next" class="next next-button" value="Next" />
+                                <input type="button" name="previous" class="previous prev-button" value="Previous" />
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="heading">Start your journey</h2>
+                                    <h4 class="form-title">Your Weight?</h4>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5 col-sm-3">
+                                            <img src="img/WEIGHT.png" class="fit-image">
+                                            <img src="img/Group 1173.png" class="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" name="next" class="next next-button" value="Next" />
+                                <input type="button" name="previous" class="previous prev-button" value="Previous" />
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="heading">Start your journey</h2>
+                                    <h4 class="form-title">What is your aim?</h4>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5 col-sm-3">
+                                            <img src="img/target.png" class="fit-image">
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-3 col-md-3"><input type="button" name="BodyBuilding"
+                                                class="body-building" value="Body Building" /></div>
+                                        <div class="col-3 col-md-3"><input type="button" name="weightLoss"
+                                                class="weight-Loss" value="Weight Loss" /></div>
+                                        <div class="col-3 col-md-3"><input type="button" name="GainWeight"
+                                                class="Gain-Weight" value="Gain Weight" /></div>
+                                    </div>
+                                </div>
+                                <input type="button" name="next" class="next next-button" value="Next" />
+                                <input type="button" name="previous" class="previous prev-button" value="Previous" />
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="heading">Start your journey</h2>
+                                    <h4 class="form-title">Activity Level?</h4>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5 col-sm-3">
+                                            <img src="img/how active.png" class="fit-image">
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-3 col-md-3"><input type="button" name="Sedenatary"
+                                                class="Sedenatary" value="Sedenatary" /></div>
+                                        <div class="col-3 col-md-3"><input type="button" name="Lightly" class="Lightly"
+                                                value="Lightly Active" /></div>
+                                        <div class="col-3 col-md-3"><input type="button" name="Moderately"
+                                                class="Moderately" value="Moderately Active" /></div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-2 col-md-2"><input type="button" name="BodyBuilding"
+                                                class="Very" value="Very Active" /></div>
+                                        <div class="col-2 col-md-2"><input type="button" name="Extreme" class="Extreme"
+                                                value="Extreme Active" /></div>
+                                    </div>
+                                </div>
+                                <input type="button" name="next" class="next next-button" value="Next" />
+                                <input type="button" name="previous" class="previous prev-button" value="Previous" />
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="heading">Start your journey</h2>
+                                    <h4 class="form-title">Diet Preference?</h4>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5 col-sm-3">
+                                            <img src="img/diet.png" class="fit-image">
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-3 col-md-3"><input type="button" name="Ketogenic"
+                                                class="Ketogenic" value="Ketogenic" /></div>
+                                        <div class="col-3 col-md-3"><input type="button" name="Paleo" class="Paleo"
+                                                value="Paleo" /></div>
+                                        <div class="col-3 col-md-3"><input type="button" name="Vegetarian"
+                                                class="Vegetarian" value="Vegetarian" /></div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-3 col-md-3"><input type="button" name="Vegan" class="Vegan"
+                                                value="Vegan" /></div>
+                                        <div class="col-3 col-md-3"><input type="button" name="Mediteranean"
+                                                class="Mediteranean" value="Mediteranean" /></div>
+                                        <div class="col-3 col-md-3"><input type="button" name="Anything"
+                                                class="Anything" value="Anything" /></div>
+                                    </div>
+                                </div>
+                                <input type="button" name="next" class="next next-button" value="Next" />
+                                <input type="button" name="previous" class="previous prev-button" value="Previous" />
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="heading">Start your journey</h2>
+                                    <h4 class="form-title">Meal Preference?</h4>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5 col-sm-3">
+                                            <img src="img/diet.png" class="fit-image">
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-3 col-md-3"><input type="button" name="meal-3" class="meal-3"
+                                                value="3" /></div>
+                                        <div class="col-3 col-md-3"><input type="button" name="meal-4" class="meal-4"
+                                                value="4" /></div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-3 col-md-3"><input type="button" name="5" class="meal-5"
+                                                value="5" /></div>
+                                        <div class="col-3 col-md-3"><input type="button" name="any" class="any"
+                                                value="Any" /></div>
+                                    </div>
+                                </div>
+                                <input type="button" name="next" class="next next-button" value="Next" />
+                                <input type="button" name="previous" class="previous prev-button" value="Previous" />
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="heading">Start your journey</h2>
+                                    <h4 class="form-title">Body Fat Percentage?</h4>
+                                    <div class="row justify-content-center">
+                                        <div class="col-5 col-sm-3">
+                                            <img src="img/fat.png" class="fit-image">
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-3 col-md-3"><input type="button" name="low" class="low"
+                                                value="low below 14%" />
+                                        </div>
+                                        <div class="col-3 col-md-3"><input type="button" name="Medium" class="Medium"
+                                                value="Medium 14%-26%" /></div>
+                                        <div class="col-3 col-md-3"><input type="button" name="High" class="High"
+                                                value="High Above 26%" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="button" name="next" class="next next-button" value="Submit" />
+                                <input type="button" name="previous" class="previous prev-button" value="Previous" />
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                                    <div class="row justify-content-center">
+                                        <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png"
+                                                class="fit-image"> </div>
+                                    </div> <br><br>
+                                    <div class="row justify-content-center">
+                                        <div class="col-7 text-center">
+                                            <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <!-- progressbar -->
+                            <ul id="progressbar">
+                                <li class="active" id="account"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+
+
+            <div class="footer_content">
+
+                <div class="footer_links">
+
+                    <div class="links">
+
+                        <p class="link_title">Nutritions Systems</p>
+
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Refer & Earn</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="links">
+
+                        <p class="link_title">Support</p>
+
+                        <ul>
+                            <li><a href="#">Your Account</a></li>
+                            <li><a href="#">Store Locator</a></li>
+                            <li><a href="#"></a> - </li>
+                            <li><a href="#">Delivery Policies</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">FAQ's & Help</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Sell on Nutiritions</a></li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="links">
+
+                        <p class="link_title">Categories</p>
+
+                        <ul>
+                            <li><a href="#">Body Building</a></li>
+                            <li><a href="#">Weight Loss</a></li>
+                            <li><a href="#">Health Living</a></li>
+                            <li><a href="#">Hair & Skin Care</a></li>
+                            <li><a href="#">Sports Nutritions</a></li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="links">
+
+                        <p class="link_title">Optional</p>
+
+                        <ul>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="newsletter">
+
+                    <h3>SIGN UP FOR NEWSLETTER</h3>
+
+                    <p>Be the first one to receive amazing offers, deals and news from Nutritionsystems.com</p>
+
+                    <form method="post" action="#" id="newsletter">
+                        <input type="text" name="newsletter" id="newsletter" placeholder="Enter Your Email id" />
+                        <input type="submit" value="Send" />
+                    </form>
+
+
+                    <h3>Download App</h3>
+
+
+                    <div class="download_center">
+                        <div>
+                            <img src="img/appStoreIcon.svg" alt="" />
+                        </div>
+                        <div>
+                            <img src="img/googlePlayIcon.svg" alt="" />
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+
+
+            <img class="footer_new_img" src="img/secure_payment.png" alt="" />
+
+
+            <br>
+
+
+            <p style="font-size: 14px;font-weight: 300;"><strong style="font-weight: 700;">About
+                    Nutritionsystems:</strong>
+                Nutritionsystems.com is India's largest online health & fitness store for men and women.<br> Shop online
+                from
+                the latest collections of health, fitness and similar products
+                featuring the best brands.</p>
+
+
+            <div class="payment_option">
+                <div>
+                    <img src="img/footer_lgo.png" alt="" width="170px" />
+                </div>
+                <div>
+                    <img src="img/payment.png" alt="" />
+                </div>
+
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><span class="lab la-facebook-f"></span></a></li>
+                        <li><a href="#"><span class="lab la-linkedin-in"></span></a></li>
+                        <li><a href="#"><span class="lab la-google-plus-g"></span></a></li>
+                        <li><a href="#"><span class="lab la-twitter"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+    <!--/footer-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/progressbar.js"></script>
+
+
+
+    <script src="js/slider_function.js"></script>
+
+</body>
+
+
+
+</html>
