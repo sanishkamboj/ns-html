@@ -61,7 +61,7 @@ $('document').ready(function(){
                 items:2
             },
             768:{
-                items:3,
+                items:1,
             }
         }
     });
@@ -109,15 +109,13 @@ $('document').ready(function(){
                 items:2
             },
             768:{
-                items:3,
-                margin:20
+                items:3
             },
             1000:{
-                margin: 40
+                items:4
             },
-            1400:{
-                items: 4,
-                margin:60
+            1200:{
+                items:5
             }
         }
     });
@@ -139,9 +137,11 @@ $('document').ready(function(){
             768:{
                 items:3
             },
-            1400:{
-                items: 4,
-                margin: 20
+            1000:{
+                items:4
+            },
+            1200:{
+                items:5
             }
         }
     });

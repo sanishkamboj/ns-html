@@ -488,7 +488,7 @@
     <section class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-lg-8">
                     <div class="card">
                         <div class="card-header">
                             <h2>My Cart</h2>
@@ -518,14 +518,14 @@
                                                 <li class="review"><p>(1182 Review)</p></li>
                                             </ul>
                                         </div>
-                                    </div>
-                                    <div class="product-quantity">
-                                        <div class="quantity">
-                                            <span class="qty-minus">-</span>
-                                            <input type="number" class="qty" name="cart_qty" value="1" title="Qty" size="4">
-                                            <span class="qty-plus">+</span>
-                                            <a href="#" class="cart-remove">Remove</a>
+                                        <div class="product-quantity">
+                                            <div class="quantity">
+                                                <span class="qty-minus">-</span>
+                                                <input type="number" class="qty" name="cart_qty" value="1" title="Qty" size="4">
+                                                <span class="qty-plus">+</span>
+                                            </div>
                                         </div>
+                                        <a href="#" class="cart-remove"><i class="fa fa-trash"></i></a>
                                     </div>
                                 </div>
                                 <div class="cart-item">
@@ -551,28 +551,42 @@
                                                 <li class="review"><p>(1182 Review)</p></li>
                                             </ul>
                                         </div>
-                                    </div>
-                                    <div class="product-quantity">
-                                        <div class="quantity">
-                                            <span class="qty-minus">-</span>
-                                            <input type="number" class="qty" name="cart_qty" value="1" title="Qty" size="4">
-                                            <span class="qty-plus">+</span>
-                                            <a href="#" class="cart-remove">Remove</a>
+                                        <div class="product-quantity">
+                                            <div class="quantity">
+                                                <span class="qty-minus">-</span>
+                                                <input type="number" class="qty" name="cart_qty" value="1" title="Qty" size="4">
+                                                <span class="qty-plus">+</span>
+                                            </div>
                                         </div>
+                                        <a href="#" class="cart-remove"><i class="fa fa-trash"></i></a>
                                     </div>
                                 </div>
-                                <div class="coupon-block">
-                                    <form class="coupon">
-                                        <input type="text" name="coupon_code" id="coupon_code" value="" placeholder="Coupon code">
-                                        <button type="submit" class="button" name="apply_coupon" value="Apply coupon">Apply coupon</button>
-                                    </form>
-                                    <a href="#" class="continue-shopping">Continue Shopping</a>
+                                <div class="continue-shopping">
+                                    <div class="mb-3 mb-sm-0">Order in <span class="text-primary">1 H 5M 30S</span> to get a freebee</div>
+                                    <a href="#" class="btn btn-outline-primary text-uppercase">Continue Shopping</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mt-5 mt-md-0">
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Coupon Code</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="coupon-block">
+                                <form class="coupon">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" name="coupon_code" id="coupon_code" value="" placeholder="Coupon code">
+                                        <div class="input-group-append">
+                                            <button type="submit" class="button" name="apply_coupon" value="Apply coupon">Apply coupon</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                     <div class="card">
                         <div class="card-header">
                             <h2>Price Detail</h2>
@@ -608,114 +622,10 @@
                             </table>
                         </div>
                     </div>
-                </div>
-                <div class="cart-option w-100">
-                    <div class="col-12 mt-5">
-                        <div class="row gutters-2">
-                            <div class="col-md-3">
-                                <h2 class="title"><span class="number">1</span> Select Delivery Address:</h2>
-                            </div>
-                            <div class="col-md-9">
-                                <div class="row gutters-1">
-                                    <div class="col-xl-3 col-sm-4 col-6">
-                                        <div class="address-block">
-                                            <div class="custom-radio custom-radio-block">
-                                                <div class="radio mb-0">
-                                                    <label>
-                                                        <input type="radio" class="form-check-input" name="address" checked="">
-                                                        <i class="form-icon"></i> User Name
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="address">
-                                                <div>Address first line</div>
-                                                <div>Address second line</div>
-                                                <div>Landmark</div>
-                                                <div>State</div>
-                                                <div>Country</div>
-                                                <div>Phone Number</div>
-                                            </div>
-                                            <div class="address-action">
-                                                <a href="#">Edit</a> <span>|</span> <a href="#">Delete</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-sm-4 col-6">
-                                        <div class="address-block">
-                                            <div class="custom-radio custom-radio-block">
-                                                <div class="radio mb-0">
-                                                    <label>
-                                                        <input type="radio" class="form-check-input" name="address">
-                                                        <i class="form-icon"></i> User Name
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="address">
-                                                <div>Address first line</div>
-                                                <div>Address second line</div>
-                                                <div>Landmark</div>
-                                                <div>State</div>
-                                                <div>Country</div>
-                                                <div>Phone Number</div>
-                                            </div>
-                                            <div class="address-action">
-                                                <a href="#">Edit</a> <span>|</span> <a href="#">Delete</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-sm-4 col-6">
-                                        <div class="address-block new">
-                                            <a href="#">
-                                                <div class="new-block">
-                                                    <i class="fa fa-plus"></i>
-                                                    <div>Add New Address</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 mt-5">
-                        <div class="row gutters-2">
-                            <div class="col-md-3">
-                                <h2 class="title"><span class="number">2</span> Payment Method:</h2>
-                            </div>
-                            <div class="col-md-9">
-                                <div class="payment-options">
-                                    <div class="custom-radio custom-radio-block">
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" class="form-check-input" name="payment_option" checked="">
-                                                <i class="form-icon"></i> Cash on Delivery
-                                            </label>
-                                        </div>
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" class="form-check-input" name="payment_option">
-                                                <i class="form-icon"></i> Debit/Credit Card
-                                            </label>
-                                        </div>
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" class="form-check-input" name="payment_option">
-                                                <i class="form-icon"></i> Wallet
-                                            </label>
-                                        </div>
-                                        <div class="radio">
-                                            <label>
-                                                <input type="radio" class="form-check-input" name="payment_option">
-                                                <i class="form-icon"></i> PayTM
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 my-5 text-center">
-                        <a href="#" class="continue">Continue</a>
+                    <div class="cart-banner">
+                        <a href="#">
+                            <span>Get your workout plan today.</span>
+                        </a>
                     </div>
                 </div>
                 <div class="col-12 mt-5">
@@ -804,16 +714,48 @@
                             <div class="col-lg-4 col-md-6 mt-lg-0 mt-5">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h2><span class="number">2</span> Shipping Method</h2>
+                                        <h2><span class="number">2</span> Shipping Address</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="address-block">
+                                            <div class="custom-radio custom-radio-block">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" class="form-check-input" name="address" checked="">
+                                                        <i class="form-icon"></i> 1115 , Prasad Chambers, Opera House, Mumbai, Maharashtra, india
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" class="form-check-input" name="address">
+                                                        <i class="form-icon"></i> 1115 , Prasad Chambers, Opera House, Mumbai
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" class="form-check-input" name="address">
+                                                        <i class="form-icon"></i> 1115 , Prasad Chambers, Opera House, Mumbai
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="address-action">
+                                                <a href="#">Add New Address</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h2><span class="number">3</span> Shipping Method</h2>
                                     </div>
                                     <div class="card-body">
                                         <h4 class="font-weight-bold">Gymvitals</h4>
-                                        <p>Shipping Charges <strong>₹0.00</strong></p>
+                                        <p>Shipping Charges <strong><span class="las la-rupee-sign"></span>0.00</strong></p>
                                     </div>
                                 </div>
                                 <div class="card mt-5">
                                     <div class="card-header">
-                                        <h2><span class="number">3</span> Payment Method</h2>
+                                        <h2><span class="number">4</span> Payment Method</h2>
                                     </div>
                                     <div class="card-body">
                                         <div class="custom-radio custom-radio-block">
@@ -838,13 +780,13 @@
                                     <div class="card-header">
                                         <h2><span class="number">&#10004;</span> Order Review</h2>
                                     </div>
-                                    <div class="card-body" style="background-color: #f0f0f0;">
+                                    <div class="card-body">
                                         <table class="table table-bordered">
                                             <thead class="text-uppercase">
                                                 <tr>
                                                     <td>Product</td>
                                                     <td>Qty</td>
-                                                    <td>Price</td>
+                                                    <td style="min-width: 90px;">Price</td>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -852,29 +794,29 @@
                                                     <td>GNC Pro Performance weight Gainer - Double Chocolate - 3Kg</td>
                                                     <td><input type="number" min="1" max="9" step="1" value="1">
                                                     </td>
-                                                    <td>₹1,999.00</td>
+                                                    <td><span class="las la-rupee-sign"></span>1,999.00</td>
                                                 </tr>
                                                 <tr>
                                                     <td colspan="2" class="text-right">Subtotal</td>
-                                                    <td>₹1,999.00</td>
+                                                    <td><span class="las la-rupee-sign"></span>1,999.00</td>
                                                 </tr>
                                                 <tr>
                                                     <td colspan="2" class="text-right">Shipping & handling (Gymvitals - Shipping Charges)</td>
-                                                    <td>₹0.00</td>
+                                                    <td><span class="las la-rupee-sign"></span>0.00</td>
                                                 </tr>
                                                 <tr>
                                                     <td colspan="2" class="text-right">Tax</td>
-                                                    <td>₹304.93</td>
+                                                    <td><span class="las la-rupee-sign"></span>304.93</td>
                                                 </tr>
                                                 <tr style="background-color: #ccc;">
                                                     <td colspan="2" class="text-right text-uppercase py-4">Grand Total</td>
-                                                    <td class="font-weight-bold py-4">₹2,303.93</td>
+                                                    <td class="font-weight-bold py-4"><span class="las la-rupee-sign"></span>2,303.93</td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn-primary btn-block btn-round text-uppercase mt-4"> Place Order Now</a>
+                                <a href="#" class="btn btn-outline-primary btn-block text-uppercase mt-4"> Place Order Now</a>
                             </div>
                         </div>
                     </div>
