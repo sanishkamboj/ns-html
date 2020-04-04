@@ -11,7 +11,7 @@ $('document').ready(function(){
     });
 
     /* Cart dropdown */
-    $('.dropdown-cart, .dropdown-access').hover(function () {
+    $('.mini-cart, .dropdown-access').hover(function () {
         $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(300);
     }, function () {
         $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(300);
@@ -38,9 +38,11 @@ $('document').ready(function(){
             },
             1000:{
                 items:4,
+                margin:20
             },
-            1400:{
+            1300:{
                 items:5,
+                margin:20
             }
         }
     });
@@ -55,13 +57,13 @@ $('document').ready(function(){
         autoplay: true,
         responsive:{
             0:{
-                items:1,
+                items:1
             },
             375:{
-                items:2
+                items:1
             },
             768:{
-                items:1,
+                items:1
             }
         }
     });
@@ -84,7 +86,7 @@ $('document').ready(function(){
                 items:3
             },
             1000:{
-                items:5,
+                items:6,
                 mouseDrag:false,
                 touchDrag:false,
                 autoplay: false,
@@ -112,10 +114,12 @@ $('document').ready(function(){
                 items:3
             },
             1000:{
-                items:4
+                items:4,
+                margin:20
             },
-            1200:{
-                items:5
+            1300:{
+                items:5,
+                margin:20
             }
         }
     });
@@ -137,9 +141,13 @@ $('document').ready(function(){
             768:{
                 items:3
             },
-            1400:{
+            1000:{
                 items: 4,
                 margin: 20
+            },
+            1300:{
+                items:5,
+                margin:20
             }
         }
     });
@@ -163,11 +171,12 @@ $('document').ready(function(){
                 margin:20
             },
             1000:{
-                margin: 40
-            },
-            1400:{
                 items: 4,
-                margin:60
+                margin: 20
+            },
+            1300:{
+                items: 5,
+                margin:20
             }
         }
     });
