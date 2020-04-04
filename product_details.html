@@ -228,9 +228,29 @@
                                     <img class="default-image" src="img/Product_details.png" alt=""/>
                                     <img class="hover-image" src="https://laz-img-sg.alicdn.com/p/7ea8badcdd0b846af3b114774e36b4e3.jpg" alt=""/>
                                 </div>
+                                <div class="text-center mt-4 fw-600">
+                                    <a href="#"><i class="fa fa-exchange"></i> Add to compare</a>
+                                </div>
+                                <div class="expert">
+                                    <a href="#">
+                                        <span class="expert-thumb">
+                                            <img src="https://keenthemes.com/preview/metronic/theme/assets/pages/media/profile/profile_user.jpg" alt="Expert Name">
+                                        </span>
+                                        <div class="expert-content">
+                                            <div class="phone-container">
+                                                <h3 class="title">Ask an Expert</h3>
+                                                <span class="phone">Call 0124 461 6444</span>
+                                            </div>
+                                            <div class="timetable">Mon-Sat (10AM-7PM)</div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                             <div class="col-sm-8">
                                 <div class="product-details-content">
+                                    <div class="wishlist_icon">
+                                        <span class="lar la-heart"></span>
+                                    </div>
                                    <h4>A <a href="#">Prosupps</a> Product</h4>
                                    <h1>ProSupps Dr. Jekyll Pump Liquid Shots</h1>
                                    <p>All The Power of a  Big Pump Product in a quick consumption Shot!</p>
@@ -257,7 +277,15 @@
                                    </div>
                                    <div class="pin_code">
                                        <img src="img/map.png" alt=""/>
-                                       <p>Shipping Area : Noida 201301 <a href="#"> Change</a> </p>
+                                       <p>Shipping Area : Noida 201301 <a href="#"> Change</a></p>
+                                       <form class="form mb-3">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Enter Pincode">
+                                                <span class="input-group-append">
+                                                    <button class="input-group-button" type="button">Check</button>
+                                                </span>
+                                            </div>
+                                       </form>
                                    </div>
                                     <div class="pin_code">
                                        <img src="img/bottle.png" alt=""/>
@@ -266,46 +294,22 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product_b_l">
-                            <div>
-                                <span class="media align-items-center">
-                                    <span class="d-flex mr-3">
-                                        <img src="img/coin-stack.svg"/>
-                                    </span>
-                                    <span class="media-body">
-                                        <span>Earn Points on everthing</span>
-                                    </span>
-                                </span>
+                        <div class="row offerings mt-3">
+                            <div class="col-sm-3 col-6 text-center">
+                                <i class="las la-truck number"></i>
+                                <p>Free shipping</p>
                             </div>
-                            <div>
-                                <span class="media align-items-center">
-                                    <span class="d-flex mr-3">
-                                        <img src="img/bottle.svg"/>
-                                    </span>
-                                    <span class="media-body">
-                                        <span>Order in next 5 mins & get a shaker free</span>
-                                    </span>
-                                </span>
+                            <div class="col-sm-3 col-6 text-center">
+                                <i class="las la-wallet number"></i>
+                                <p>Cash on Delivery</p>
                             </div>
-                            <div>
-                                <span class="media align-items-center">
-                                    <span class="d-flex mr-3">
-                                        <img src="img/delivery-truck.svg"/>
-                                    </span>
-                                    <span class="media-body">
-                                        <span>Sample text</span>
-                                    </span>
-                                </span>
+                            <div class="col-sm-3 col-6 text-center">
+                                <i class="las la-sync number"></i>
+                                <p>14 days Return</p>
                             </div>
-                            <div>
-                                <span class="media align-items-center">
-                                    <span class="d-flex mr-3">
-                                        <img src="img/credit-card.svg"/>
-                                    </span>
-                                    <span class="media-body">
-                                        <span>Sample text</span>
-                                    </span>
-                                </span>
+                            <div class="col-sm-3 col-6 text-center">
+                                <i class="las la-shield-alt number"></i>
+                                <p>Authenticity Guaranteed</p>
                             </div>
                         </div>
                     </div>
@@ -317,16 +321,27 @@
                         <div class="buy_options">
                             <h2>BUYING OPTIONS</h2>
                             <div class="sec_buy_1">
-                                <div class="sec_stock">
-                                    <p class="in_stock">In Stock</p>
-                                </div>
-                                <div class="price_sec">
-                                    <div class="p_sec_1">
-                                        <h1><span class="las la-rupee-sign"></span>3,999</h1>
-                                        <p><span class="las la-rupee-sign"></span>5,749</p>
+                                <div class="row gutters-1">
+                                    <div class="col-xl-7 col-lg-12 col-sm-7">
+                                        <div class="sec_stock">
+                                            <p class="in_stock">In Stock</p>
+                                        </div>
+                                        <div class="price_sec">
+                                            <div class="p_sec_1">
+                                                <h1><span class="las la-rupee-sign"></span>3,999</h1>
+                                                <p><span class="las la-rupee-sign"></span>5,749</p>
+                                            </div>
+                                            <div class="btn_sec_1">
+                                                <button type="btn btn_red">30% off</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="btn_sec_1">
-                                        <button type="btn btn_red">30% off</button>
+                                    <div class="col-xl-5 col-lg-12 col-sm-5">
+                                        <div class="ns-points-list d-block">
+                                            <div><img src="img/ns-points/ns-black.svg"> NS Points: 20</div>
+                                            <div><img src="img/ns-points/cashback-black.svg"> Cashback: 30%</div>
+                                            <div><img src="img/ns-points/donate-black.svg"> Donated: 170</div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="configurable-wrap mt-4">
@@ -352,22 +367,15 @@
                                             </select>
                                         </div>
                                         <div class="form-group product-quantity">
-                                            <div class="row gutters-1 align-items-end">
-                                                <div class="col-6">
-                                                    <label for="quantity">Quantity</label>
-                                                    <div class="input-group">
-                                                        <span class="input-group-prepend">
-                                                            <button class="input-group-text" type="button">-</button>
-                                                        </span>
-                                                        <input type="text" name="" class="form-control" value="1">
-                                                        <span class="input-group-append">
-                                                            <button class="input-group-text" type="button">+</button>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <a href="#" class="btn btn-outline-primary btn-block">Wishlist</a>
-                                                </div>
+                                            <label for="quantity">Quantity</label>
+                                            <div class="input-group">
+                                                <span class="input-group-prepend">
+                                                    <button class="input-group-text" type="button">-</button>
+                                                </span>
+                                                <input type="text" name="" class="form-control" value="1">
+                                                <span class="input-group-append">
+                                                    <button class="input-group-text" type="button">+</button>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="row gutters-1 mt-4">
@@ -388,11 +396,9 @@
         </div>
         <div class="row mt-5">
             <div class="col-md-8">
-                <section>
-                    <div class="deal-header">
-                        <h1>Todays Deal</h1>
-                    </div>
-                    <div class="product_deals products list">
+                <section class="deals">
+                    <span class="title">Deals</span>
+                    <div class="product_deals products list p-0">
                         <!--owl-carousel item -->
                         <div class="product-detail-slider owl-carousel owl-theme">
                             <div class="item">
@@ -413,6 +419,9 @@
                                     <!--product image-->
                                     <div class="product-thumb-wrap product-bg">
                                         <div class="product-category-icon red"></div>
+                                        <div class="wishlist_icon">
+                                            <span class="lar la-heart"></span>
+                                        </div>
                                         <img src="img/products.png" alt="" class="product-thumb" />
                                         <div class="hover-content">
                                             <div class="top">

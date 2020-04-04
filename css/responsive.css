@@ -33,11 +33,6 @@
     .product-thumb-wrap .verified {
         width: 40px;
     }
-    .product-thumb-wrap .wishlist_icon {
-        width: 40px;
-        height: 40px;
-        font-size: 2rem;
-    }
     .product-item .product_title {
         font-size: 1.6rem;
         line-height: 2.2rem;
@@ -77,6 +72,9 @@
     .products.list .product-thumb-wrap img.product-thumb {
         padding: 0;
     }
+    .products.list .product-thumb-wrap .wishlist_icon {
+        top: 6px;
+    }
     .products.list .product-item .hover-content {
         height: 100%;
         font-size: 80%;
@@ -112,9 +110,12 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        opacity: 1;
+        visibility: visible;
     }
     .ns-points-list {
         display: block;
+        font-weight: 600;
     }
     .product-thumbnail {
         margin-right: 30px;
@@ -856,26 +857,13 @@
     .form_red_box form {
         width: 76%;
     }
-
     .containerred {
         padding-left: 4rem;
         padding-top: 0.5rem;
     }
-
     .four_box_section > div.section_four .section_four_content h2 {
         font-size: 2.6rem;
     }
-
-    .four_box_section > div.section_four > div.section_four_img {
-        width: 100px;
-        height: 100px;
-        padding: 2.8rem 0 0 0;
-    }
-
-    .four_box_section > div.section_four .section_four_img img {
-        width: 65%;
-    }
-
     footer .footer_content > div.footer_links {
         width: 100%;
         display: flex;
@@ -916,33 +904,26 @@
     .form_red_box form input[type="submit"] {
         padding: 1rem 2rem;
     }
-
     .four_box_section > div.section_four .section_four_content {
-        padding: 1rem 4rem;
+        width: calc(100% - 120px);
     }
-
     .four_box_section > div.section_four > div.section_four_img {
         width: 70px;
         height: 70px;
-        padding: 2rem 0 0 0;
     }
-
     .left_side_toogle_menu {
         display: none;
     }
-
     .left_side_toogle_menu {
         display: block;
         position: relative;
         left: 0px;
     }
-
     .left_side_toogle_menu ul {
         list-style: none;
         margin: 0;
         padding: 0;
     }
-
     .left_side_toogle_menu ul li {
         display: inline-block;
         position: relative;
@@ -950,7 +931,6 @@
         margin: 0 10px;
         padding: 3px 0 0 0;
     }
-
     .left_side_toogle_menu ul li a {
         color: #fff;
     }
@@ -1150,11 +1130,6 @@
         position: relative;
         margin: 2rem 0 0 0;
     }
-
-    .four_box_section > div.section_four .section_four_content h2 span {
-        display: block;
-    }
-
     #red_box_center .red_box {
         height: auto;
         min-height: auto;
