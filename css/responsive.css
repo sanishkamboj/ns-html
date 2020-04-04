@@ -125,15 +125,33 @@
     }
     .cart .product-content {
         width: calc(100% - 150px);
+        padding-right: 40px;
     }
     .cart-item .product_title {
         font-size: 2rem;
         line-height: 2.5rem;
         font-weight: 600;
-        margin-bottom: 10px;
+    }
+    .cart-remove {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 25px;
     }
     .sec_buy_1{
         padding: 1rem 2rem;
+    }
+    .exercise-rating .badge {
+        font-size: 14px;
+        width: 28px;
+        padding: 6px 0;
+    }
+    .exercise .video {
+        width: 400px;
+        margin: 0 20px 0 0;
+    }
+    .exercise.detail .exercise-content {
+        width: calc(100% - 420px);
     }
 }
 

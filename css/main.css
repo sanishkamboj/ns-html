@@ -288,7 +288,7 @@ input:-webkit-autofill, input:focus-within:-webkit-autofill, input:focus:-webkit
     user-select: none
 }
 .custom-checkbox .checkboxes label, .custom-radio .radio label {
-    padding-left: 30px;
+    padding-left: 25px;
     margin-right: 10px;
     width: 100%;
     position: relative;
@@ -306,7 +306,7 @@ input:-webkit-autofill, input:focus-within:-webkit-autofill, input:focus:-webkit
 .form-icon {
     position: absolute;
     top: 1px;
-    left: 5px;
+    left: 0;
     height: 16px;
     width: 16px;
     border: 1px solid #dc1222;
@@ -328,12 +328,33 @@ input:-webkit-autofill, input:focus-within:-webkit-autofill, input:focus:-webkit
 .custom-radio .radio input:checked~ label {
     font-weight: 600;
 }
-.custom-checkbox .checkboxes input:checked~.form-icon, .custom-radio .radio input:checked~.form-icon {
+.custom-radio .radio input:checked~.form-icon {
     background-color: #dc1222;
+}
+.custom-checkbox .checkboxes input:checked~.form-icon:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    top: 50%;
+    left: 40%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-weight: 100;
+    font-size: 100%;
+    color: #dd121f;
 }
 .custom-checkbox .form-icon {
     border-radius: 2px;
     top: 2px;
+}
+.custom-checkbox-lg .checkboxes label {
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.custom-checkbox-lg .form-icon {
+    width: 20px;
+    height: 20px;
+    top: 0;
 }
 
 /*Button*/
@@ -497,6 +518,7 @@ header{
 }
 .navigation ul li.mega-menu > ul li a {
     font-size: 16px;
+    text-align: center;
 }
 .navigation ul li > ul.sub-mega-menu {
     padding: 0;
@@ -866,7 +888,7 @@ header{
     background-color: #fff;
     z-index: 9;
 }
-.product-item .ns-points {
+.ns-points {
     background-color: #dd121f;
     color: #fff;
     min-width: 90px;
@@ -875,6 +897,8 @@ header{
     margin-bottom: 4px;
     border-radius: 4px;
     font-size: 14px;
+}
+.product-item .ns-points {
     opacity: 0;
 }
 .product-item .ns-points .col-4 + .col-4 {
@@ -1508,8 +1532,8 @@ header{
 }
 
 #four_box_section {
-    background-image: url(../img/four-section-bg.png);
-    background-size: auto;
+    background-image: url(../img/four-section-bg.jpg);
+    background-size: cover;
     background-position: center;
 }
 .four_box_section{
@@ -3228,8 +3252,77 @@ to {
     color: #6c757d!important;
     margin-top: -25px;
 }
-
-
+.widget + .widget {
+    margin-top: 30px;
+}
+.widget .widget-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.exercise img {
+    max-width: 100%;
+}
+.exercise .exercise-item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.exercise-item + .exercise-item {
+    margin-top: 15px;
+}
+.exercise-thumbnail {
+    position: relative;
+    margin-right: 10px;
+}
+.exercise-thumbnail img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 1px solid #f5f5f5;
+}
+.exercise .exercise-content {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    width: calc(100% - 80px);
+    font-weight: 500;
+    font-size: 14px;
+}
+.exercise .exercise-content .content {
+    width: calc(100% - 80px);
+}
+.exercise-item h3 {
+    font-size: 16px;
+}
+.exercise-item h3 a:hover {
+    color: #DD121F;
+}
+.exercise .exercise-content p {
+    margin-bottom: 0;
+}
+.exercise-rating {
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+.exercise-rating .badge {
+    width: 26px;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 5px 0;
+    border: 1px solid #c8c8c8;
+    border-radius: 50%/15%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+.exercise.detail .exercise-item {
+    margin-bottom: 20px;
+}
 
 @media (max-width:767px) {
     .custom-dasboard {
