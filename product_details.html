@@ -321,8 +321,8 @@
                         <div class="buy_options">
                             <h2>BUYING OPTIONS</h2>
                             <div class="sec_buy_1">
-                                <div class="row gutters-1">
-                                    <div class="col-xl-7 col-lg-12 col-sm-7">
+                                <div class="row gutters-1 align-items-center">
+                                    <div class="col-sm-7">
                                         <div class="sec_stock">
                                             <p class="in_stock">In Stock</p>
                                         </div>
@@ -336,13 +336,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-5 col-lg-12 col-sm-5">
+                                    <div class="col-sm-5">
                                         <div class="ns-points-list d-block">
-                                            <div><img src="img/ns-points/ns-black.svg"> NS Points: 20</div>
-                                            <div><img src="img/ns-points/cashback-black.svg"> Cashback: 30%</div>
-                                            <div><img src="img/ns-points/donate-black.svg"> Donated: 170</div>
+                                            <div>Earn <img src="img/ns-points/ns-black.svg" class="pl-2"> 20 Points</div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="ns-points text-left">
+                                    <div class="d-flex justify-content-between"><span><img src="img/ns-points/donate.svg"> Donation</span> 170</div>
                                 </div>
                                 <div class="configurable-wrap mt-4">
                                     <form class="form">
@@ -368,14 +369,23 @@
                                         </div>
                                         <div class="form-group product-quantity">
                                             <label for="quantity">Quantity</label>
-                                            <div class="input-group">
-                                                <span class="input-group-prepend">
-                                                    <button class="input-group-text" type="button">-</button>
-                                                </span>
-                                                <input type="text" name="" class="form-control" value="1">
-                                                <span class="input-group-append">
-                                                    <button class="input-group-text" type="button">+</button>
-                                                </span>
+                                            <div class="row gutters-1">
+                                                <div class="col-6">
+                                                    <div class="input-group">
+                                                        <span class="input-group-prepend">
+                                                            <button class="input-group-text" type="button">-</button>
+                                                        </span>
+                                                        <input type="text" name="" class="form-control" value="1">
+                                                        <span class="input-group-append">
+                                                            <button class="input-group-text" type="button">+</button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="ns-points-list d-block">
+                                                        <div><img src="img/ns-points/cashback-black.svg">Cashback: 30%</div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="row gutters-1 mt-4">
