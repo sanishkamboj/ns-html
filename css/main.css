@@ -104,9 +104,14 @@ body {
 }
 
 /*-------- 1.1 Typography  --------*/
-
-h1, h2, h3{
+h1 {
+    font-size: 3.6rem;
+}
+h2{
     font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.8rem;
 }
 
 /*-------- 1.2 Global  --------*/
@@ -127,6 +132,9 @@ a:hover {
 }
 a:focus,button:focus {
     outline: none;
+}
+img {
+    max-width: 100%;
 }
 .gutters-1 {
     margin-right: -7.5px;
@@ -183,7 +191,7 @@ label {
 .form-control {
     font-size: 14px;
     padding: 5px 10px;
-    height: 34px;
+    height: 40px;
 }
 .form-control:focus {
     box-shadow: none;
@@ -3322,6 +3330,83 @@ to {
 }
 .exercise.detail .exercise-item {
     margin-bottom: 20px;
+}
+.header-img {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header-img img {
+    min-height: 150px;
+    object-fit: cover;
+}
+.header-img .title {
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(221, 18, 31, 0.4);
+    border-radius: 30px;
+    font-size: 24px;
+    width: auto;
+    display: inline-block;
+    margin: -50px auto 0 auto;
+    min-width: 300px;
+    position: relative;
+    font-weight: 700;
+}
+.jobs .card {
+    margin-bottom: 20px;
+}
+.jobs h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.jobs p {
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+.tabs .nav-link {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.stats .stats-box {
+    width: 32.3%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+.stats .stats-box:before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 15px);
+    left: 50%;
+    transform: translate(0,-50%);
+    width: 100%;
+    height: 3px;
+    background: #f4f4f4;
+    z-index: -1;
+}
+.stats .stats-box:last-child:before {
+    display: none;
+}
+.stats .stats-box .stats-box-inner .count {
+    width: 50px;
+    height: 50px;
+    background: #f4f4f4;
+    border: 1px solid #d3d4d5;
+    border-radius: 46px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.stats .stats-box .stats-box-inner .count span {
+    font-size: 18px;
+    color: #1a4f69;
+}
+.stats .stats-box .stats-box-inner .text {
+    margin-top: 5px;
+    color: #1a4f69;
+    font-weight: 500;
 }
 
 @media (max-width:767px) {
