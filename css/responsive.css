@@ -153,6 +153,28 @@
     .exercise.detail .exercise-content {
         width: calc(100% - 420px);
     }
+    .header-img  {
+        margin-bottom: 40px;
+    }
+    .header-img .title {
+        padding: 20px;
+        font-size: 40px;
+        min-width: 500px;
+    }
+    .jobs .card {
+        margin-bottom: 30px;
+    }
+    .tabs .nav-link {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+    .stats .stats-box .stats-box-inner .count {
+        width: 80px;
+        height: 80px;
+    }
+    .stats .stats-box .stats-box-inner .count span {
+        font-size: 28px;
+    }
 }
 
 @media (min-width: 992px) {
