@@ -43,6 +43,12 @@
     .overall-rating {
         text-align: center;
     }
+    .top-products .brand-item .brand-thumb {
+        width: 200px;
+    }
+    .top-products .brand-content .product-title {
+        font-size: 20px;
+    }
 }
 @media (min-width: 475px) and (max-width: 767px) {
     .products.list .col-12 {
@@ -174,6 +180,9 @@
     }
     .stats .stats-box .stats-box-inner .count span {
         font-size: 28px;
+    }
+    .top-products .brand-item .brand-info {
+        display: flex;
     }
 }
 
