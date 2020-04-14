@@ -10,6 +10,18 @@ $('document').ready(function(){
     	};
     });
 
+    $(".page-scroll").on("click", function(e) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('data-target')).offset().top - 180
+        }, 2000, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+    $(".faq .card-link").on("click", function() {
+        $(".faq .card-link").removeClass("active"), $(this).addClass("active")
+    });
+
     /* Cart dropdown */
     $('.mini-cart, .dropdown-access').hover(function () {
         $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(300);
