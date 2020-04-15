@@ -414,6 +414,18 @@ input:-webkit-autofill, input:focus-within:-webkit-autofill, input:focus:-webkit
 .btn-rounded {
     border-radius: 50px
 }
+
+/*-- Model --*/
+.modal-header,.modal-body {
+    padding: 15px;
+}
+.modal-footer {
+    padding: 10px 15px;
+}
+.close {
+    font-size: 22px;
+    font-weight: 500;
+}
 /*============================================================================================*/
 /* 2.  CONTENT */
 /*============================================================================================*/
@@ -1269,6 +1281,77 @@ header{
     background-color: #DD121F;
     color: #fff;
     border-radius: 50px;
+}
+.addresses .address-block {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 8px #ccc;
+    padding: 10px;
+    min-height: 300px;
+    font-weight: 500;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+.addresses .address-block .custom-radio {
+    border-bottom: 1.5px solid #ccc;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.address {
+    padding: 5px;
+}
+.addresses .address-action {
+    position: absolute;
+    bottom: 20px;
+    padding: 5px;
+}
+.address-action a {
+    color: #000;
+    text-decoration: none;
+}
+.address-action a:hover {
+    color: #DD121F;
+}
+.address-action span {
+    margin: 0 10px;
+}
+.address-block.new {
+    display: flex;
+    padding: 0;
+}
+.new-block {
+    color: #1e2022;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed transparent;
+    border-radius: 4px;
+}
+.new-block i {
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin-bottom: 5px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #1e2022;
+    transition: all 0.3s linear;
+}
+.address-block.new .new-block:hover {
+    background-color: rgba(221, 18, 31, 0.1);
+    color: #DD121F;
+    text-decoration: none;
+    border-color: #DD121F;
+}
+.address-block.new .new-block:hover i {
+    background-color: #DD121F;
+    border-color: #DD121F;
+    color: #fff;
 }
 .address-block {
     font-weight: 500;
@@ -3235,31 +3318,6 @@ to {
     margin-bottom: 10px;
     padding: 0 0 7px 0;
 }
-.common-under-section .form-common label {
-    font-size: 15px;
-    color: #6c757d!important;
-}
-.common-under-section .p_g {
-    font-size: 20px;
-    margin: 20px 0 20px 0;
-}
-.common-under-section .c-c {
-    border: 1px solid #ccc;
-    height: 35px;
-    font-size: 15px;
-    margin-bottom: 30px;
-}
-.common-under-section button.btn.savee {
-    background: #dc1222;
-    color: #fff;
-    font-size: 15px;
-    padding: 5px 15px;
-    height: 35px;
-}
-.common-under-section .text-muted {
-    color: #6c757d!important;
-    margin-top: -25px;
-}
 .widget + .widget {
     margin-top: 30px;
 }
@@ -3336,6 +3394,7 @@ to {
     margin-bottom: 20px;
 }
 .header-img img {
+    width: 100%;
     min-height: 150px;
     object-fit: cover;
 }
@@ -3533,7 +3592,6 @@ to {
     right: 20px;
     top: 50%;
     transform: translate(0, -50%);
-    transition: none;
 }
 .faq .card {
     margin-bottom: 20px;
@@ -3554,7 +3612,7 @@ to {
     transition: .3s ease-in-out;
     position: relative;
     font-weight: 500;
-    font-weight: 16px;
+    font-size: 16px;
 }
 .faq .card-header a.active, .faq .card-header a:hover {
     background-color: #dd121f;
@@ -3569,7 +3627,6 @@ to {
     right: 20px;
     top: 50%;
     transform: translate(0, -50%);
-    transition: all .3s linear
 }
 .faq .card-header a.active:after {
     transform: translate(0, -50%) rotate(-180deg)
@@ -3584,6 +3641,66 @@ to {
 }
 .faq .card-header a.active.collapsed:after {
     transform: translate(0, -50%) rotate(0)
+}
+.location-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.location-item h2 {
+    margin-bottom: 20px;
+    color: #dd121f;
+    font-size: 3.2rem;
+}
+.location-item h3 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #777;
+    font-size: 16px;
+}
+.location-item .map {
+    border: none;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+}
+.coupon-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.coupon-item + .coupon-item {
+    margin-top: 15px;
+}
+.coupon-item .top {
+    display: flex;
+}
+.coupon-item .coupon {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    color: #dd121f;
+    border-right: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.coupon-item .coupon span {
+    font-size: 90%;
+}
+.coupon-item .coupon-content {
+    flex: 1;
+    padding-left: 10px;
+}
+.coupon-item .coupon-content span {
+    font-weight: 500;
+    color: inherit;
+}
+.coupon-item .bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
 }
 @media (max-width:767px) {
     .custom-dasboard {
