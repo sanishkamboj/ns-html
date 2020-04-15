@@ -184,6 +184,12 @@
     .top-products .brand-item .brand-info {
         display: flex;
     }
+    .location-item h3 {
+        font-size: 18px;
+    }
+    .coupon-item .coupon {
+        width: 100px;
+    }
 }
 
 @media (min-width: 992px) {
