@@ -1799,12 +1799,7 @@ header{
     font-size: 1.2rem;
 }
 
-
-
-
 /*-------- 3.7 Footer  --------*/
-
-
 footer{
     border-top:2.5rem solid #dc1222;
     background: #f4f4f4;
@@ -1813,14 +1808,10 @@ footer{
     position: relative;
     
 }
-
-
 footer .footer_content{
     display: flex;
     flex-wrap: wrap;
 }
-
-
 footer .footer_content > div.footer_links{
     width:75%;
     display: flex;
@@ -1854,25 +1845,18 @@ footer .footer_content > div.footer_links .links{
     display: block;
     position: relative;
 }
-
-
 footer .footer_content > div.footer_links .links p.link_title{
     font-weight: 500;
 }
-
-
 footer .footer_content > div.footer_links .links ul{
     list-style: none;
     margin:0;
     padding: 0 1.5rem; 
 }
-
 footer .footer_content > div.footer_links .links ul li{
     display: block;
     position: relative
 }
-
-
 
 footer .footer_content > div.footer_links .links ul li::before {
 	content: "";
@@ -1883,8 +1867,6 @@ footer .footer_content > div.footer_links .links ul li::before {
 	left: -19px;
 	top: 8px;
 }
-
-
 footer .footer_content > div.footer_links .links ul li a{
     color:#2b2b2b;
     line-height: 3.2rem;
@@ -1900,7 +1882,7 @@ footer .social ul{
 footer .social ul li a{
     padding: 0 1rem;
     font-size: 2.5rem;
-    color:#8b8b8b;
+    color: #dd121f;
 }
 .copyright{
     padding: 2rem 0;
@@ -3192,107 +3174,98 @@ to {
     display: block;
     margin-left: 20px;
 }
-
-
-
-
-
-.custom-dasboard {
+.user-dasboard {
     position: relative;
     width: 100%;
-    padding-left: 250px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .side-bar {
-    position: absolute;
-    width: 250px;
+    position: relative;
+    width: 100%;
     background: #fff;
-    height: 100%;
-    left: 0;
-    top: 0;
     z-index: 999;
-    overflow: auto;
-    border-right: 1px solid #ccc;
 }
-.side-bar h3.my-order {
-    padding: 40px 25px;
-}
-.side-bar ul.side-ul li a:hover,
-.side-bar ul.side-ul li a.active {
-    background: #dc1222;
-    color: #fff;
-}
-.side-bar ul.side-ul {
+.side-bar .title {
+    padding: 15px 15px 15px 40px;
+    font-weight: 700;
     margin: 0;
-    padding: 0;
-    list-style: none;
 }
-.side-bar ul.side-ul li a {
-    padding: 8px 25px;
+.side-bar .side-nav {
+    padding: 0;
+}
+.side-bar .side-nav li a {
+    padding: 8px 15px 8px 40px;
     display: block;
     color: black;
     text-decoration: none;
+    font-size: 14px;
 }
-.side-bar ul.side-ul li a i {
-    display: inline-block;
-    padding: 0 10px 0 30px;
+.side-bar .side-nav li a i {
+    padding-right: 10px;
     font-size: 16px;
     position: relative;
     top: 1px;
 }
-.side-bar a.log-out {
-    color: #dc1222;
-    padding: 30px 50px;
-    display: block;
-    text-decoration: none;
+.side-bar .side-nav li a:hover {
+    background-color: rgba(221, 18, 31, 0.1);
+    color: #DD121F;
 }
-.common-under-section .common-order {
+.side-bar .side-nav li a.active {
+    background: #dc1222;
+    color: #fff;
+}
+.dasboard-wrapper {
+    padding: 30px 16px;
+    width: 100%;
+    flex: 1;
+}
+.dasboard-wrapper .common-order {
     padding: 30px;
     /*-webkit-box-shadow: 1px 0px 16px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 0px 16px -4px rgba(0,0,0,0.75);
     box-shadow: 1px 0px 16px -4px rgba(0,0,0,0.75);*/
     margin-bottom: 25px;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    box-shadow: 0 0 10px #ccc;
 }
-.common-under-section p.ordr-p {
+.dasboard-wrapper p.ordr-p {
     font-size: 15px;
     margin-bottom: 20px;
 }
-.common-under-section p.blaze {
+.dasboard-wrapper p.blaze {
     font-size: 16px;
     font-weight: 600;
     color: #dc1222;
     max-width: 310px;
     line-height: 22px;
 }
-.common-under-section .dabba {
+.dasboard-wrapper .dabba {
     text-align: center;
 }
-.common-under-section .dabba img {
+.dasboard-wrapper .dabba img {
     max-width: 100%;
 }
-.common-under-section p.hindi-word {
+.dasboard-wrapper p.hindi-word {
     font-size: 16px;
 }
-.common-under-section ul.track-package {
+.dasboard-wrapper ul.track-package {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.common-under-section ul.track-package li a {
+.dasboard-wrapper ul.track-package li a {
     display: block;
     margin-bottom: 5px;
     padding: 5px;
 }
-.common-under-section p.ordr-p img {
+.dasboard-wrapper p.ordr-p img {
     margin-right: 7px;
 }
-.common-under-section p.del {
+.dasboard-wrapper p.del {
     float: left;
     font-size: 15px;
 }
-.common-under-section ul.del-ul {
+.dasboard-wrapper ul.del-ul {
     float: left;
     margin: 0 0 0 15px;
     list-style: none;
@@ -3300,20 +3273,20 @@ to {
     box-shadow: 0 3px 6px rgba(0,0,0,.16);
     width: 70%;
 }
-.common-under-section ul.del-ul li {
+.dasboard-wrapper ul.del-ul li {
     font-size: 15px;
 }
-.common-under-section .rgt-pro {
+.dasboard-wrapper .rgt-pro {
     padding: 20px;
     box-shadow: 0 3px 6px rgba(0,0,0,.16);
     width: 80%;
     text-align: center;
     font-size: 35px;
 }
-.common-under-section .mar{
+.dasboard-wrapper .mar{
     margin-top: 25px;
 }
-.common-under-section .bor-bottom{
+.dasboard-wrapper .bor-bottom{
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
     padding: 0 0 7px 0;
@@ -3486,7 +3459,6 @@ to {
     left: 0;
 }
 .brand-item .brand-thumb {
-    width: 100%;
     text-align: center;
     display: block;
     margin-bottom: 15px;
@@ -3644,8 +3616,21 @@ to {
 }
 .location-item {
     border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(221, 18, 31, 0.4);
     padding: 20px;
     margin-bottom: 20px;
+    position: relative;
+}
+.location-item:before {
+    content: "";
+    background-image: url(../img/product-bg.jpg);
+    background-size: 260%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(90deg);
 }
 .location-item h2 {
     margin-bottom: 20px;
@@ -3702,15 +3687,165 @@ to {
     border-top: 1px solid #ccc;
     padding-top: 10px;
 }
+.molecules {
+    position: relative;
+}
+.molecules:before {
+    content: "";
+    background-image: url(../img/product-bg.jpg);
+    background-size: 260%;
+    position: absolute;
+    z-index: -1;
+}
+.molecules.top-right:before{
+    top: 0px;
+    right: 0px;
+    width: 120px;
+    height: 120px;
+    transform: rotate(-90deg);
+}
+.main-container{
+  background-color: crimson;
+}
+.form-container{
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.heading {
+  text-transform: uppercase;
+  color: crimson;
+}
+.sub-heading{
+  text-transform: uppercase;
+}
+#msform {
+  text-align: center;
+  position: relative;
+  margin-top: 20px
+}
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative
+}
+.form-card {
+  padding: 50px 50px 0 50px;
+}
+
+#msform fieldset:not(:first-of-type) {
+  display: none
+}
+.next-button,.prev-button,.female-button,.male-button,.body-building,.weight-Loss,.Gain-Weight,.Sedenatary,.Lightly,
+.Moderately,.Very,.Extreme,.Ketogenic,.Paleo,.Vegetarian,.Vegan,.Mediteranean,.Anything,.meal-3,.meal-4,.meal-5
+,.any,.low,.Medium,.High {
+  width: auto;
+  background: #fff;
+  font-weight: bold;
+  color: #787676;;
+  border: 1px solid #bbb;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 2px 15px;
+  margin: 10px 10px 10px 5px;
+}
+.next-button,.prev-button{
+  float: right;
+}
+.next-button:hover,.next-button:focus,
+.prev-button:hover,.prev-button:focus
+ {
+  background-color: crimson;
+  color: #fff;
+}
+.next-button:hover,.prev-button:hover,.female-button:hover,.male-button:hover,.body-building:hover
+,.weight-Loss:hover,.Gain-Weight:hover,.Sedenatary:hover,.Lightly:hover,
+.Moderately:hover,.Very:hover,.Extreme:hover,.Ketogenic:hover,.Paleo:hover,.Vegetarian:hover,.Vegan:hover,
+.Mediteranean:hover,.Anything:hover,.meal-3:hover,.meal-4:hover,.meal-5:hover
+,.any:hover,.low:hover,.Medium:hover,.High:hover{
+  background-color: crimson;
+  color: #fff;
+}
+/* . {
+  background-color: crimson;
+  color: #fff;
+} */
+.form-title {
+  text-align: center;
+}
+.steps {
+  font-size: 25px;
+  color: gray;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-align: right
+}
+.fieldlabels {
+  color: gray;
+  text-align: left
+}
+#progressbar {
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+  border-radius: 1rem;
+  padding: 50px;
+}
+#progressbar .active {
+  color: #673AB7
+}
+#progressbar li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 11%;
+  float: left;
+  position: relative;
+  font-weight: 400
+}
+#progressbar li:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: #fff;
+  border: 1px arcsize="20%" solid;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px
+}
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 5px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  z-index: 100;
+}
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: crimson;
+}
+.fit-image {
+  width: 100%;
+  object-fit: cover
+}
+@media only screen and (max-width: 600px) {
+  #progressbar {
+    padding: 50px 15px;
+  }
+}
 @media (max-width:767px) {
-    .custom-dasboard {
-        padding-left: 0;
-    }
-    .side-bar {
-        position: static;
-        width: 100%;
-        border-right: none;
-    }
     .common-under-section ul.del-ul {
         margin: 0 0 30px 0;
         width: 100%;
