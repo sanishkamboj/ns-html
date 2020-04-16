@@ -15,10 +15,11 @@
     <!-- Stylesheet -->
     <link href="css/owl/owl.carousel.min.css" type="text/css" rel="stylesheet" />
     <link href="css/owl/owl.theme.default.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/custom-slider.css">
-    <title>Home Page</title>
+    <title>Wishlist</title>
     <!-- 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" /> -->
     <style>
@@ -33,19 +34,292 @@
             <div id="header">
                 <!--logo-->
                 <div class="logo">
-                    <h1 class="navbar-brand navbar-brand_"><a href="#"><img src="img/logo.png" alt="" width="164px"/></a></h1>
+                    <h1 class="navbar-brand navbar-brand_"><a href="home.html"><img src="img/logo.png" alt="" width="164px"/></a></h1>
                 </div>
                 <!--.logo-->
                 <!--Navigation-->
                 <div class="navigation">
                     <ul>
-                        <li><a href="#"><span class="las la-store"></span> Store</a></li>
-                        <li><a href="#"><span class="las la-bullseye"></span> Goal</a></li>
-                        <li><a href="#"><span class="las la-store"></span> Brand</a></li>
-                        <li><a href="#"><span class="las la-bullseye"></span> Offer</a></li>
+                        <li class="mega-menu cat">
+                            <a href="#"><span class="las la-store"></span> Store</a>
+                            <ul class="sub-mega-menu">
+                                <div class="nav flex-column nav-pills" role="tablist">
+                                    <a class="nav-link active" data-toggle="pill" href="#news-0" role="tab" aria-expanded="true">Best Sellers</a>
+                                    <a class="nav-link" data-toggle="pill" href="#news-1" role="tab" aria-expanded="false">Promos</a>
+                                    <a class="nav-link" data-toggle="pill" href="#news-2" role="tab" aria-expanded="false">New</a>
+                                    <a class="nav-link" data-toggle="pill" href="#news-3" role="tab" aria-expanded="false">Discovery Boxes</a>
+                                </div>
+
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="news-0" role="tabpanel" aria-expanded="true">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Protein</li>
+                                                    <li><a href="#">Casein</a></li>
+                                                    <li><a href="#">Gainer</a></li>
+                                                    <li><a href="#">Isolate</a></li>
+                                                    <li><a href="#">Vegan</a></li>
+                                                    <li><a href="#">Whey</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Bars</li>
+                                                    <li><a href="#">Energy</a></li>
+                                                    <li><a href="#">Protein</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Amino Acids</li>
+                                                    <li><a href="#">Liquid</a></li>
+                                                    <li><a href="#">Capsules</a></li>
+                                                    <li><a href="#">Powders</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Drinks</li>
+                                                    <li><a href="#">Energy</a></li>
+                                                    <li><a href="#">Protein</a></li>
+                                                    <li><a href="#">Amino Acids</a></li>
+                                                    <li><a href="#">L-Carnitine</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Vitamins</li>
+                                                    <li><a href="#">Capsules</a></li>
+                                                    <li><a href="#">Ready to drink</a></li>
+                                                    <li><a href="#">Shots</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">L-Carnitine</li>
+                                                    <li><a href="#">Ready to drink</a></li>
+                                                    <li><a href="#">Capsules</a></li>
+                                                    <li><a href="#">Shots</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Fat Burner</li>
+                                                    <li><a href="#">Capsules</a></li>
+                                                    <li><a href="#">Liquid</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Accessories</li>
+                                                    <li><a href="#">Belts</a></li>
+                                                    <li><a href="#">Gloves</a></li>
+                                                    <li><a href="#">Others</a></li>
+                                                    <li><a href="#">Shakers</a></li>
+                                                    <li><a href="#">T-shirts</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="news-1" role="tabpanel" aria-expanded="false">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Protein</li>
+                                                    <li><a href="#">Casein</a></li>
+                                                    <li><a href="#">Gainer</a></li>
+                                                    <li><a href="#">Isolate</a></li>
+                                                    <li><a href="#">Vegan</a></li>
+                                                    <li><a href="#">Whey</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Bars</li>
+                                                    <li><a href="#">Energy</a></li>
+                                                    <li><a href="#">Protein</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Amino Acids</li>
+                                                    <li><a href="#">Liquid</a></li>
+                                                    <li><a href="#">Capsules</a></li>
+                                                    <li><a href="#">Powders</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="news-2" role="tabpanel" aria-expanded="false">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Protein</li>
+                                                    <li><a href="#">Casein</a></li>
+                                                    <li><a href="#">Gainer</a></li>
+                                                    <li><a href="#">Isolate</a></li>
+                                                    <li><a href="#">Vegan</a></li>
+                                                    <li><a href="#">Whey</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Bars</li>
+                                                    <li><a href="#">Energy</a></li>
+                                                    <li><a href="#">Protein</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Amino Acids</li>
+                                                    <li><a href="#">Liquid</a></li>
+                                                    <li><a href="#">Capsules</a></li>
+                                                    <li><a href="#">Powders</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="news-3" role="tabpanel" aria-expanded="false">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Protein</li>
+                                                    <li><a href="#">Casein</a></li>
+                                                    <li><a href="#">Gainer</a></li>
+                                                    <li><a href="#">Isolate</a></li>
+                                                    <li><a href="#">Vegan</a></li>
+                                                    <li><a href="#">Whey</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Bars</li>
+                                                    <li><a href="#">Energy</a></li>
+                                                    <li><a href="#">Protein</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Amino Acids</li>
+                                                    <li><a href="#">Liquid</a></li>
+                                                    <li><a href="#">Capsules</a></li>
+                                                    <li><a href="#">Powders</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="mega-menu img-text">
+                            <a href="#"><span class="las la-bullseye"></span> Goal</a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                        <span>Endurance</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                        <span>Energy</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                        <span>Muscle</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                        <span>Strength</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                        <span>Weight Loss</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                        <span>Wellness</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mega-menu">
+                            <a href="#"><span class="las la-store"></span> Brand</a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mega-menu offer">
+                            <a href="#"><span class="las la-bullseye"></span> Offers</a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/40x40">
+                                        <span>Flash Sale</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/40x40">
+                                        <span>Crazy Deals</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/40x40">
+                                        <span>Wipe Out Sale</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/40x40">
+                                        <span>Half Price Store</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li><a href="#"><span class="las la-question"></span> Why us</a></li>
                         <li><a href="#"><span class="lar la-edit"></span> i-Nutrition</a></li>
-                        <li><a href="#"><span class="lab la-whatsapp"></span> Whatsapp</a></li>
+                        <li><a href="workout.html"><span class="las la-dumbbell"></span> Workouts</a></li>
                         <li class="search">
                             <div class="search-box">
                                 <form method="post">
@@ -55,30 +329,30 @@
                             </div>
                         </li>
                         <li><a href="#"><span class="lar la-user"></span> Profile</a></li>
-                        <li class="dropdown dropdown-cart"><a href="#"><span class="las la-shopping-bag"></span> Cart  <strong>2</strong></a>
+                        <li class="dropdown mini-cart"><a href="#"><span class="las la-shopping-bag"></span> Cart  <strong>2</strong></a>
                             <div class="dropdown-menu">
-                                <div class="small_cart">
+                                <div class="mini-cart-item">
                                     <div class="product_image">
                                         <a href="#">
-                                            <figure><img src="img/products.png" alt="" width="50" height="50" class="lazy"></figure>
+                                            <img src="img/products.png" alt="">
                                         </a>
                                     </div>
                                     <div class="product_des">
-                                        <span>1x MuscleBlaze Whey Protein </span>
+                                        <span>1x MuscleBlaze Whey Protein</span>
                                         <p>900.00</p>
-                                        <a href="#0" class="action"><span class="lar la-trash-alt"></span></a>
+                                        <a href="#" class="action"><span class="lar la-trash-alt"></span></a>
                                     </div>
                                 </div>
-                                <div class="small_cart">
+                                <div class="mini-cart-item">
                                     <div class="product_image">
                                         <a href="#">
-                                            <figure><img src="img/products.png" alt="" width="50" height="50" class="lazy"></figure>
+                                            <img src="img/products.png" alt="">
                                         </a>
                                     </div>
                                     <div class="product_des">
-                                        <span>1x MuscleBlaze Whey Protein </span>
+                                        <span>1x MuscleBlaze Whey Protein</span>
                                         <p>900.00</p>
-                                        <a href="#0" class="action"><span class="lar la-trash-alt"></span></a>
+                                        <a href="#" class="action"><span class="lar la-trash-alt"></span></a>
                                     </div>
                                 </div>
                                 <div class="total_drop">
@@ -87,8 +361,8 @@
                                         <span class="align-right">$200.00</span>
                                     </div>
                                     <div class="checkout">
-                                        <a href="cart.html" class="btn_1 outline">View Cart</a>
-                                        <a href="checkout.html" class="btn_1 checkout">Checkout</a>
+                                        <a href="cart.html" class="btn btn-outline-primary btn-block">View Cart</a>
+                                        <a href="checkout.html" class="btn btn-primary btn-block mt-3">Checkout</a>
                                     </div>
                                 </div>
                             </div>
@@ -205,32 +479,30 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Account</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Order History</li>
+                    <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Wishlist</li>
                 </ol>
             </nav>
         </div>
     </section>
     <!--breadcrumb content end here-->
 
-    <!--user accout strat-->
-    <section class="custom-dasboard">
+    <section class="user-dasboard">
         <div class="side-bar">
-            <h3 class="my-order">Order History</h3>
-            <ul class="side-ul">
-                <li><a href="#"><i class="fa fa-home"></i>Dasboard</a></li>
-                <li><a href="#"><i class="fa fa-gifts"></i>Orders</a></li>
-                <li><a href="#"><i class="fa fa-address-book"></i></i>Address</a></li>
-                <li><a class="active" href="#"><i class="fa fa-user"></i>Accont Details</a></li>
-                <li><a href="#"><i class="fa fa-history"></i>Cashback History</a></li>
-                <li><a href="#"><i class="fa fa-sync"></i>Referral</a></li>
-                <li><a href="#"><i class="fa fa-list-alt"></i>Coupons</a></li>
-                <li><a href="#"><i class="fa fa-heart"></i>Wishlist</a></li>
+            <h3 class="title">Wishlist</h3>
+            <ul class="side-nav">
+                <li><a href="#"><i class="la la-home"></i>Dasboard</a></li>
+                <li><a href="order-history.html"><i class="la la-box"></i>Orders</a></li>
+                <li><a href="user-address.html"><i class="la la-map-signs"></i></i>Address</a></li>
+                <li><a href="user-account.html"><i class="la la-user"></i>Account Details</a></li>
+                <li><a href="user-cashback.html"><i class="la la-money-bill-wave"></i>Cashback History</a></li>
+                <li><a href="user-referrals.html"><i class="la la-user-friends"></i>Referral</a></li>
+                <li><a href="user-coupons.html"><i class="la la-award"></i>Coupons</a></li>
+                <li><a href="user-wishlist.html" class="active"><i class="la la-heart"></i>Wishlist</a></li>
+                <li><a href="home.html" class="log-out"><i class="la la-sign-out"></i>Log Out</a></li>
             </ul>
-            <a href="" class="log-out">Log Out</a>
         </div>
-        <div class="container-fluid common-under-section">
+        <div class="dasboard-wrapper">
             <div class="products list">
                 <div class="row">
                     <div class="col-12">
@@ -752,49 +1024,32 @@
     <!--footer-->
     <footer>
         <div class="container">
-
-
             <div class="footer_content">
-
                 <div class="footer_links">
-
                     <div class="links">
-
                         <p class="link_title">Nutritions Systems</p>
-
                         <ul>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Refer & Earn</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="about-us.html">About us</a></li>
+                            <li><a href="refer-and-earn.html">Refer & Earn</a></li>
+                            <li><a href="career.html">Careers</a></li>
+                            <li><a href="policy.html">Terms & Conditions</a></li>
+                            <li><a href="policy.html">Privacy Policy</a></li>
                         </ul>
-
                     </div>
-
-
                     <div class="links">
-
                         <p class="link_title">Support</p>
-
                         <ul>
-                            <li><a href="#">Your Account</a></li>
-                            <li><a href="#">Store Locator</a></li>
-                            <li><a href="#"></a> - </li>
-                            <li><a href="#">Delivery Policies</a></li>
-                            <li><a href="#">Return Policy</a></li>
-                            <li><a href="#">FAQ's & Help</a></li>
-                            <li><a href="#">Contact us</a></li>
+                            <li><a href="user-account.html">Your Account</a></li>
+                            <li><a href="store-locator.html">Store Locator</a></li>
+                            <li><a href="policy.html">Delivery Policies</a></li>
+                            <li><a href="policy.html">Return Policy</a></li>
+                            <li><a href="policy.html">FAQ's & Help</a></li>
+                            <li><a href="contact-us">Contact us</a></li>
                             <li><a href="#">Sell on Nutiritions</a></li>
                         </ul>
-
                     </div>
-
-
                     <div class="links">
-
                         <p class="link_title">Categories</p>
-
                         <ul>
                             <li><a href="#">Body Building</a></li>
                             <li><a href="#">Weight Loss</a></li>
@@ -802,14 +1057,9 @@
                             <li><a href="#">Hair & Skin Care</a></li>
                             <li><a href="#">Sports Nutritions</a></li>
                         </ul>
-
                     </div>
-
-
                     <div class="links">
-
                         <p class="link_title">Optional</p>
-
                         <ul>
                             <li><a href="#">Lorem Ipsum</a></li>
                             <li><a href="#">Lorem Ipsum</a></li>
@@ -817,75 +1067,36 @@
                             <li><a href="#">Lorem Ipsum</a></li>
                             <li><a href="#">Lorem Ipsum</a></li>
                         </ul>
-
                     </div>
-
                 </div>
 
 
                 <div class="newsletter">
-
                     <h3>SIGN UP FOR NEWSLETTER</h3>
-
                     <p>Be the first one to receive amazing offers, deals and news from Nutritionsystems.com</p>
-
-                    <form method="post" action="#" id="newsletter">
-                        <input type="text" name="newsletter" id="newsletter" placeholder="Enter Your Email id" />
-                        <input type="submit" value="Send" />
+                    <form method="post" action="#" id="newsletter" class="mb-4">
+                        <div class="input-group">
+                            <input type="text" name="newsletter" class="form-control" placeholder="Enter Your Email id" />
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit">Send</button>
+                            </div>
+                        </div>
                     </form>
-
-
-                    <h3>Download App</h3>
-
-
-                    <div class="download_center">
-                        <div>
-                            <img src="img/appStoreIcon.svg" alt="" />
-                        </div>
-                        <div>
-                            <img src="img/googlePlayIcon.svg" alt="" />
-                        </div>
+                    <img src="img//logo.png" alt=" logo" class="mt-5 d-block img-fluid" width="150px;">
+                    <div class="social mt-4">
+                        <ul>
+                            <li><a href="#"><span class="lab la-facebook-f"></span></a></li>
+                            <li><a href="#"><span class="lab la-linkedin-in"></span></a></li>
+                            <li><a href="#"><span class="lab la-google-plus-g"></span></a></li>
+                            <li><a href="#"><span class="lab la-twitter"></span></a></li>
+                        </ul>
                     </div>
-
-
-
                 </div>
             </div>
 
+            <img src="img/payment.svg" alt="" class="mt-4 d-block img-fluid" style="width: 800px">
 
-            <br>
-            <br>
-
-
-            <img class="footer_new_img" src="img/secure_payment.png" alt="" />
-
-
-            <br>
-
-
-            <p style="font-size: 14px;font-weight: 300;"><strong style="font-weight: 700;">About Nutritionsystems:</strong> Nutritionsystems.com is India's largest online health & fitness store for men and women.<br> Shop online from the latest collections of health, fitness and similar products
-                featuring the best brands.</p>
-
-
-            <div class="payment_option">
-                <div>
-                    <img src="img/footer_lgo.png" alt="" width="170px" />
-                </div>
-                <div>
-                    <img src="img/payment.png" alt="" />
-                </div>
-
-                <div class="social">
-                    <ul>
-                        <li><a href="#"><span class="lab la-facebook-f"></span></a></li>
-                        <li><a href="#"><span class="lab la-linkedin-in"></span></a></li>
-                        <li><a href="#"><span class="lab la-google-plus-g"></span></a></li>
-                        <li><a href="#"><span class="lab la-twitter"></span></a></li>
-                    </ul>
-                </div>
-            </div>
-
-
+            <p><span class="fw-600">About Nutritionsystems:</span> Nutritionsystems.com is India's largest online health & fitness store for men and women.<br class="d-none d-md-block"> Shop online from the latest collections of health, fitness and similar products featuring the best brands.</p>
         </div>
     </footer>
     <!--/footer-->
@@ -893,26 +1104,20 @@
     <!--Copyright-->
     <div class="copyright">
         <div class="container">
-            <p><strong>Disclaimer:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Quisque eu nibh ac arcu porttitor consectetur et sit amet nisi. Phasellussed justo vel nulla vestibulum dapibus. Curabitur consequat lacus risus, ac tempus
-                metus porttitor a. Quisquelobortis faucibus mauris, et consequat eros vehicula a. Quisque hendrerit pharetra augue sed fermentum. Orci varius natoquepenatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur quis tellus
-                interdum, rutrum mi id, consectetur est.</p>
-
-            <p class="copyright_text">Copyright <span class="las la-copyright"></span> 2020. All Rights Reserved</p>
+            <p><span class="fw-600 text-primary">Disclaimer:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Quisque eu nibh ac arcu porttitor consectetur et sit amet nisi. Phasellussed justo vel nulla vestibulum dapibus. Curabitur consequat lacus risus, ac tempus metus porttitor a. Quisquelobortis faucibus mauris, et consequat eros vehicula a. Quisque hendrerit pharetra augue sed fermentum. Orci varius natoquepenatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur quis tellus interdum, rutrum mi id, consectetur est.</p>
+            <p class="mb-0">Copyright &copy; 2020. All Rights Reserved</p>
         </div>
     </div>
     <!--/copyright-->
 
-
-
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-
-
     <script src="js/slider_function.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -187,6 +187,16 @@
     .location-item h3 {
         font-size: 18px;
     }
+    .side-bar {
+        width: 250px;
+        box-shadow: 0 0px 2px #bbb;
+    }
+    .side-bar .title {
+        padding: 35px 15px 25px 40px;
+    }
+    .dasboard-wrapper {
+        width: calc(100% - 250px);
+    }
     .coupon-item .coupon {
         width: 100px;
     }
