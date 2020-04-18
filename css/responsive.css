@@ -200,11 +200,28 @@
     .coupon-item .coupon {
         width: 100px;
     }
+    .widget + .widget {
+        margin-top: 30px;
+    }
+    .post-comment .user-img img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+    .post-comment .comment-data {
+        margin-left: 20px;
+    }
 }
 
 @media (min-width: 992px) {
+    .blog-thumbnail {
+        width: 300px;
+        margin-right: 10px;
+    }
+    .blog .blog-content {
+        width: calc(100% - 310px);
+    }
 }
-
 @media (min-width: 1200px) {
 }
 
@@ -1388,42 +1405,29 @@
         text-align: center;
         padding: 2rem 0 0 0;
     }
-
     footer .payment_option > div.social {
         padding: 2rem 0 0 5rem;
     }
-
     .form_red_box form > div:first-child {
         width: 100%;
     }
-
     .form_red_box form > div:nth-child(2) {
         width: 100%;
         font-size: 1.4rem;
         color: #ffffff;
     }
-
     .form_red_box form > div:nth-child(3) {
         width: 100%;
         font-size: 1.4rem;
         color: #ffffff;
         padding: 3rem 0 0 0;
     }
-
     footer .payment_option > div img {
         width: auto;
     }
-
     #banner .banner-text h1.main_text {
         font-size: 4rem;
     }
-
-    #banner .banner-text p {
-        color: #ffffff;
-        line-height: 1.7rem;
-        font-size: 1rem;
-    }
-
     footer .payment_option > div img {
         width: 80%;
     }
