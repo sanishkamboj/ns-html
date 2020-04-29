@@ -27,7 +27,9 @@ $('document').ready(function(){
         $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(300);
     }, function () {
         $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(300);
-    });   
+    });
+
+    $('[data-toggle="tooltip"]').tooltip();
     
     /* Slider */
     // Product Slider   
@@ -62,11 +64,32 @@ $('document').ready(function(){
     // Product Slider   
     $('.product-detail-slider').owlCarousel({
         loop:true,
-        margin:10,
+        margin:0,
         responsiveClass:true,
         dots: false,
         nav:true,
         autoplay: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            375:{
+                items:1
+            },
+            768:{
+                items:1
+            }
+        }
+    });
+
+    // Product Image Slider   
+    $('.product-details-image').owlCarousel({
+        loop: false,
+        margin: 0,
+        responsiveClass: true,
+        dots: false,
+        nav: true,
+        autoplay: false,
         responsive:{
             0:{
                 items:1
@@ -98,7 +121,7 @@ $('document').ready(function(){
                 items:3
             },
             1000:{
-                items:6,
+                items:5,
                 mouseDrag:false,
                 touchDrag:false,
                 autoplay: false,
@@ -196,15 +219,18 @@ $('document').ready(function(){
     /* sideslider */
     var sideslider = $('[data-toggle=collapse-side]');
     var sel = sideslider.attr('data-target');
-    var sel2 = sideslider.attr('data-target-2');
     sideslider.click(function(event){
         $(sel).toggleClass('in');
-        $(sel2).toggleClass('out');
     });
 
     /* close button */
     $(".close_btn").click(function(){
         $(".side-collapse").toggleClass("in");
+    });
+
+    // Search Toggle
+    $(".search-toggle").click(function(){
+        $(".search").slideToggle();
     });
   
     /* Price Range */    
