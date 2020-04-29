@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/custom-slider.css">
-    <title>Store Location</title>
+    <title>Home Page</title>
     <!-- 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" /> -->
     <style>
@@ -28,7 +28,7 @@
 
 <body>
 
-<!--header-->
+    <!--header-->
     <header class="Sticky">
         <div class="container">
             <div id="header">
@@ -289,7 +289,7 @@
                             </ul>
                         </li>
                         <li class="mega-menu offer">
-                            <a href="#"><span class="las la-bullseye"></span> Offers</a>
+                            <a href="#"><span class="las la-gift"></span> Offers</a>
                             <ul>
                                 <li>
                                     <a href="#">
@@ -372,104 +372,63 @@
                     </ul>
                 </div>
                 <!--.Navigation-->
-
-                <div class="mobile_cart">
-                    <ul>
-                        <li class="search">
-                            <div class="search-box">
-                                <form method="post">
-                                    <input type="text" name="search" id="search" class="search" placeholder="search for products, Brand and more" />
-                                    <input type="submit" value="&#xf002" />
-                                </form>
-                            </div>
-                        </li>
-                        <li><a href="#"><span class="lar la-user"></span> Profile</a></li>
-                        <li class="dropdown dropdown-cart"><a href="#"><span class="las la-shopping-bag"></span> Cart  <strong>2</strong></a>
-                            <div class="dropdown-menu">
-                                <div class="small_cart">
-                                    <div class="product_image">
-                                        <a href="#">
-                                            <figure><img src="img/products.png" alt="" width="50" height="50" class="lazy"></figure>
-                                        </a>
-                                    </div>
-                                    <div class="product_des">
-                                        <span>1x MuscleBlaze Whey Protein </span>
-                                        <p>900.00</p>
-                                        <a href="#0" class="action"><span class="lar la-trash-alt"></span></a>
-                                    </div>
-                                </div>
-                                <div class="small_cart">
-                                    <div class="product_image">
-                                        <a href="#">
-                                            <figure><img src="img/products.png" alt="" width="50" height="50" class="lazy"></figure>
-                                        </a>
-                                    </div>
-                                    <div class="product_des">
-                                        <span>1x MuscleBlaze Whey Protein </span>
-                                        <p>900.00</p>
-                                        <a href="#0" class="action"><span class="lar la-trash-alt"></span></a>
-                                    </div>
-                                </div>
-                                <div class="total_drop">
-                                    <div class="clearfix total_value">
-                                        <span>Total</span>
-                                        <span class="align-right">$200.00</span>
-                                    </div>
-                                    <div class="checkout">
-                                        <a href="cart.html" class="btn_1 outline">View Cart</a>
-                                        <a href="checkout.html" class="btn_1 checkout">Checkout</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
 
         <!--Mobile Navigation-->
         <div class="mobile_navigation">
-            <div class="mobile_navbar navbar">
-                <div class="navbar-header">
-                    <div class="mobile_bar">
-                        <!--mobile left -->
-                        <div class="mobile_left">
-                            <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-right">  <span class="las la-bars"></span></button>
-                            <div class="navbar-inverse side-collapse in">
-                                <h1>Hello, User</h1>
-                                <div class="user_btns">
-                                    <a href="#" class="btn btn-sign-in">Sign in</a>
-                                    <a href="#" class="btn btn-sign-up">Sign up</a>
+            <div class="navbar no-gutters">
+                <div class="col-3">
+                    <button data-toggle="collapse-side" data-target=".side-collapse" type="button" class="navbar-toggle"> <span class="las la-bars"></span></button>
+                    <div class="side-collapse">
+                        <h1>Hello, User</h1>
+                        <span class="las la-times close_btn"></span>
+                        <div class="user_btn">
+                            <div class="row gutters-1">
+                                <div class="col-6">
+                                    <a href="#" class="btn btn-outline-primary btn-block">Sign in</a>
                                 </div>
-                                <nav role="navigation" class="navbar-collapse">
-                                    <ul>
-                                        <li><a href="#"><span class="las la-store"></span> Store</a></li>
-                                        <li><a href="#"><span class="las la-bullseye"></span> Goal</a></li>
-                                        <li><a href="#"><span class="las la-store"></span> Brand</a></li>
-                                        <li><a href="#"><span class="las la-bullseye"></span> Offer</a></li>
-                                        <li><a href="#"><span class="las la-question"></span> Why us</a></li>
-                                        <li><a href="#"><span class="lar la-edit"></span> i-Nutrition</a></li>
-                                    </ul>
-                                </nav>
-                                <span class="las la-times close_btn"></span>
+                                <div class="col-6">
+                                    <a href="#" class="btn btn-primary btn-block">Sign up</a>
+                                </div>
                             </div>
                         </div>
-                        <!--mobile left -->
-                        <div class="center_mobile_logo">
-                            <!--mobile logo-->
-                            <div class="logo">
-                                <h1 class="navbar-brand navbar-brand_"><a href="#"><img src="img/logo.png" alt="" width="150px"/></a></h1>
-                            </div>
-                            <!--.mobile logo-->
-                        </div>
-                        <div class="left_side_toogle_menu">
+                        <nav role="navigation" class="navbar-collapse">
                             <ul>
-                                <li><a href="#"><span class="lar la-user"></span></a></li>
-                                <li><a href="#"><span class="las la-shopping-bag"></span></a></li>
+                                <li class="active"><a href="#"><span class="las la-store"></span> Store</a></li>
+                                <li><a href="#"><span class="las la-bullseye"></span> Goal</a></li>
+                                <li><a href="#"><span class="las la-store"></span> Brand</a></li>
+                                <li><a href="#"><span class="las la-gift"></span> Offer</a></li>
+                                <li><a href="#"><span class="las la-question"></span> Why us</a></li>
+                                <li><a href="#"><span class="lar la-edit"></span> i-Nutrition</a></li>
                             </ul>
-                        </div>
+                        </nav>
                     </div>
                 </div>
+                <div class="col-6 text-center">
+                    <div class="navbar-brand">
+                        <a href="home.html">
+                            <img src="img/logo.png" alt="Nutrition systems"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="left_side_toogle_menu col-3 text-right">
+                    <ul>
+                        <li><a href="javscript:" class="search-toggle"><i class="las la-search"></i></a></li>
+                        <li><a href="#"><i class="lar la-user"></i></a></li>
+                        <li><a href="cart.html"><span class="cart-count">2</span><i class="las la-shopping-bag"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search">
+                <form method="post" action="#">
+                    <div class="input-group">
+                        <input type="text" name="" class="form-control" placeholder="search for products, Brand and more">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit"><i class="las la-search"></i></button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
         <!--/Mobile Navigation-->
@@ -493,7 +452,7 @@
         <h2 class="title">Store Locations</h2>
     </section>
 
-    <section class="locations">
+    <section class="locations mb-5">
         <div class="container">
             <div class="location-item">
                 <div class="row">
@@ -503,6 +462,7 @@
                             <div class="col-sm-6">
                                 <h3>Address Details</h3>
                                 <p>SCO 396, 37D, Sector 37,<br class="d-none d-sm-block">Chandigarh, 160036</p>
+                                <p><a href="#">Use my location</a></p>
                             </div>
                             <div class="col-sm-6">
                                 <h3>Contact Details</h3>
@@ -525,6 +485,7 @@
                             <div class="col-sm-6">
                                 <h3>Address Details</h3>
                                 <p>SCO 396, 37D, Sector 37,<br class="d-none d-sm-block">Chandigarh, 160036</p>
+                                <p><a href="#">Use my location</a></p>
                             </div>
                             <div class="col-sm-6">
                                 <h3>Contact Details</h3>
@@ -547,6 +508,7 @@
                             <div class="col-sm-6">
                                 <h3>Address Details</h3>
                                 <p>SCO 396, 37D, Sector 37,<br class="d-none d-sm-block">Chandigarh, 160036</p>
+                                <p><a href="#">Use my location</a></p>
                             </div>
                             <div class="col-sm-6">
                                 <h3>Contact Details</h3>
@@ -569,6 +531,7 @@
                             <div class="col-sm-6">
                                 <h3>Address Details</h3>
                                 <p>SCO 396, 37D, Sector 37,<br class="d-none d-sm-block">Chandigarh, 160036</p>
+                                <p><a href="#">Use my location</a></p>
                             </div>
                             <div class="col-sm-6">
                                 <h3>Contact Details</h3>
@@ -581,6 +544,28 @@
                     <div class="col-md-6 mt-4 mt-md-0">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3429.2275406441418!2d76.74656941517827!3d30.740109392327952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed31bc2dcaf1%3A0x95376f7335e0fa7a!2sNutrition%20Systems%20(Best%20Supplement%20Store%20in%20India)!5e0!3m2!1sen!2sin!4v1586926796591!5m2!1sen!2sin" class="map" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>Benefits of visiting the store</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row mt-md-5 mt-4">
+                <div class="col-md-6">
+                    <a href=""><img src="https://via.placeholder.com/1920x400/09f/fff?text=Tool Page" class="btn-round" alt="" style="min-height: 150px; object-fit: cover;"></a>
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <a href=""><img src="https://via.placeholder.com/1920x400/f90/fff?text=Refer and Earn" class="btn-round" alt="" style="min-height: 150px; object-fit: cover;"></a>
                 </div>
             </div>
         </div>
@@ -589,56 +574,57 @@
     <!--footer-->
     <footer>
         <div class="container">
-            <div class="footer_content">
-                <div class="footer_links">
-                    <div class="links">
-                        <p class="link_title">Nutritions Systems</p>
-                        <ul>
-                            <li><a href="about-us.html">About us</a></li>
-                            <li><a href="refer-and-earn.html">Refer & Earn</a></li>
-                            <li><a href="career.html">Careers</a></li>
-                            <li><a href="policy.html">Terms & Conditions</a></li>
-                            <li><a href="policy.html">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="links">
-                        <p class="link_title">Support</p>
-                        <ul>
-                            <li><a href="user-account.html">Your Account</a></li>
-                            <li><a href="store-locator.html">Store Locator</a></li>
-                            <li><a href="policy.html">Delivery Policies</a></li>
-                            <li><a href="policy.html">Return Policy</a></li>
-                            <li><a href="policy.html">FAQ's & Help</a></li>
-                            <li><a href="contact-us">Contact us</a></li>
-                            <li><a href="#">Sell on Nutiritions</a></li>
-                        </ul>
-                    </div>
-                    <div class="links">
-                        <p class="link_title">Categories</p>
-                        <ul>
-                            <li><a href="#">Body Building</a></li>
-                            <li><a href="#">Weight Loss</a></li>
-                            <li><a href="#">Health Living</a></li>
-                            <li><a href="#">Hair & Skin Care</a></li>
-                            <li><a href="#">Sports Nutritions</a></li>
-                        </ul>
-                    </div>
-                    <div class="links">
-                        <p class="link_title">Optional</p>
-                        <ul>
-                            <li><a href="#">Lorem Ipsum</a></li>
-                            <li><a href="#">Lorem Ipsum</a></li>
-                            <li><a href="#">Lorem Ipsum</a></li>
-                            <li><a href="#">Lorem Ipsum</a></li>
-                            <li><a href="#">Lorem Ipsum</a></li>
-                        </ul>
+            <div class="row gutters-2">
+                <div class="col-xl-9 col-lg-8">
+                    <div class="row gutters-1">
+                        <div class="widget col-md-3 col-6">
+                            <h3 class="widget-title">Nutritions Systems</h3>
+                            <ul class="links">
+                                <li><a href="about-us.html">About us</a></li>
+                                <li><a href="refer-and-earn.html">Refer & Earn</a></li>
+                                <li><a href="career.html">Careers</a></li>
+                                <li><a href="policy.html">Terms & Conditions</a></li>
+                                <li><a href="policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="widget col-md-3 col-6">
+                            <h3 class="widget-title">Support</h3>
+                            <ul class="links">
+                                <li><a href="user-account.html">Your Account</a></li>
+                                <li><a href="store-locator.html">Store Locator</a></li>
+                                <li><a href="policy.html">Delivery Policies</a></li>
+                                <li><a href="policy.html">Return Policy</a></li>
+                                <li><a href="policy.html">FAQ's & Help</a></li>
+                                <li><a href="contact-us">Contact us</a></li>
+                                <li><a href="#">Sell on Nutiritions</a></li>
+                            </ul>
+                        </div>
+                        <div class="widget col-md-3 col-6">
+                            <h3 class="widget-title">Categories</h3>
+                            <ul class="links">
+                                <li><a href="#">Body Building</a></li>
+                                <li><a href="#">Weight Loss</a></li>
+                                <li><a href="#">Health Living</a></li>
+                                <li><a href="#">Hair & Skin Care</a></li>
+                                <li><a href="#">Sports Nutritions</a></li>
+                            </ul class="links">
+                        </div>
+                        <div class="widget col-md-3 col-6">
+                            <h3 class="widget-title">Optional</h3>
+                            <ul class="links">
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-
-                <div class="newsletter">
-                    <h3>SIGN UP FOR NEWSLETTER</h3>
-                    <p>Be the first one to receive amazing offers, deals and news from Nutritionsystems.com</p>
+                <div class="widget col-xl-3 col-lg-4">
+                    <h3 class="widget-title">SIGN UP FOR NEWSLETTER</h3>
+                    <p>Be the first one to receive amazing offers, deals and news from Nutrition systems</p>
                     <form method="post" action="#" id="newsletter" class="mb-4">
                         <div class="input-group">
                             <input type="text" name="newsletter" class="form-control" placeholder="Enter Your Email id" />
@@ -647,14 +633,16 @@
                             </div>
                         </div>
                     </form>
-                    <img src="img//logo.png" alt=" logo" class="mt-5 d-block img-fluid" width="150px;">
-                    <div class="social mt-4">
-                        <ul>
-                            <li><a href="#"><span class="lab la-facebook-f"></span></a></li>
-                            <li><a href="#"><span class="lab la-linkedin-in"></span></a></li>
-                            <li><a href="#"><span class="lab la-google-plus-g"></span></a></li>
-                            <li><a href="#"><span class="lab la-twitter"></span></a></li>
-                        </ul>
+                    <div class="text-center">
+                        <img src="img//logo.png" alt="logo" class="mt-2 img-fluid" width="150px;">
+                        <div class="social-media mt-4">
+                            <ul>
+                                <li><a href="#"><span class="lab la-facebook-f"></span></a></li>
+                                <li><a href="#"><span class="lab la-linkedin-in"></span></a></li>
+                                <li><a href="#"><span class="lab la-google-plus-g"></span></a></li>
+                                <li><a href="#"><span class="lab la-twitter"></span></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -679,6 +667,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/slider_function.js"></script>
