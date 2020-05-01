@@ -1,11 +1,4 @@
 @media (min-width: 375px) {
-    #service_sec_1 .services_sec .item {
-        border-right: 1px solid #cccccc;
-        min-height: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
 }
 @media (min-width: 425px) {
     .left_side_toogle_menu ul li {
@@ -84,6 +77,19 @@
         width: 150px;
         height: 100px;
     }
+    .refer-widget {
+        font-size: 16px;
+    }
+    .refer-widget i {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+    }
+    .refer-widget .btn {
+        padding: 10px 15px;
+        font-size: 100%;
+    }
 }
 @media (min-width: 475px) and (max-width: 767px) {
     .products.list .col-12 {
@@ -101,6 +107,24 @@
     }
     #service_sec_1{
         margin-top: -8rem;
+    }
+    #service_sec_1 .services_sec{
+        background: #ffffff;
+        border-radius: 2rem;
+        padding: 20px 0;
+        height: auto;
+        box-shadow: 0 0 5px #d4d4d4;
+        display: flex;
+        align-items: center;
+    }
+    #service_sec_1 .services_sec .item {
+        font-size: 1.4rem;
+        border-right: 1px solid #cccccc;
+        min-height: 100px;
+        padding: 0 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .products.list .product-item {
         padding: 0;
@@ -275,6 +299,9 @@
     }
     .social-media ul li + li {
         margin-left: 10px;
+    }
+    .tabs .nav-pills {
+        min-height: 200px;
     }
 }
 

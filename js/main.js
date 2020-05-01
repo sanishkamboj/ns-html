@@ -105,29 +105,14 @@ $('document').ready(function(){
 
     // Services Slider   
     $('.services_sec').owlCarousel({
-        loop:true,
-        responsiveClass:true,
-        nav:false,
+        loop: false,
+        responsiveClass: true,
+        nav: false,
         dots: false,
-        autoplay: true,
-        responsive:{
-            0:{
-                items:1
-            },
-            375:{
-                items:2
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:5,
-                mouseDrag:false,
-                touchDrag:false,
-                autoplay: false,
-                loop: false
-            }
-        }
+        autoplay: false,
+        items: 5,
+        mouseDrag: false,
+        touchDrag: false,
     });
 
     // Blog Slider   
