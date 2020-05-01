@@ -136,6 +136,11 @@ a:focus,button:focus {
 img {
     max-width: 100%;
 }
+ul, ol {
+    line-height: 1.8;
+    list-style-position: inside;
+    padding: 0;
+}
 .gutters-0 {
     margin-right: -2.5px;
     margin-left: -2.5px;
@@ -203,6 +208,9 @@ label {
 }
 .form-control:focus {
     box-shadow: none;
+}
+.form-control:focus {
+    border-color: #dd121f;
 }
 .form-control-placeholder {
     position: absolute;
@@ -860,35 +868,33 @@ header{
     margin-top: 3rem;
     z-index: 99;
 }
-#service_sec_1 .services_sec{
-    background: #ffffff;
-    border-radius: 2rem;
-    padding: 20px 0;
-    height: auto;
-    box-shadow: 0 0 5px #d4d4d4;
-    display: flex;
-    align-items: center;
-}
-#service_sec_1 .services_sec .item{
-    padding: 0 2.5rem;
-    text-align: center;
-    box-sizing: border-box;
-    font-size: 1.4rem;
-    color:#000000;
+#service_sec_1 .services_sec .item {
+    font-size: 10px;
+    color: #000000;
     font-weight: 500;
+    text-align: center;
 }
-#service_sec_1 .services_sec .item span{
-    color:#dd121f;
+#service_sec_1 .services_sec .item span {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    background-color: rgba(221, 18, 31, 0.1);
+    color: #DD121F;
     font-size: 3.6rem;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 #service_sec_1 .services_sec .item p {
     margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 #service_sec_1 .services_sec .owl-item:last-child .item{
     border:none;
 }
-
 #deal_section {
     display: block;
     position: relative;
@@ -1986,7 +1992,6 @@ footer .widget .widget-title {
 }
 footer .links {
     list-style: none;
-    padding: 0;
 }
 footer .links li a {
     position: relative;
@@ -2629,9 +2634,6 @@ to {
 	opacity: 1;
 	-webkit-transform: none;
 	transform: none
-}
-.configurable-wrap select.form-control {
-    border-color: #dd121f;
 }
 .configurable-wrap .product-quantity .form-control {
     width: 50px;
@@ -3289,47 +3291,26 @@ to {
 .tabs .nav-link {
     padding: 5px 10px;
     font-size: 14px;
+    color: inherit;
 }
-.price_tab {
-    border-radius: 10px;
-    max-width: 450px;
-    background-color: #000;
-    -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 11, 40, 0.08);
-    box-shadow: 0px 3px 13px 0px rgba(0, 11, 40, 0.08);
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-    border: 0px;
-    padding: 4px;
-    margin-bottom: 10px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    position: relative;
-    font-weight: 500;
+.tabs .nav-link i {
+    font-size: 18px;
 }
-.price_tab .nav-item {
-    padding: 0px;
-    margin: 0px;
-    width: 50%;
+.tabs .nav-pills .nav-link {
+    border-radius: 0;
 }
-.price_tab .nav-item .nav-link {
-    color: #fff;
-    padding: 10px 20px;
-    border: 0px;
-    border-radius: 7px;
-    text-align: center;
-    transition: none;
-    position: relative;
-    z-index: 1;
-    font-weight: 600;
+.tabs .nav-pills {
+    background-color: rgba(221, 18, 31, 0.1);
+    height: 100%;
 }
-.price_tab .nav-item .nav-link span {
-    transition: none;
+.tabs .nav-pills .nav-link + .nav-link {
+    margin-top: 10px;
 }
-.price_tab .nav-item .nav-link.active {
-    background: #fff;
-    color: #000;
+.tabs .nav-pills .nav-link.active, .tabs .nav-pills .show>.nav-link {
+    background-color: #DD121F;
+}
+.tabs .tab-content {
+    padding: 10px;
 }
 .stats .stats-box {
     width: 32.3%;
@@ -3776,6 +3757,10 @@ to {
     text-decoration: none;
     display: block;
 }
+.social-media ul li svg {
+    width: 22px;
+    fill: #DD121F;
+}
 .social-media.full ul {
     font-size: 16px;
 }
@@ -3826,6 +3811,30 @@ to {
 }
 .social-media.bg ul li a.email {
     background-color: #007bb6;
+}
+.refer-widget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px #e5e5e5;
+    border-radius: 4px;
+}
+.refer-widget i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 24px;
+    background-color: rgba(221, 18, 31, 0.1);
+    color: #DD121F;
+    margin-right: 10px;
+}
+.refer-widget .btn {
+    padding: 8px 10px;
+    font-size: 90%;
 }
 .main-container{
   background-color: crimson;
