@@ -207,10 +207,8 @@ label {
     height: 40px;
 }
 .form-control:focus {
-    box-shadow: none;
-}
-.form-control:focus {
-    border-color: #dd121f;
+    box-shadow: 0 0 6px #ced4da;
+    border-color: #ced4da;
 }
 .form-control-placeholder {
     position: absolute;
@@ -433,10 +431,15 @@ input:-webkit-autofill, input:focus-within:-webkit-autofill, input:focus:-webkit
 .btn-rounded {
     border-radius: 50px
 }
-
 .alert {
-    padding: 12px 20px;
+    padding: 15px 10px;
     margin-bottom: 16px;
+    border: 2px dashed;
+    border-radius: 4px;
+}
+.alert-danger {
+    background-color: rgba(221, 18, 31, 0.1);
+    color: #DD121F;
 }
 .alert-dismissible .close {
     padding: 12px 20px;
@@ -673,16 +676,18 @@ header{
     margin-top: 10px;
     color: #000;
 }
+.navigation ul li .search-box {
+    position: relative;
+}
 .navigation ul li.search input[type="text"]{
-    border-top:none;
-    border-left: none;
-    border-right:none;
+    border:none;
     border-bottom: 1px solid #c3c3c3;
     position: relative;
     display: block;
-    padding-bottom: 0.5rem;
-    font-size: 1.6rem;
-    width:32rem;
+    padding: 6px 0;
+    font-size: 1.4rem;
+    width: 250px;
+    height: 40px;
     outline: none;
 }
 .navigation ul li.search input[type="submit"]{
@@ -692,8 +697,10 @@ header{
     background: transparent;
     font-size: 2.2rem;
     position: absolute;
-    right:1.5rem;
-    top:-0.2rem;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
     outline: none;   
 }
 .navigation ul li.mini-cart strong{
@@ -739,8 +746,8 @@ header{
 .left_side_toogle_menu ul li {
     display: inline-block;
     position: relative;
-    font-size: 22px;
-    margin: 0 0px;
+    font-size: 25px;
+    margin: 0 2px;
     padding: 3px 0 0 0;
 }
 .left_side_toogle_menu ul li .cart-count {
@@ -804,7 +811,7 @@ header{
 }
 .navbar-collapse ul {
     margin: 0;
-    padding: 0;
+    list-style: none;
 }
 .navbar-collapse ul li a {
     color:#333;
@@ -832,7 +839,6 @@ header{
 }
 .mobile_navigation .search {
     margin: 5px 0 3px;
-    display: none;
 }
 .dropdown-menu{
     display: none;
@@ -2635,6 +2641,14 @@ to {
 	-webkit-transform: none;
 	transform: none
 }
+.sec_buy_1 .ns-points-list {
+    display: block;
+    font-size: 10px;
+}
+.sec_buy_1 .ns-points-list img {
+    width: 16px;
+    margin-right: 2px;
+}
 .configurable-wrap .product-quantity .form-control {
     width: 50px;
     text-align: center;
@@ -2657,7 +2671,7 @@ to {
 }
 .deals .title {
     background-color: #dd121f;
-    padding: 6px 10px;
+    padding: 6px 20px;
     text-transform: uppercase;
     border-radius: 0 0 10px 0;
     font-weight: 500;
@@ -2686,7 +2700,6 @@ to {
     position: relative;
     margin: 15px 0;
     overflow: hidden;
-    height: calc(100% - 30px);
 }
 .video:before {
     content: '';
@@ -2754,11 +2767,8 @@ to {
     border: 2px dashed #DD121F;
     background-color: rgba(221, 18, 31, 0.1);
     color: #DD121F;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: 500;
+    padding: 15px;
 }
 .review-rating .title {
     background-color: #dd121f;
@@ -3086,7 +3096,7 @@ to {
     margin: 0;
 }
 .side-bar .side-nav {
-    padding: 0;
+    list-style: none;
 }
 .side-bar .side-nav li a {
     padding: 8px 15px 8px 40px;
@@ -3292,6 +3302,7 @@ to {
     padding: 5px 10px;
     font-size: 14px;
     color: inherit;
+    background-color: transparent;
 }
 .tabs .nav-link i {
     font-size: 18px;
@@ -3302,6 +3313,8 @@ to {
 .tabs .nav-pills {
     background-color: rgba(221, 18, 31, 0.1);
     height: 100%;
+    border: none;
+    border-radius: 0;
 }
 .tabs .nav-pills .nav-link + .nav-link {
     margin-top: 10px;
@@ -3311,6 +3324,21 @@ to {
 }
 .tabs .tab-content {
     padding: 10px;
+}
+.boxed-tabs .nav-link {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #DD121F;
+    background-color: transparent;
+    border: 2px solid #DD121F;
+}
+.boxed-tabs .nav-link:hover {
+    background-color: rgba(221, 18, 31, 0.1);
+}
+.boxed-tabs .nav-link.active {
+    background-color: #DD121F;
+    color: #fff;
 }
 .stats .stats-box {
     width: 32.3%;
@@ -3474,7 +3502,7 @@ to {
     position: absolute;
     right: 20px;
     top: 50%;
-    transform: translate(0, -50%);
+    transform: translate(0, -50%) rotate(90deg);
 }
 .faq .card {
     margin-bottom: 20px;
@@ -3526,7 +3554,7 @@ to {
     transform: translate(0, -50%) rotate(0)
 }
 .location-item {
-    border: 1px solid #dd121f;
+    border: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 20px;
     position: relative;
