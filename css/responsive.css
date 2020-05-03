@@ -1,12 +1,8 @@
 @media (min-width: 375px) {
-}
-@media (min-width: 425px) {
-    .left_side_toogle_menu ul li {
-        font-size: 25px;
-        margin: 0 2px;
+    .sec_buy_1 .ns-points-list {
+        display: flex;
     }
 }
-
 @media (min-width: 375px) and (max-width: 575px) {
     .product-slider .product-slider .unit_pending {
         font-size: 1.2rem;
@@ -101,6 +97,10 @@
 @media (min-width: 768px) {
     .owl-theme .owl-nav [class*=owl-] {
         font-size: 60px;
+    }
+
+    .alert {
+        padding: 20px;
     }
     #banner{
         padding: 12rem 0;
@@ -206,6 +206,7 @@
         position: absolute;
         top: -1px;
         left: 0;
+        padding: 6px 10px;
     }
     .cart .product-content {
         width: calc(100% - 150px);
@@ -221,9 +222,6 @@
         height: 40px;
         line-height: 40px;
         font-size: 25px;
-    }
-    .sec_buy_1{
-        padding: 1rem 2rem;
     }
     .cart-fixed {
         position: inherit;
@@ -303,6 +301,9 @@
     .tabs .nav-pills {
         min-height: 200px;
     }
+    .faq-nav li a:after {
+        transform: translate(0, -50%) rotate(0);
+    }
 }
 
 @media (min-width: 992px) {
@@ -317,6 +318,21 @@
     }
     .products .product-item > a {
         pointer-events: inherit;
+    }
+    .blog-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .blog-list .blog-item {
+        width: calc(50% - 10px);
+    }
+    .blog-list .blog-thumbnail {
+        width: 100%;
+        margin-right: 0;
+    }
+    .blog-list .blog-item:nth-child(2) {
+        margin-top: 0;
     }
     .blog-thumbnail {
         width: 300px;
@@ -335,6 +351,19 @@
     }
     .navigation ul li {
         padding: 1.2rem 1.8rem;
+    }
+    .navigation ul li.search input[type="text"] {
+        width: 350px;
+        font-size: 1.6rem;
+    }
+    .sec_buy_1{
+        padding: 1rem 2rem;
+    }
+    .sec_buy_1 .ns-points-list {
+        font-size: 12px;
+    }
+    .header-img .title {
+        padding: 20px 40px;
     }
 }
 
@@ -371,9 +400,6 @@
 @media (min-width:1200px) and (max-width:1400px) {
     html {
         font-size: 8px;
-    }
-    .navigation ul li.search input[type="text"] {
-        font-size: 1.4rem;
     }
     .products_image .wishlist_icon {
         display: flex;
@@ -417,9 +443,6 @@
 @media (min-width:1000px) and (max-width:1200px) {
     html {
         font-size: 8px;
-    }
-    .navigation ul li.search input[type="text"] {
-        font-size: 1.4rem;
     }
     #red_box_center .red_box {
         height: auto;

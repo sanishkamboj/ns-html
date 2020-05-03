@@ -212,11 +212,6 @@ $('document').ready(function(){
     $(".close_btn").click(function(){
         $(".side-collapse").toggleClass("in");
     });
-
-    // Search Toggle
-    $(".search-toggle").click(function(){
-        $(".search").slideToggle();
-    });
   
     /* Price Range */    
     $( function() {
