@@ -15,6 +15,7 @@
 }
 .slider .slider-parent .images-list {
     background-size: cover;
+    list-style: none;
 }
 .slider .slider-parent .images-list:first-of-type, .slider .slider-parent .images-list:last-of-type {
     background-image: url("../img/ads.png");

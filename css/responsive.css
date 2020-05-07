@@ -85,6 +85,7 @@
     .refer-widget .btn {
         padding: 10px 15px;
         font-size: 100%;
+        width: 135px;
     }
 }
 @media (min-width: 475px) and (max-width: 767px) {
@@ -98,7 +99,9 @@
     .owl-theme .owl-nav [class*=owl-] {
         font-size: 60px;
     }
-
+    .table td, .table th {
+        padding: 12px;
+    }
     .alert {
         padding: 20px;
     }
@@ -353,8 +356,7 @@
         padding: 1.2rem 1.8rem;
     }
     .navigation ul li.search input[type="text"] {
-        width: 350px;
-        font-size: 1.6rem;
+        width: 260px;
     }
     .sec_buy_1{
         padding: 1rem 2rem;
@@ -367,6 +369,11 @@
     }
 }
 
+@media (min-width: 1440px) {
+    .navigation ul li.search input[type="text"] {
+        width: 350px;
+    }
+}
 @media (min-width:1600px) and (max-width:1800px) {
     html {
         font-size: 9px;

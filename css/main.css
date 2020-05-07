@@ -300,6 +300,12 @@ input:-webkit-autofill, input:focus-within:-webkit-autofill, input:focus:-webkit
 .card-body {
     padding: 15px;
 }
+.table {
+    font-size: 14px;
+}
+.table-diet tr td:first-child {
+    width: 30%;
+}
 .custom-checkbox, .custom-radio {
     position: relative;
     line-height: initial
@@ -517,21 +523,29 @@ header{
 .navigation ul li:last-child {
     padding-right: 0;
 }
-.navigation ul li a > span{
+.navigation ul li a > span {
     display: block;
     position: relative;
     text-align: center;
-    font-size: 3.2rem;
+    font-size: 25px;
 }
-.navigation ul li a{
+.navigation ul li a > svg {
+    height: 22px;
+    display: block;
+    margin: 0 auto;
+    fill: #333333;
+}
+.navigation ul li a {
     color:#333333;
     text-decoration: none;
     line-height: 2.7rem;
     display: block;
     position: relative;
 }
-.navigation ul li a:hover{
-    color: #db5450;
+.navigation ul li a:hover,
+.navigation ul li a:hover svg {
+    color: #DD121F;
+    fill: #DD121F;
 }
 /*Mega Menu*/
 .navigation {
@@ -684,9 +698,9 @@ header{
     border-bottom: 1px solid #c3c3c3;
     position: relative;
     display: block;
-    padding: 6px 0;
+    padding: 6px 30px 6px 0;
     font-size: 1.4rem;
-    width: 250px;
+    width: 160px;
     height: 40px;
     outline: none;
 }
@@ -699,7 +713,6 @@ header{
     position: absolute;
     right: 0;
     top: 0;
-    width: 40px;
     height: 40px;
     outline: none;   
 }
@@ -820,16 +833,28 @@ header{
     display: block;
     text-decoration: none;
 }
-.navbar-collapse ul li a span {
+.navbar-collapse ul li a span,
+.navbar-collapse ul li a svg {
     margin-right: 5px;
 }
 .navbar-collapse ul li a:hover {
     background-color: rgba(221, 18, 31, 0.1);
     color: #DD121F;
 }
+.navbar-collapse ul li a svg {
+    width: 16px;
+    fill: #333333;
+    margin-top: -2px;
+}
+.navbar-collapse ul li a:hover svg {
+    fill: #DD121F;
+}
 .navbar-collapse ul li.active a {
     background-color: #dd121f;
     color: #fff;
+}
+.navbar-collapse ul li.active a svg {
+    fill: #fff;
 }
 .copyright_text_nav{
     display: block;
@@ -885,7 +910,7 @@ header{
     height: 50px;
     line-height: 50px;
     border-radius: 50px;
-    background-color: rgba(221, 18, 31, 0.1);
+    background-color: rgba(140, 140, 140, 0.1);
     color: #DD121F;
     font-size: 3.6rem;
     margin-bottom: 1rem;
@@ -1520,6 +1545,7 @@ header{
     border-bottom-width: 1px;
     padding: 5px;
     border-radius: 0;
+    box-shadow: none;
 }
 .billing .form select.form-control {
     padding: 5px 0;
@@ -1607,9 +1633,6 @@ header{
     overflow: hidden;
     width:100%;
 }
-
-
-
 .discounted .item{
     display: block;
     position: relative;
@@ -3165,7 +3188,6 @@ to {
     margin-right: 7px;
 }
 .dasboard-wrapper p.del {
-    float: left;
     font-size: 15px;
 }
 .dasboard-wrapper ul.del-ul {
@@ -3173,7 +3195,7 @@ to {
     margin: 0 0 0 15px;
     list-style: none;
     padding: 20px;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    box-shadow: 0 0 6px rgba(0,0,0,.16);
     width: 70%;
 }
 .dasboard-wrapper ul.del-ul li {
@@ -3181,13 +3203,10 @@ to {
 }
 .dasboard-wrapper .rgt-pro {
     padding: 20px;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    box-shadow: 0 0 6px rgba(0,0,0,.16);
     width: 80%;
     text-align: center;
     font-size: 35px;
-}
-.dasboard-wrapper .mar{
-    margin-top: 25px;
 }
 .dasboard-wrapper .bor-bottom{
     border-bottom: 1px solid #ccc;
@@ -3784,9 +3803,15 @@ to {
 .social-media ul li a {
     text-decoration: none;
     display: block;
+    color: #6c757d;
 }
 .social-media ul li svg {
     width: 22px;
+    fill: #6c757d;
+}
+.social-media ul li a:hover,
+.social-media ul li a:hover svg {
+    color: #DD121F;
     fill: #DD121F;
 }
 .social-media.full ul {
@@ -3863,6 +3888,7 @@ to {
 .refer-widget .btn {
     padding: 8px 10px;
     font-size: 90%;
+    width: 100px;
 }
 .main-container{
   background-color: crimson;
