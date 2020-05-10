@@ -488,164 +488,84 @@
         <!--/Mobile Navigation-->
     </header>
     <!--header end here-->
-
+    
     <!--breadcrumb content-->
     <section class="breadcrumb-wrapper">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="home.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Address</li>
+                    <li class="breadcrumb-item active" aria-current="page">Order Tracking</li>
                 </ol>
             </nav>
         </div>
     </section>
     <!--breadcrumb content end here-->
+    <section class="header-img">
+        <img src="https://via.placeholder.com/1920x400">
+        <h2 class="title">Order Tracking</h2>
+    </section>
 
-    <section class="user-dasboard">
-        <div class="side-bar">
-            <h3 class="title">Address</h3>
-            <ul class="side-nav">
-                <li><a href="#"><i class="la la-home"></i>Dasboard</a></li>
-                <li><a href="order-history.html"><i class="la la-box"></i>Orders</a></li>
-                <li><a href="user-address.html" class="active"><i class="la la-map-signs"></i></i>Address</a></li>
-                <li><a href="user-account.html"><i class="la la-user"></i>Account Details</a></li>
-                <li><a href="user-cashback.html"><i class="la la-money-bill-wave"></i>Cashback History</a></li>
-                <li><a href="user-referrals.html"><i class="la la-user-friends"></i>Referral</a></li>
-                <li><a href="user-coupons.html"><i class="la la-ticket-alt"></i>Coupons</a></li>
-                <li><a href="user-wishlist.html"><i class="la la-heart"></i>Wishlist</a></li>
-                <li><a href="home.html" class="log-out"><i class="la la-sign-out"></i>Log Out</a></li>
-            </ul>
-        </div>
-        <div class="dasboard-wrapper">
-            <div class="addresses">
-                <div class="col-12 mt-5">
-                    <div class="row gutters-2">
-                        <div class="col-xl-9">
-                            <div class="row gutters-1">
-                                <div class="col-lg-4 col-sm-6">
-                                    <div class="address-block">
-                                        <div class="custom-radio custom-radio-block">
-                                            <div class="radio mb-0">
-                                                <label>
-                                                    <input type="radio" class="form-check-input" name="address" checked="">
-                                                    <i class="form-icon"></i> User Name
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="address">
-                                            <div>Address first line</div>
-                                            <div>Address second line</div>
-                                            <div>Landmark</div>
-                                            <div>State</div>
-                                            <div>Country</div>
-                                            <div>Phone Number</div>
-                                        </div>
-                                        <div class="address-action">
-                                            <a href="#">Edit</a> <span>|</span> <a href="#">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-sm-6">
-                                    <div class="address-block">
-                                        <div class="custom-radio custom-radio-block">
-                                            <div class="radio mb-0">
-                                                <label>
-                                                    <input type="radio" class="form-check-input" name="address">
-                                                    <i class="form-icon"></i> User Name
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="address">
-                                            <div>Address first line</div>
-                                            <div>Address second line</div>
-                                            <div>Landmark</div>
-                                            <div>State</div>
-                                            <div>Country</div>
-                                            <div>Phone Number</div>
-                                        </div>
-                                        <div class="address-action">
-                                            <a href="#">Edit</a> <span>|</span> <a href="#">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-sm-6">
-                                    <div class="address-block new">
-                                        <a href="javscript:" class="new-block" data-toggle="modal" data-target="#myModal">
-                                            <i class="la la-plus"></i>
-                                            <div>Add New Address</div>
-                                        </a>
-                                    </div>
-                                </div>
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="text-lg">To track your order please enter your Order ID in the box below and press the "Track" button. This was given to you on your receipt and in the confirmation email you should have received.</p>
+                    <form class="form">
+                        <div class="form-group">
+                            <label>Order ID</label>
+                            <input type="text" name="orderid" id="orderid" value="" placeholder="Found in your order confirmation email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Billing Email</label>
+                            <input type="email" name="order_email" id="order_email" value="" placeholder="Email you used during checkout" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-outline-primary px-5 text-uppercase"><span class="px-5">Track</span></button>
+                        </div>
+                    </form>
+                    <div class="order-track">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Order# - <span>1234</span></h3>
+                                <p class="text-lg text-muted"><span class="fw-600">Address:</span> SCO 396, 37D, Sector 37, Chandigarh, 160036</p>
+                            </div>
+                            <div class="col-6 text-right">
+                                <h3>Expected Date</h3>
+                                <p class="text-lg text-muted"><span class="fw-600">7-Jul-2020</span></p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!-- The Modal -->
-            <div class="modal fade" id="myModal">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                            <h3 class="modal-title">Add/Edit Address</h3>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-                        
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            <form class="form">
-                                <div class="row">
-                                    <div class="col-sm-6 form-group">
-                                        <input type="text" name="" placeholder="Rahul" class="form-control">
-                                    </div>
-                                    <div class="col-sm-6 form-group">
-                                        <input type="text" name="" placeholder="Kumar" class="form-control">
-                                    </div>
-                                    <div class="col-12 form-group">
-                                        <input type="text" name="" placeholder="qweqwe" class="form-control">
-                                    </div>
-                                    <div class="col-sm-6 form-group">
-                                        <input type="text" name="" placeholder="321654987" class="form-control">
-                                    </div>
-                                    <div class="col-sm-6 form-group">
-                                        <input type="text" name="" placeholder="Fax" class="form-control">
-                                    </div>
-                                    <div class="col-12 form-group">
-                                        <input type="text" name="" placeholder="qweqwe" class="form-control">
-                                    </div>
-                                    <div class="col-12 form-group">
-                                        <input type="text" name="" placeholder="qweqwe" class="form-control">
-                                    </div>
-                                    <div class="col-sm-6 form-group">
-                                        <input type="text" name="" placeholder="City" class="form-control">
-                                    </div>
-                                    <div class="col-sm-6 form-group">
-                                        <input type="text" name="" placeholder="" class="form-control">
-                                    </div>
-                                    <div class="col-sm-6 form-group">
-                                        <input type="text" name="" placeholder="Zip/Postal Code" class="form-control">
-                                    </div>
-                                    <div class="col-sm-6 form-group">
-                                        <input type="text" name="" placeholder="India" class="form-control">
-                                    </div>
+                        <hr class="my-5">
+                        <div class="progressbar">
+                            <ul class="d-flex m-0">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 35%;"></div>
                                 </div>
-                            </form>
+                                <li class="active">
+                                    <i class="icon"></i>
+                                    <p class="text-lg fw-600 mb-0">Received</p>
+                                    <p class="text-muted">Tue, 10 Jul</p>
+                                </li>
+                                <li>
+                                    <i class="icon"></i>
+                                    <p class="text-lg fw-600 mb-0">Shipped</p>
+                                    <p class="text-muted">Thu, 12 Jul</p>
+                                </li>
+                                <li>
+                                    <i class="icon"></i>
+                                    <p class="text-lg fw-600 mb-0">Expected Delivery</p>
+                                    <p class="text-muted">Tue, 17 Jul</p>
+                                </li>
+                            </ul>
                         </div>
-                        
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-primary">Save</button>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                        </div>
-                        
+                    </div>
+                    <div class="text-center mt-5">
+                        <a href=""><img src="https://via.placeholder.com/1920x400/09f/fff?text=Tool Page" class="btn-round" alt="" style="min-height: 130px; object-fit: cover;"></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--user accout  end-->
 
     <!--footer-->
     <footer>
