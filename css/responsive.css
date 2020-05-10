@@ -63,6 +63,9 @@
     .continue-shopping .btn {
         width: auto;
     }
+    .video {
+        margin: 15px 0;
+    }
     .video .video-button a {
         width: 100px;
         height: 100px;
@@ -86,6 +89,9 @@
         padding: 10px 15px;
         font-size: 100%;
         width: 135px;
+    }
+    .toolbox fieldset .btn {
+        min-width: 140px;
     }
 }
 @media (min-width: 475px) and (max-width: 767px) {
@@ -307,6 +313,9 @@
     .faq-nav li a:after {
         transform: translate(0, -50%) rotate(0);
     }
+    .thankyou {
+        margin: 50px auto;
+    }
 }
 
 @media (min-width: 992px) {
@@ -347,6 +356,12 @@
     .navigation ul li {
         padding: 1.2rem 1.4rem;
     }
+    .toolbox {
+        padding: 20px;
+    }
+    .tool-result .card {
+        min-height: 250px;
+    }
 }
 @media (min-width: 1200px) {
     .navigation > ul {
@@ -383,9 +398,6 @@
 @media (min-width:1400px) and (max-width:1600px) {
     html {
         font-size: 8px;
-    }
-    #red_box_center .red_box {
-        height: auto;
     }
     .containerred {
         display: block;
@@ -425,9 +437,6 @@
         align-items: center;
         justify-content: center;
     }
-    #red_box_center .red_box {
-        height: auto;
-    }
     .price_box > div.price {
         text-align: right;
     }
@@ -450,9 +459,6 @@
 @media (min-width:1000px) and (max-width:1200px) {
     html {
         font-size: 8px;
-    }
-    #red_box_center .red_box {
-        height: auto;
     }
     .price_box > div.price {
         text-align: right;
@@ -480,21 +486,6 @@
     .dropdown-menu {
         margin-left: -240px;
     }
-    #red_box_center .red_box {
-        min-height: 55rem;
-        height: auto;
-        padding: 6rem 0 4rem 0;
-    }
-    #red_box_center .red_box img {
-        width: 80%;
-    }
-    .form_red_box form {
-        width: 76%;
-    }
-    .containerred {
-        padding-left: 4rem;
-        padding-top: 0.5rem;
-    }
     .four_box_section > div.section_four .section_four_content h2 {
         font-size: 2.6rem;
     }
@@ -521,21 +512,6 @@
     .dropdown-menu {
         margin-left: -240px;
     }
-    #red_box_center .red_box {
-        min-height: 55rem;
-        height: auto;
-        padding: 6rem 0 4rem 0;
-    }
-    #red_box_center .red_box img {
-        width: 80%;
-    }
-    .form_red_box form {
-        width: 76%;
-    }
-    .containerred {
-        padding-left: 4rem;
-        padding-top: 0.5rem;
-    }
     .four_box_section > div.section_four .section_four_content h2 {
         font-size: 2.6rem;
     }
@@ -561,10 +537,6 @@
     .star_rating ul {
         font-size: 2.2rem;
     }
-    #red_box_center .red_box {
-        height: auto;
-        min-height: auto;
-    }
 }
 @media (max-width:480px) {
     .four_box_section > div.section_four {
@@ -572,20 +544,6 @@
         height: auto;
         padding: 2rem 0;
         display: flex;
-    }
-    .form_red_box form > div:first-child {
-        width: 100%;
-    }
-    .form_red_box form > div:nth-child(2) {
-        width: 100%;
-        font-size: 1.4rem;
-        color: #ffffff;
-    }
-    .form_red_box form > div:nth-child(3) {
-        width: 100%;
-        font-size: 1.4rem;
-        color: #ffffff;
-        padding: 3rem 0 0 0;
     }
     #banner .banner-text h1.main_text {
         font-size: 4rem;
