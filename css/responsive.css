@@ -93,6 +93,14 @@
     .toolbox fieldset .btn {
         min-width: 140px;
     }
+    .toolbox-slider.owl-theme .owl-nav [class*=owl-] {
+        font-size: 80px;
+        left: 20px;
+    }
+    .toolbox-slider.owl-theme .owl-nav .owl-next {
+        left: initial;
+        right: 20px;
+    }
 }
 @media (min-width: 475px) and (max-width: 767px) {
     .products.list .col-12 {
@@ -316,6 +324,17 @@
     .thankyou {
         margin: 50px auto;
     }
+    .toolbox-slider.owl-theme .owl-nav [class*=owl-] {
+        font-size: 180px;
+        left: 50px;
+    }
+    .toolbox-slider.owl-theme .owl-nav .owl-next {
+        left: initial;
+        right: 50px;
+    }
+    .progress-step span {
+        height: 13px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -356,11 +375,11 @@
     .navigation ul li {
         padding: 1.2rem 1.4rem;
     }
-    .toolbox {
+    .toolbox-content {
         padding: 20px;
     }
     .tool-result .card {
-        min-height: 250px;
+        min-height: 200px;
     }
 }
 @media (min-width: 1200px) {

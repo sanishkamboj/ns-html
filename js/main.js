@@ -200,6 +200,19 @@ $('document').ready(function(){
             }
         }
     });
+
+    // Toolbox Slider   
+    $('.toolbox-slider').owlCarousel({
+        loop: false,
+        margin: 0,
+        items:1,
+        mouseDrag: false,
+        touchDrag: false,
+        dots: false,
+        nav: true,
+        navRewind: false,
+        //autoHeight: true,
+    });
  
     /* sideslider */
     var sideslider = $('[data-toggle=collapse-side]');
