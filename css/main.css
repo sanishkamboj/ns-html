@@ -1438,7 +1438,7 @@ header{
     align-items: center;
     border-top: 1px solid #ccc;
     margin-top: 30px;
-    padding-top: 20px;
+    padding-top: 15px;
     font-size: 14px;
 }
 .continue-shopping .btn {
@@ -1633,8 +1633,7 @@ header{
 }
 .checkout-block input[type=number]::-webkit-inner-spin-button, 
 .checkout-block input[type=number]::-webkit-outer-spin-button {  
-   opacity: 1;
-   height: 30px;
+   display: none;
 }
 .checkout-block .billing .checkboxes {
     background-color: #ebebeb;
@@ -1770,6 +1769,7 @@ header{
     background-size: cover;
     background-position: center;
     padding: 2rem 0;
+    flex: 1;
 }
 .toolbox-content {
     padding: 20px 10px;
@@ -1801,6 +1801,42 @@ header{
     border-radius: 0;
     padding: 0;
 }
+.toolbox .ms-options-wrap {
+    width: calc(100% - 40px)
+}
+.toolbox .ms-options-wrap > button:focus, .toolbox .ms-options-wrap > button {
+    border: none;
+    border-bottom: 1px solid #000;
+    height: 40px;
+    color: #495057;
+    padding-left: 0;
+}
+.toolbox .ms-options-wrap > .ms-options {
+    min-height: 100px !important;
+    max-height: 100px !important;
+}
+.ms-options-wrap > .ms-options > ul input[type="checkbox"] {
+    top: 9px !important;
+    width: 14px;
+    height: 14px;
+}
+.ms-options-wrap > button:after {
+    border: 3px solid rgba(0, 0, 0, 0) !important;
+    border-top-color: #495057 !important;
+    border-top-width: 6px !important;
+}
+.ms-options-wrap > .ms-options::-webkit-scrollbar {
+    width: 5px;
+}
+.ms-options-wrap > .ms-options::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+.ms-options-wrap > .ms-options::-webkit-scrollbar-thumb {
+    background: #DD121F;
+}
+.ms-options-wrap > .ms-options::-webkit-scrollbar-thumb:hover {
+    background: #DD121F; 
+}
 .toolbox .input-group-text {
     font-size: 26px;
     background: transparent;
@@ -1823,24 +1859,44 @@ header{
     z-index: 9;
 }
 .toolbox .custom-radio {
-    margin-left: 0;
+    margin-left: -7.5px;
 }
 .toolbox .custom-radio .radio {
     background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 0 0 1px #ccc;
+    padding: 10px 15px;
     border-radius: 4px;
     width: 100%;
     margin-bottom: 8px;
 }
 .toolbox .custom-radio .radio label {
     margin: 0;
+    padding: 0;
     cursor: pointer;
+    height: 100%;
+}
+.toolbox .custom-radio .form-icon {
+    width: calc(100% + 30px);
+    height: calc(100% + 20px);
+    border-radius: 4px;
+    border-width: 1.5px;
+    border-color: #ccc;
+    top: -10px;
+    left: -15px;
+    transition: all 0.3s linear;
+}
+.toolbox .custom-radio .form-icon:hover {
+    box-shadow: 0 0 10px #ccc;
+}
+.toolbox .custom-radio .form-icon:before {
+    display: none;
+}
+.toolbox .custom-radio .radio input:checked~.form-icon {
+    background-color: transparent;
+    border-color: #DD121F;
 }
 .toolbox .custom-radio .radio p {
     font-weight: 600;
     font-size: 14px;
-    margin-top: -1px;
     margin-bottom: 0;
 }
 .toolbox .custom-radio .radio span {
@@ -1853,6 +1909,9 @@ header{
 .toolbox .text-center-img{
     padding-bottom: 1rem;
     padding-top: 1rem;
+}
+.toolbox img.toolbox-infographic {
+    width: 100px;
 }
 .toolbox .progress {
     height: 20px;
@@ -3848,8 +3907,8 @@ to {
     color: #DD121F;
 }
 .blog .blog-content p {
-    margin-bottom: 0;
     font-size: 12px;
+    line-height: 1.7;
 }
 .blog-header {
     margin-top: 20px;

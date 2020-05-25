@@ -326,14 +326,20 @@
     }
     .toolbox-slider.owl-theme .owl-nav [class*=owl-] {
         font-size: 180px;
-        left: 50px;
+        left: 30px;
     }
     .toolbox-slider.owl-theme .owl-nav .owl-next {
         left: initial;
-        right: 50px;
+        right: 30px;
+    }
+    .toolbox .input-group {
+        margin: 5px 0;
     }
     .progress-step span {
         height: 13px;
+    }
+    .toolbox img.toolbox-infographic {
+        width: 150px;
     }
 }
 
@@ -400,6 +406,9 @@
     }
     .header-img .title {
         padding: 20px 40px;
+    }
+    .toolbox-content {
+        padding: 20px 50px;
     }
 }
 
