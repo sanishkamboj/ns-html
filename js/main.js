@@ -314,3 +314,14 @@ $(document).ready(function(){
         return false;
     })
 });
+
+$(document).ready(function(){
+  var my_options = $('.multidropdown select option');
+  var selected = $('.multidropdown').find('select').val();
+
+  $('.multidropdown').find('select').attr('multiple', true);
+  $('.multidropdown').find('select option[value=""]').remove();
+  $('.multidropdown').find('select').multiselect({
+        search   : true,
+    });
+})
