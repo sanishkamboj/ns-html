@@ -210,8 +210,37 @@ $('document').ready(function(){
         touchDrag: false,
         dots: false,
         nav: true,
-        navRewind: false,
-        //autoHeight: true,
+        autoHeight: true,
+        responsive:{
+            768:{
+                autoHeight: false,
+            }
+        }
+    });
+
+    // User Review Slider   
+    $('.user-review-slider').owlCarousel({
+        loop:true,
+        margin:10,
+        dots: false,
+        nav:true,
+        autoplay: true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            576:{
+                items:2
+            },
+            768:{
+                items:3,
+                margin:20
+            },
+            1000:{
+                items: 4,
+                margin: 20
+            }
+        }
     });
  
     /* sideslider */
@@ -251,56 +280,16 @@ $('document').ready(function(){
 });
 
 $(document).ready(function(){
-    var current_fs, next_fs, previous_fs; //fieldsets
-    var opacity;
     var current = 1;
-    var steps = $("fieldset").length;
+    var steps = $(".toolbox .item").length;
 
     setProgressBar(current);
 
-    $(".next").click(function(){
-        current_fs = $(this).parent();
-        next_fs = $(this).parent().next();
-
-        //Add Class Active
-        $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-
-        //show the next fieldset
-        next_fs.show();
-        //hide the current fieldset with style
-        current_fs.animate({opacity: 0}, {
-            step: function(now) {
-                // for making fielset appear animation
-                opacity = 1 - now;
-
-                current_fs.css({'display': 'none','position': 'relative'});
-                next_fs.css({'opacity': opacity});
-            },
-            duration: 500
-        });
+    $(".toolbox .owl-next").click(function(){
         setProgressBar(++current);
     });
 
-    $(".previous").click(function(){
-        current_fs = $(this).parent();
-        previous_fs = $(this).parent().prev();
-
-        //Remove class active
-        $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-
-        //show the previous fieldset
-        previous_fs.show();
-
-        //hide the current fieldset with style
-        current_fs.animate({opacity: 0}, {
-            step: function(now) {
-                // for making fielset appear animation
-                opacity = 1 - now;
-                current_fs.css({'display': 'none','position': 'relative'});
-                previous_fs.css({'opacity': opacity});
-            },
-            duration: 500
-        });
+    $(".toolbox .owl-prev").click(function(){
         setProgressBar(--current);
     });
 
@@ -309,10 +298,6 @@ $(document).ready(function(){
         percent = percent.toFixed();
         $(".progress-bar").css("width",percent+"%")
     }
-
-    $(".submit").click(function(){
-        return false;
-    })
 });
 
 $(document).ready(function(){
@@ -321,7 +306,13 @@ $(document).ready(function(){
 
   $('.multidropdown').find('select').attr('multiple', true);
   $('.multidropdown').find('select option[value=""]').remove();
-  $('.multidropdown').find('select').multiselect({
-        search   : true,
-    });
+  $('.multidropdown').find('select').multiselect();
 })
+
+$(function () {
+    $("#medical-condition ul li input").change(function () {
+        if ($(this).val() == "Physical_injury") {
+            $(".physical-injury").toggleClass('d-none');
+        }
+    });
+});
