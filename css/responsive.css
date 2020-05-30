@@ -96,8 +96,11 @@
         font-size: 100%;
         width: 135px;
     }
-    .toolbox fieldset .btn {
-        min-width: 140px;
+    .refer-widget.box i {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 60px;
     }
 }
 @media (min-width: 475px) and (max-width: 767px) {
