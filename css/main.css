@@ -4127,8 +4127,9 @@ to {
     align-items: center;
     background-color: #fff;
     padding: 10px;
-    box-shadow: 0 0 10px #e5e5e5;
+    border: 1px solid #e5e5e5;
     border-radius: 4px;
+    box-shadow: 0 0 10px #e5e5e5;
 }
 .refer-widget i {
     width: 30px;
