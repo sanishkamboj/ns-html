@@ -412,7 +412,7 @@ input:-webkit-autofill, input:focus-within:-webkit-autofill, input:focus:-webkit
 .custom-radio.white .radio input:checked~.form-icon {
     background-color: #fff;
 }
-.custom-radio .form-icon:before {
+.custom-radio.white .form-icon:before {
     border-color: #fff;
 }
 .square-block .radio {
@@ -1829,6 +1829,12 @@ header{
     box-shadow: none;
     border-radius: 0;
     padding: 0;
+}
+.toolbox .form-control::placeholder {
+    color: #ccc;
+}
+.toolbox .form-control:focus::placeholder {
+    color: #777;
 }
 .toolbox .ms-options-wrap {
     width: calc(100% - 40px)
@@ -4139,6 +4145,23 @@ to {
     padding: 8px 10px;
     font-size: 90%;
     width: 100px;
+}
+.refer-widget.box {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+}
+.refer-widget.box i {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+}
+.refer-widget.box .btn {
+    width: 100%;
+    margin-top: 20px;
 }
 .thankyou {
     margin: 20px auto;
