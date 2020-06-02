@@ -61,6 +61,21 @@ $('document').ready(function(){
         }
     });
 
+    // User Review Slider   
+    $('.product-tabs-slider').owlCarousel({
+        loop: false,
+        dots: false,
+        nav:true,
+        autoWidth:true,
+    });
+
+    $(document) .ready(function(){
+        $(".product-tabs-slider .owl-item li a").click(function(){
+            $(".product-tabs-slider .owl-item li a").removeClass('active');
+            this.addClass('active');
+        });
+    });
+
     // Product Slider   
     $('.product-detail-slider').owlCarousel({
         loop:true,
@@ -277,9 +292,7 @@ $('document').ready(function(){
     $('.dropdown-toggle-category').click(function(){
        $(this).next('.dropdown-category').slideToggle("fast");
     });
-});
 
-$(document).ready(function(){
     var current = 1;
     var steps = $(".toolbox .item").length;
 
@@ -298,6 +311,14 @@ $(document).ready(function(){
         percent = percent.toFixed();
         $(".progress-bar").css("width",percent+"%")
     }
+    
+    $('.offers').click(function(){
+        $('.offers-block').removeClass("show");
+        $(this).next('.offers-block').addClass("show");
+    });
+    $('.close-offers').click(function(){
+        $('.offers-block').removeClass("show");
+    });
 });
 
 $(document).ready(function(){
@@ -316,3 +337,4 @@ $(function () {
         }
     });
 });
+

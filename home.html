@@ -541,8 +541,8 @@
                 <!--owl-carousel item -->
                 <div class="product-slider owl-carousel owl-theme">
                     <div class="item">
-                        <a href="product_details.html">
-                            <div class="product-item">
+                        <div class="product-item">
+                            <a href="product_details.html">
                                 <!--sale-top-->
                                 <div class="ns-points">
                                     <div class="row">
@@ -560,9 +560,7 @@
                                 <div class="flash_sale_time">
                                     <div><img src="img/sale/sale_1.png" alt=""/></div>
                                     <div class="unit_pending"><span class="las la-people-carry"></span> 20 Unit</div>
-                                    <div class="sale_time">
-                                        <span>30:09:11</span>
-                                    </div>
+                                    <div class="sale_time"><span>30:09:11</span></div>
                                 </div>
                                 <!--.sale-top-->
                                 <!--product image-->
@@ -571,9 +569,7 @@
                                         <img src="img/sale/sale_2.png" alt="" />
                                     </div>
                                     <img src="img/products.png" alt="" class="product-thumb" />
-                                    <div class="wishlist_icon">
-                                        <span class="lar la-heart"></span>
-                                    </div>
+                                    <div class="wishlist_icon"><span class="lar la-heart"></span></div>
                                     <div class="hover-content">
                                         <div class="top">
                                             <div><i class="fas fa-bullhorn"></i><span>Contains WPI</span></div>
@@ -600,7 +596,11 @@
                                     </div>
                                 </div>
                                 <!--product image-->
-                                <h3 class="product_title">MuscleBlaze Whey Gold Protein,<br> 4 lb Rich Milk Chocolate</h3>
+                                <h3 class="product_title">MuscleBlaze Whey Gold Protein</h3>
+                                <div class="variant">
+                                    <div class="product-category-icon red"></div>
+                                    <span>4 lb, Rich Milk Chocolate</span>
+                                </div>
                                 <div class="change-view">
                                     <div class="price_box">
                                         <div class="price">
@@ -622,13 +622,39 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="add_to_cart_buttons">
-                                    <div><a href="#" class="btn btn-primary">Add to Cart</a></div>
-                                    <div class="d-lg-block d-none"><a href="#" class="btn btn-outline-primary">Buy Now</a></div>
-                                    <div class="d-lg-none"><a href="product_details.html" class="btn btn-outline-primary">Read more</a></div>
+                            </a>
+                            <div class="premium-price">
+                                <div>
+                                    <span class="icon"><img src="img/ns-points/ns.svg"></span>
+                                    <span>Premium</span>
+                                </div>
+                                <div>
+                                    <span class="las la-rupee-sign"></span>3,499
                                 </div>
                             </div>
-                        </a>
+                            <div class="add_to_cart_buttons">
+                                <div><a href="#" class="btn btn-primary">Add to Cart</a></div>
+                                <div class="d-lg-block d-none"><a href="#" class="btn btn-outline-primary">Buy Now</a></div>
+                                <div class="d-lg-none"><a href="product_details.html" class="btn btn-outline-primary">Read more</a></div>
+                            </div>
+                            <div class="offers">
+                                3 Offers
+                                <span class="open-offers">
+                                    <i class="fa fa-angle-down"></i>
+                                </span>
+                            </div>
+                            <div class="offers-block">
+                                <p>Offer</p>
+                                <span class="close-offers">
+                                    <i class="fa fa-angle-down"></i>
+                                </span>
+                                <div class="ns-points-list">
+                                    <div><img src="img/ns-points/ns.svg"> NS Points: 20</div>
+                                    <div><img src="img/ns-points/cashback.svg"> Cashback: 30%</div>
+                                    <div><img src="img/ns-points/donate.svg"> Donated: 170</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!--owl-carousel item -->
@@ -740,7 +766,11 @@
                                         <div class="toolbox-content mt-4">
                                             <h1>We Know What You Are Looking For!</h1>
                                             <img src="img/weight-machine.svg" alt="" class="text-center-img toolbox-infographic">
-                                            <div class="form-card mt-5">
+                                            <div class="form-card">
+                                                <div class="tool-title">
+                                                    <h3>BCA Report</h3>
+                                                    <hr>
+                                                </div>
                                                 <div class="row gutters-1">
                                                     <div class="form-group col-md-3 col-6">
                                                         <div class="input-group">
@@ -823,7 +853,11 @@
                                         <div class="toolbox-content mt-4">
                                             <h1>We Know What You Are Looking For!</h1>
                                             <img src="img/body.svg" alt="" class="text-center-img toolbox-infographic">
-                                            <div class="form-card mt-5">
+                                            <div class="form-card">
+                                                <div class="tool-title">
+                                                    <h3>Generic information</h3>
+                                                    <hr>
+                                                </div>
                                                 <div class="row gutters-1 justify-content-center">
                                                     <div class="form-group col-md-3 col-6">
                                                         <div class="input-group">
@@ -887,6 +921,14 @@
                                                             <input type="email" name="" placeholder="Email" class="form-control">
                                                         </div>
                                                     </div>
+                                                    <div class="form-group col-md-3 col-12">
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text"><i class="la la-map-marker"></i></span>
+                                                            </div>
+                                                            <input type="text" name="" placeholder="Location" class="form-control">
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -901,7 +943,7 @@
                                             <img src="img/medical-condition.svg" alt="" class="text-center-img toolbox-infographic">
                                             <div class="form-card">
                                                 <div class="tool-title">
-                                                    <h3>Medical Condition</h3>
+                                                    <h3>Allergy + Medical condition + Addiction</h3>
                                                     <hr>
                                                 </div>
                                                 <div class="row gutters-1 justify-content-center mb-5 mb-md-0 pb-5 pb-md-0">
@@ -956,122 +998,6 @@
                                                     </div>
                                                     <div class="form-group  col-md-3 col-sm-6">
                                                         <input type="text" name="" placeholder="Time of Injury - Months/Years" class="form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="row justify-content-center">
-                                    <div class="col-xl-10">
-                                        <div class="toolbox-content mt-4">
-                                            <h1>We Know What You Are Looking For!</h1>
-                                            <img src="img/food-preference.svg" alt="" class="text-center-img toolbox-infographic">
-                                            <div class="form-card">
-                                                <div class="tool-title">
-                                                    <h3>Food Preference</h3>
-                                                    <hr>
-                                                </div>
-                                                <div class="row gutters-1 justify-content-center custom-radio custom-radio-block box">
-                                                    <div class="col-md-3 col-sm-6 d-flex">
-                                                        <div class="radio">
-                                                            <label>
-                                                                <input type="radio" class="form-check-input" name="food_preference" checked="checked">
-                                                                <i class="form-icon"></i>
-                                                                <p>North Indian</p>
-                                                                <span>Lorem ipsum dolor sit amet adipisicing.</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 col-sm-6 d-flex">
-                                                        <div class="radio">
-                                                            <label>
-                                                                <input type="radio" class="form-check-input" name="food_preference">
-                                                                <i class="form-icon"></i>
-                                                                <p>South Indian</p>
-                                                                <span>Lorem ipsum dolor sit amet adipisicing.</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3 col-sm-6 d-flex">
-                                                        <div class="radio">
-                                                            <label>
-                                                                <input type="radio" class="form-check-input" name="food_preference">
-                                                                <i class="form-icon"></i>
-                                                                <p>Continental</p>
-                                                                <span>Lorem ipsum dolor sit amet adipisicing.</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="row justify-content-center">
-                                    <div class="col-xl-10">
-                                        <div class="toolbox-content mt-4">
-                                            <h1>We Know What You Are Looking For!</h1>
-                                            <img src="img/food-type.svg" alt="" class="text-center-img toolbox-infographic">
-                                            <div class="form-card">
-                                                <div class="tool-title">
-                                                    <h3>Food Type</h3>
-                                                    <hr>
-                                                </div>
-                                                <div class="row gutters-1 justify-content-center custom-radio custom-radio-block box">
-                                                    <div class="col-lg col-md-3 col-sm-6 d-flex">
-                                                        <div class="radio">
-                                                            <label>
-                                                                <input type="radio" class="form-check-input" name="food_type" checked="checked">
-                                                                <i class="form-icon"></i>
-                                                                <p>Vegetarian</p>
-                                                                <span>Lorem ipsum dolor sit amet adipisicing.</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg col-md-3 col-sm-6 d-flex">
-                                                        <div class="radio">
-                                                            <label>
-                                                                <input type="radio" class="form-check-input" name="food_type">
-                                                                <i class="form-icon"></i>
-                                                                <p>Non-Vegetarian</p>
-                                                                <span>Lorem ipsum dolor sit amet adipisicing.</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg col-md-3 col-sm-6 d-flex">
-                                                        <div class="radio">
-                                                            <label>
-                                                                <input type="radio" class="form-check-input" name="food_type">
-                                                                <i class="form-icon"></i>
-                                                                <p>Paleo</p>
-                                                                <span>Lorem ipsum dolor sit amet adipisicing.</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg col-md-3 col-sm-6 d-flex">
-                                                        <div class="radio">
-                                                            <label>
-                                                                <input type="radio" class="form-check-input" name="food_type">
-                                                                <i class="form-icon"></i>
-                                                                <p>Vegan</p>
-                                                                <span>Lorem ipsum dolor sit amet adipisicing.</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg col-md-3 col-sm-6 d-flex">
-                                                        <div class="radio">
-                                                            <label>
-                                                                <input type="radio" class="form-check-input" name="food_type">
-                                                                <i class="form-icon"></i>
-                                                                <p>Ketogenic</p>
-                                                                <span>Lorem ipsum dolor sit amet adipisicing.</span>
-                                                            </label>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1286,6 +1212,122 @@
                                     <div class="col-xl-10">
                                         <div class="toolbox-content mt-4">
                                             <h1>We Know What You Are Looking For!</h1>
+                                            <img src="img/food-preference.svg" alt="" class="text-center-img toolbox-infographic">
+                                            <div class="form-card">
+                                                <div class="tool-title">
+                                                    <h3>Food Preference</h3>
+                                                    <hr>
+                                                </div>
+                                                <div class="row gutters-1 justify-content-center custom-radio custom-radio-block box">
+                                                    <div class="col-md-3 col-sm-6 d-flex">
+                                                        <div class="radio">
+                                                            <label>
+                                                                <input type="radio" class="form-check-input" name="food_preference" checked="checked">
+                                                                <i class="form-icon"></i>
+                                                                <p>North Indian</p>
+                                                                <span>Lorem ipsum dolor sit amet adipisicing.</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-6 d-flex">
+                                                        <div class="radio">
+                                                            <label>
+                                                                <input type="radio" class="form-check-input" name="food_preference">
+                                                                <i class="form-icon"></i>
+                                                                <p>South Indian</p>
+                                                                <span>Lorem ipsum dolor sit amet adipisicing.</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 col-sm-6 d-flex">
+                                                        <div class="radio">
+                                                            <label>
+                                                                <input type="radio" class="form-check-input" name="food_preference">
+                                                                <i class="form-icon"></i>
+                                                                <p>Continental</p>
+                                                                <span>Lorem ipsum dolor sit amet adipisicing.</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-10">
+                                        <div class="toolbox-content mt-4">
+                                            <h1>We Know What You Are Looking For!</h1>
+                                            <img src="img/food-type.svg" alt="" class="text-center-img toolbox-infographic">
+                                            <div class="form-card">
+                                                <div class="tool-title">
+                                                    <h3>Food Type</h3>
+                                                    <hr>
+                                                </div>
+                                                <div class="row gutters-1 justify-content-center custom-radio custom-radio-block box">
+                                                    <div class="col-lg col-md-3 col-sm-6 d-flex">
+                                                        <div class="radio">
+                                                            <label>
+                                                                <input type="radio" class="form-check-input" name="food_type" checked="checked">
+                                                                <i class="form-icon"></i>
+                                                                <p>Vegetarian</p>
+                                                                <span>Lorem ipsum dolor sit amet adipisicing.</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg col-md-3 col-sm-6 d-flex">
+                                                        <div class="radio">
+                                                            <label>
+                                                                <input type="radio" class="form-check-input" name="food_type">
+                                                                <i class="form-icon"></i>
+                                                                <p>Non-Vegetarian</p>
+                                                                <span>Lorem ipsum dolor sit amet adipisicing.</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg col-md-3 col-sm-6 d-flex">
+                                                        <div class="radio">
+                                                            <label>
+                                                                <input type="radio" class="form-check-input" name="food_type">
+                                                                <i class="form-icon"></i>
+                                                                <p>Paleo</p>
+                                                                <span>Lorem ipsum dolor sit amet adipisicing.</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg col-md-3 col-sm-6 d-flex">
+                                                        <div class="radio">
+                                                            <label>
+                                                                <input type="radio" class="form-check-input" name="food_type">
+                                                                <i class="form-icon"></i>
+                                                                <p>Vegan</p>
+                                                                <span>Lorem ipsum dolor sit amet adipisicing.</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg col-md-3 col-sm-6 d-flex">
+                                                        <div class="radio">
+                                                            <label>
+                                                                <input type="radio" class="form-check-input" name="food_type">
+                                                                <i class="form-icon"></i>
+                                                                <p>Ketogenic</p>
+                                                                <span>Lorem ipsum dolor sit amet adipisicing.</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-10">
+                                        <div class="toolbox-content mt-4">
+                                            <h1>We Know What You Are Looking For!</h1>
                                         </div>
                                     </div>
                                 </div>
@@ -1421,6 +1463,10 @@
                                             <h1>We Know What You Are Looking For!</h1>
                                             <img src="img/workout-experience.svg" alt="" class="text-center-img toolbox-infographic">
                                             <div class="form-card">
+                                                <div class="tool-title">
+                                                    <h3>Goal</h3>
+                                                    <hr>
+                                                </div>
                                                 <div class="row gutters-1 justify-content-center custom-radio custom-radio-block box mt-4">
                                                     <div class="col-md-3 col-sm-6 d-flex">
                                                         <div class="radio">
@@ -2035,475 +2081,38 @@
 
     <section id="deal_section" class="product-tabs">
         <div class="container">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#protein">Protein</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#bars">Bars</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#amino_acids">Amino Acids</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#drinks">Drinks</a>
-                </li>
+            <div class="deal-header border-0 text-left">
+                <h1>Top Brands</h1>
+            </div>
+            <ul class="nav nav-tabs mt-4">
+                <div class="product-tabs-slider owl-carousel owl-theme">
+                    <div class="item">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#protein">Protein</a>
+                        </li>
+                    </div>
+                    <div class="item">
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#bars">Bars</a>
+                        </li>
+                    </div>
+                    <div class="item">
+                        <li class="nav-item item">
+                            <a class="nav-link" data-toggle="tab" href="#amino_acids">Amino Acids</a>
+                        </li>
+                    </div>
+                    <div class="item">
+                        <li class="nav-item item">
+                            <a class="nav-link" data-toggle="tab" href="#drinks">Drinks</a>
+                        </li>
+                    </div>
+                </div>
             </ul>
             <div class="product_deals products">
                 <!--owl-carousel item -->
                 <div class="tab-content">
                     <div class="tab-pane active" id="protein">
                         <div class="product-slider owl-carousel owl-theme">
-                            <div class="item">
-                                <a href="product_details.html">
-                                    <div class="product-item">
-                                        <!--sale-top-->
-                                        <div class="ns-points">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <img src="img/ns-points/ns.svg"> 20
-                                                </div>
-                                                <div class="col-4">
-                                                    <img src="img/ns-points/cashback.svg"> 30%
-                                                </div>
-                                                <div class="col-4">
-                                                    <img src="img/ns-points/donate.svg"> 170
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flash_sale_time">
-                                            <div><img src="img/sale/sale_1.png" alt=""/></div>
-                                            <div class="unit_pending"><span class="las la-people-carry"></span> 20 Unit</div>
-                                            <div class="sale_time">
-                                                <span>30:09:11</span>
-                                            </div>
-                                        </div>
-                                        <!--.sale-top-->
-                                        <!--product image-->
-                                        <div class="product-thumb-wrap">
-                                            <div class="verified">
-                                                <img src="img/sale/sale_2.png" alt="" />
-                                            </div>
-                                            <img src="img/products.png" alt="" class="product-thumb" />
-                                            <div class="wishlist_icon">
-                                                <span class="lar la-heart"></span>
-                                            </div>
-                                            <div class="hover-content">
-                                                <div class="top">
-                                                    <div><i class="fas fa-bullhorn"></i><span>Contains WPI</span></div>
-                                                    <div><i class="fas fa-bullhorn"></i><span>Helps in Muscle Building</span></div>
-                                                    <div><i class="fas fa-bullhorn"></i><span>Consume with Water or Milk</span></div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <div><span>30gm of 66 servings contains</span></div>
-                                                    <div class="row no-gutters mt-3">
-                                                        <div class="col-3">
-                                                            <span>25gm Protein</span>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <span>5.5gm BCAA</span>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <span>11.75gm EAA</span>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <span>4.38gm Glutamic acid</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--product image-->
-                                        <h3 class="product_title">MuscleBlaze Whey Gold Protein,<br> 4 lb Rich Milk Chocolate</h3>
-                                        <div class="change-view">
-                                            <div class="price_box">
-                                                <div class="price">
-                                                    <span class="sale_price"><span class="las la-rupee-sign"></span>3,999</span>
-                                                    <span class="real_price"><span class="las la-rupee-sign"></span>5749</span>
-                                                </div>
-                                                <div class="discount">30% off</div>
-                                            </div>
-                                            <div class="star_rating">
-                                                <ul>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star-half-alt"></span></li>
-                                                    <li class="review">
-                                                        <p>(1182 Review)</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="add_to_cart_buttons">
-                                            <div><a href="#" class="btn btn-primary">Add to Cart</a></div>
-                                            <div class="d-lg-block d-none"><a href="#" class="btn btn-outline-primary">Buy Now</a></div>
-                                            <div class="d-lg-none"><a href="product_details.html" class="btn btn-outline-primary">Read more</a></div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="product_details.html">
-                                    <div class="product-item">
-                                        <!--sale-top-->
-                                        <div class="ns-points">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <img src="img/ns-points/ns.svg"> 20
-                                                </div>
-                                                <div class="col-4">
-                                                    <img src="img/ns-points/cashback.svg"> 30%
-                                                </div>
-                                                <div class="col-4">
-                                                    <img src="img/ns-points/donate.svg"> 170
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flash_sale_time">
-                                            <div><img src="img/sale/sale_1.png" alt=""/></div>
-                                            <div class="unit_pending"><span class="las la-people-carry"></span> 20 Unit</div>
-                                            <div class="sale_time">
-                                                <span>30:09:11</span>
-                                            </div>
-                                        </div>
-                                        <!--.sale-top-->
-                                        <!--product image-->
-                                        <div class="product-thumb-wrap">
-                                            <div class="verified">
-                                                <img src="img/sale/sale_2.png" alt="" />
-                                            </div>
-                                            <img src="img/products.png" alt="" class="product-thumb" />
-                                            <div class="wishlist_icon">
-                                                <span class="lar la-heart"></span>
-                                            </div>
-                                            <div class="hover-content">
-                                                <div class="top">
-                                                    <div><i class="fas fa-bullhorn"></i><span>Contains WPI</span></div>
-                                                    <div><i class="fas fa-bullhorn"></i><span>Helps in Muscle Building</span></div>
-                                                    <div><i class="fas fa-bullhorn"></i><span>Consume with Water or Milk</span></div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <div><span>30gm of 66 servings contains</span></div>
-                                                    <div class="row no-gutters mt-3">
-                                                        <div class="col-3">
-                                                            <span>25gm Protein</span>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <span>5.5gm BCAA</span>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <span>11.75gm EAA</span>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <span>4.38gm Glutamic acid</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--product image-->
-                                        <h3 class="product_title">MuscleBlaze Whey Gold Protein,<br> 4 lb Rich Milk Chocolate</h3>
-                                        <div class="change-view">
-                                            <div class="price_box">
-                                                <div class="price">
-                                                    <span class="sale_price"><span class="las la-rupee-sign"></span>3,999</span>
-                                                    <span class="real_price"><span class="las la-rupee-sign"></span>5749</span>
-                                                </div>
-                                                <div class="discount">30% off</div>
-                                            </div>
-                                            <div class="star_rating">
-                                                <ul>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star-half-alt"></span></li>
-                                                    <li class="review">
-                                                        <p>(1182 Review)</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="add_to_cart_buttons">
-                                            <div><a href="#" class="btn btn-primary">Add to Cart</a></div>
-                                            <div class="d-lg-block d-none"><a href="#" class="btn btn-outline-primary">Buy Now</a></div>
-                                            <div class="d-lg-none"><a href="product_details.html" class="btn btn-outline-primary">Read more</a></div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="product_details.html">
-                                    <div class="product-item">
-                                        <!--sale-top-->
-                                        <div class="ns-points">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <img src="img/ns-points/ns.svg"> 20
-                                                </div>
-                                                <div class="col-4">
-                                                    <img src="img/ns-points/cashback.svg"> 30%
-                                                </div>
-                                                <div class="col-4">
-                                                    <img src="img/ns-points/donate.svg"> 170
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flash_sale_time">
-                                            <div><img src="img/sale/sale_1.png" alt=""/></div>
-                                            <div class="unit_pending"><span class="las la-people-carry"></span> 20 Unit</div>
-                                            <div class="sale_time">
-                                                <span>30:09:11</span>
-                                            </div>
-                                        </div>
-                                        <!--.sale-top-->
-                                        <!--product image-->
-                                        <div class="product-thumb-wrap">
-                                            <div class="verified">
-                                                <img src="img/sale/sale_2.png" alt="" />
-                                            </div>
-                                            <img src="img/products.png" alt="" class="product-thumb" />
-                                            <div class="wishlist_icon">
-                                                <span class="lar la-heart"></span>
-                                            </div>
-                                            <div class="hover-content">
-                                                <div class="top">
-                                                    <div><i class="fas fa-bullhorn"></i><span>Contains WPI</span></div>
-                                                    <div><i class="fas fa-bullhorn"></i><span>Helps in Muscle Building</span></div>
-                                                    <div><i class="fas fa-bullhorn"></i><span>Consume with Water or Milk</span></div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <div><span>30gm of 66 servings contains</span></div>
-                                                    <div class="row no-gutters mt-3">
-                                                        <div class="col-3">
-                                                            <span>25gm Protein</span>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <span>5.5gm BCAA</span>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <span>11.75gm EAA</span>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <span>4.38gm Glutamic acid</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--product image-->
-                                        <h3 class="product_title">MuscleBlaze Whey Gold Protein,<br> 4 lb Rich Milk Chocolate</h3>
-                                        <div class="change-view">
-                                            <div class="price_box">
-                                                <div class="price">
-                                                    <span class="sale_price"><span class="las la-rupee-sign"></span>3,999</span>
-                                                    <span class="real_price"><span class="las la-rupee-sign"></span>5749</span>
-                                                </div>
-                                                <div class="discount">30% off</div>
-                                            </div>
-                                            <div class="star_rating">
-                                                <ul>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star-half-alt"></span></li>
-                                                    <li class="review">
-                                                        <p>(1182 Review)</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="add_to_cart_buttons">
-                                            <div><a href="#" class="btn btn-primary">Add to Cart</a></div>
-                                            <div class="d-lg-block d-none"><a href="#" class="btn btn-outline-primary">Buy Now</a></div>
-                                            <div class="d-lg-none"><a href="product_details.html" class="btn btn-outline-primary">Read more</a></div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="product_details.html">
-                                    <div class="product-item">
-                                        <!--sale-top-->
-                                        <div class="ns-points">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <img src="img/ns-points/ns.svg"> 20
-                                                </div>
-                                                <div class="col-4">
-                                                    <img src="img/ns-points/cashback.svg"> 30%
-                                                </div>
-                                                <div class="col-4">
-                                                    <img src="img/ns-points/donate.svg"> 170
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flash_sale_time">
-                                            <div><img src="img/sale/sale_1.png" alt=""/></div>
-                                            <div class="unit_pending"><span class="las la-people-carry"></span> 20 Unit</div>
-                                            <div class="sale_time">
-                                                <span>30:09:11</span>
-                                            </div>
-                                        </div>
-                                        <!--.sale-top-->
-                                        <!--product image-->
-                                        <div class="product-thumb-wrap">
-                                            <div class="verified">
-                                                <img src="img/sale/sale_2.png" alt="" />
-                                            </div>
-                                            <img src="img/products.png" alt="" class="product-thumb" />
-                                            <div class="wishlist_icon">
-                                                <span class="lar la-heart"></span>
-                                            </div>
-                                            <div class="hover-content">
-                                                <div class="top">
-                                                    <div><i class="fas fa-bullhorn"></i><span>Contains WPI</span></div>
-                                                    <div><i class="fas fa-bullhorn"></i><span>Helps in Muscle Building</span></div>
-                                                    <div><i class="fas fa-bullhorn"></i><span>Consume with Water or Milk</span></div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <div><span>30gm of 66 servings contains</span></div>
-                                                    <div class="row no-gutters mt-3">
-                                                        <div class="col-3">
-                                                            <span>25gm Protein</span>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <span>5.5gm BCAA</span>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <span>11.75gm EAA</span>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <span>4.38gm Glutamic acid</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--product image-->
-                                        <h3 class="product_title">MuscleBlaze Whey Gold Protein,<br> 4 lb Rich Milk Chocolate</h3>
-                                        <div class="change-view">
-                                            <div class="price_box">
-                                                <div class="price">
-                                                    <span class="sale_price"><span class="las la-rupee-sign"></span>3,999</span>
-                                                    <span class="real_price"><span class="las la-rupee-sign"></span>5749</span>
-                                                </div>
-                                                <div class="discount">30% off</div>
-                                            </div>
-                                            <div class="star_rating">
-                                                <ul>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star-half-alt"></span></li>
-                                                    <li class="review">
-                                                        <p>(1182 Review)</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="add_to_cart_buttons">
-                                            <div><a href="#" class="btn btn-primary">Add to Cart</a></div>
-                                            <div class="d-lg-block d-none"><a href="#" class="btn btn-outline-primary">Buy Now</a></div>
-                                            <div class="d-lg-none"><a href="product_details.html" class="btn btn-outline-primary">Read more</a></div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="product_details.html">
-                                    <div class="product-item">
-                                        <!--sale-top-->
-                                        <div class="ns-points">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <img src="img/ns-points/ns.svg"> 20
-                                                </div>
-                                                <div class="col-4">
-                                                    <img src="img/ns-points/cashback.svg"> 30%
-                                                </div>
-                                                <div class="col-4">
-                                                    <img src="img/ns-points/donate.svg"> 170
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flash_sale_time">
-                                            <div><img src="img/sale/sale_1.png" alt=""/></div>
-                                            <div class="unit_pending"><span class="las la-people-carry"></span> 20 Unit</div>
-                                            <div class="sale_time">
-                                                <span>30:09:11</span>
-                                            </div>
-                                        </div>
-                                        <!--.sale-top-->
-                                        <!--product image-->
-                                        <div class="product-thumb-wrap">
-                                            <div class="verified">
-                                                <img src="img/sale/sale_2.png" alt="" />
-                                            </div>
-                                            <img src="img/products.png" alt="" class="product-thumb" />
-                                            <div class="wishlist_icon">
-                                                <span class="lar la-heart"></span>
-                                            </div>
-                                            <div class="hover-content">
-                                                <div class="top">
-                                                    <div><i class="fas fa-bullhorn"></i><span>Contains WPI</span></div>
-                                                    <div><i class="fas fa-bullhorn"></i><span>Helps in Muscle Building</span></div>
-                                                    <div><i class="fas fa-bullhorn"></i><span>Consume with Water or Milk</span></div>
-                                                </div>
-                                                <div class="bottom">
-                                                    <div><span>30gm of 66 servings contains</span></div>
-                                                    <div class="row no-gutters mt-3">
-                                                        <div class="col-3">
-                                                            <span>25gm Protein</span>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <span>5.5gm BCAA</span>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <span>11.75gm EAA</span>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <span>4.38gm Glutamic acid</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--product image-->
-                                        <h3 class="product_title">MuscleBlaze Whey Gold Protein,<br> 4 lb Rich Milk Chocolate</h3>
-                                        <div class="change-view">
-                                            <div class="price_box">
-                                                <div class="price">
-                                                    <span class="sale_price"><span class="las la-rupee-sign"></span>3,999</span>
-                                                    <span class="real_price"><span class="las la-rupee-sign"></span>5749</span>
-                                                </div>
-                                                <div class="discount">30% off</div>
-                                            </div>
-                                            <div class="star_rating">
-                                                <ul>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star"></span></li>
-                                                    <li><span class="las la-star-half-alt"></span></li>
-                                                    <li class="review">
-                                                        <p>(1182 Review)</p>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="add_to_cart_buttons">
-                                            <div><a href="#" class="btn btn-primary">Add to Cart</a></div>
-                                            <div class="d-lg-block d-none"><a href="#" class="btn btn-outline-primary">Buy Now</a></div>
-                                            <div class="d-lg-none"><a href="product_details.html" class="btn btn-outline-primary">Read more</a></div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
                             <div class="item">
                                 <a href="product_details.html">
                                     <div class="product-item">
