@@ -359,6 +359,9 @@
     .toolbox img.toolbox-infographic {
         width: 150px;
     }
+    .icon-tabs .nav-link span {
+        display: block;
+    }
 }
 
 @media (min-width: 992px) {
@@ -435,6 +438,11 @@
     .tool-result .card {
         min-height: 200px;
     }
+    .video.height img {
+        height: 270px;
+        object-fit: cover;
+        width: 100%;
+    }
 }
 @media (min-width: 1024px) {
     .navigation ul li.search input[type="text"] {
@@ -457,7 +465,7 @@
         padding-left: 0;
     }
     .navigation ul li.search input[type="text"] {
-        width: 290px;
+        width: 260px;
     }
     .sec_buy_1 .ns-points-list {
         font-size: 12px;
@@ -467,6 +475,9 @@
     }
     .toolbox-content {
         padding: 20px 50px 0;
+    }
+    .video.height img {
+        height: 300px;
     }
 }
 

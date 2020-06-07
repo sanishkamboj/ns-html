@@ -35,7 +35,7 @@
             <div id="header">
                 <!--logo-->
                 <div class="logo">
-                    <h1 class="navbar-brand navbar-brand_"><a href="home.html"><img src="img/logo.png" alt="" width="164px"/></a></h1>
+                    <h1 class="navbar-brand navbar-brand_"><a href="home.html"><img src="img/logo.svg" alt="" width="164px"/></a></h1>
                 </div>
                 <!--.logo-->
                 <!--Navigation-->
@@ -341,7 +341,33 @@
                             </ul>
                         </li>
                         <li><a href="#"><span class="lar la-edit"></span> i-Nutrition</a></li>
-                        <li><a href="workout.html"><span class="las la-dumbbell"></span> Workouts</a></li>
+                        <li class="sub-menu sm">
+                            <a href="workout.html"><span class="las la-dumbbell"></span> Workouts</a>
+                            <div class="dropdown-menu">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul>
+                                            <li><a href="workout-plans.html" class="title">Workout Plan</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul>
+                                            <li><a href="diet-plans.html" class="title">Diet Plan</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <li><a href="franchise.html"><span class="las la-warehouse"></span> Franchise</a></li>
                         <li><a href="#"><span class="las la-question"></span> Why us</a></li>
                     </ul>
@@ -354,8 +380,21 @@
                                 </form>
                             </div>
                         </li>
-                        <li><a href="#"><span class="lar la-user"></span> Profile</a></li>
-                        <li class="dropdown mini-cart"><a href="#"><span class="las la-shopping-bag"></span> Cart  <strong>2</strong></a>
+                        <li class="sub-menu user-menu">
+                            <a href="#"><span class="lar la-user"></span> Profile</a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <ul>
+                                    <li><a href="#">My Profile</a></li>
+                                    <li><a href="#">Order</a></li>
+                                    <li><a href="#">Wishlist</a></li>
+                                    <li><a href="#">Coupons</a></li>
+                                    <li><a href="#">Referrals</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sub-menu mini-cart">
+                            <a href="#"><span class="las la-shopping-bag"></span> Cart <strong>2</strong></a>
                             <div class="dropdown-menu dropdown-menu-right">
                                 <div class="mini-cart-item">
                                     <div class="product_image">
@@ -382,9 +421,9 @@
                                     </div>
                                 </div>
                                 <div class="total_drop">
-                                    <div class="clearfix total_value">
+                                    <div class="total_value">
                                         <span>Total</span>
-                                        <span class="align-right">$200.00</span>
+                                        <span class="fw-600"><i class="la la-rupee-sign"></i>200.00</span>
                                     </div>
                                     <div class="checkout">
                                         <a href="cart.html" class="btn btn-outline-primary btn-block">View Cart</a>
@@ -468,7 +507,7 @@
                 </div>
                 <div class="left_side_toogle_menu col-3 text-right">
                     <ul>
-                        <li><a href="#"><i class="lar la-user"></i></a></li>
+                        <li><a href="user-account.html"><i class="lar la-user"></i></a></li>
                         <li><a href="cart.html"><span class="cart-count">2</span><i class="las la-shopping-bag"></i></a></li>
                     </ul>
                 </div>
@@ -628,8 +667,12 @@
                                     <span class="icon"><img src="img/ns-points/ns.svg"></span>
                                     <span>Premium</span>
                                 </div>
-                                <div>
-                                    <span class="las la-rupee-sign"></span>3,499
+                                <div class="justify-content-end justify-content-lg-center">
+                                    <span class="la la-rupee-sign"></span>3499
+                                    <span class="fa fa-lock ml-2 d-lg-none"></span>
+                                </div>
+                                <div class="d-none d-lg-flex justify-content-end">
+                                    <span class="fa fa-lock mr-2"></span> <a href="#">Earn It</a>
                                 </div>
                             </div>
                             <div class="add_to_cart_buttons">
@@ -668,7 +711,7 @@
     <!--discount_section-->
     <section id="discount_section">
         <div class="container">
-            <div class="deal-header">
+            <div class="deal-header text-center">
                 <h1>Discounted Brand</h1>
             </div>
             <div class="discounted_product_list">
@@ -720,8 +763,8 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-11">
-                    <div class="text-center mb-5">
-                        <h2 class="title fw-700">Tool Heading</h2>
+                    <div class="deal-header border-0 text-center">
+                        <h1>Tool Heading</h1>
                     </div>
                     <div class="toolbox">
                         <div class="toolbox-slider owl-carousel owl-theme">
@@ -2081,8 +2124,422 @@
 
     <section id="deal_section" class="product-tabs">
         <div class="container">
-            <div class="deal-header border-0 text-left">
-                <h1>Top Brands</h1>
+            <div class="deal-header border-0 text-center">
+                <h1>Popular in Brands</h1>
+            </div>
+            <ul class="nav nav-tabs mt-4">
+                <div class="product-tabs-slider owl-carousel owl-theme">
+                    <div class="item">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#protein">Protein</a>
+                        </li>
+                    </div>
+                    <div class="item">
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#bars">Bars</a>
+                        </li>
+                    </div>
+                    <div class="item">
+                        <li class="nav-item item">
+                            <a class="nav-link" data-toggle="tab" href="#amino_acids">Amino Acids</a>
+                        </li>
+                    </div>
+                    <div class="item">
+                        <li class="nav-item item">
+                            <a class="nav-link" data-toggle="tab" href="#drinks">Drinks</a>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+            <div class="product_deals products">
+                <!--owl-carousel item -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="protein">
+                        <div class="product-slider owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="product_details.html">
+                                    <div class="product-item">
+                                        <!--sale-top-->
+                                        <div class="ns-points">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="img/ns-points/ns.svg"> 20
+                                                </div>
+                                                <div class="col-4">
+                                                    <img src="img/ns-points/cashback.svg"> 30%
+                                                </div>
+                                                <div class="col-4">
+                                                    <img src="img/ns-points/donate.svg"> 170
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flash_sale_time">
+                                            <div><img src="img/sale/sale_1.png" alt=""/></div>
+                                            <div class="unit_pending"><span class="las la-people-carry"></span> 20 Unit</div>
+                                            <div class="sale_time">
+                                                <span>30:09:11</span>
+                                            </div>
+                                        </div>
+                                        <!--.sale-top-->
+                                        <!--product image-->
+                                        <div class="product-thumb-wrap">
+                                            <div class="verified">
+                                                <img src="img/sale/sale_2.png" alt="" />
+                                            </div>
+                                            <img src="img/products.png" alt="" class="product-thumb" />
+                                            <div class="wishlist_icon">
+                                                <span class="lar la-heart"></span>
+                                            </div>
+                                            <div class="hover-content">
+                                                <div class="top">
+                                                    <div><i class="fas fa-bullhorn"></i><span>Contains WPI</span></div>
+                                                    <div><i class="fas fa-bullhorn"></i><span>Helps in Muscle Building</span></div>
+                                                    <div><i class="fas fa-bullhorn"></i><span>Consume with Water or Milk</span></div>
+                                                </div>
+                                                <div class="bottom">
+                                                    <div><span>30gm of 66 servings contains</span></div>
+                                                    <div class="row no-gutters mt-3">
+                                                        <div class="col-3">
+                                                            <span>25gm Protein</span>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <span>5.5gm BCAA</span>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <span>11.75gm EAA</span>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <span>4.38gm Glutamic acid</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--product image-->
+                                        <h3 class="product_title">MuscleBlaze Whey Gold Protein,<br> 4 lb Rich Milk Chocolate</h3>
+                                        <div class="change-view">
+                                            <div class="price_box">
+                                                <div class="price">
+                                                    <span class="sale_price"><span class="las la-rupee-sign"></span>3,999</span>
+                                                    <span class="real_price"><span class="las la-rupee-sign"></span>5749</span>
+                                                </div>
+                                                <div class="discount">30% off</div>
+                                            </div>
+                                            <div class="star_rating">
+                                                <ul>
+                                                    <li><span class="las la-star"></span></li>
+                                                    <li><span class="las la-star"></span></li>
+                                                    <li><span class="las la-star"></span></li>
+                                                    <li><span class="las la-star"></span></li>
+                                                    <li><span class="las la-star-half-alt"></span></li>
+                                                    <li class="review">
+                                                        <p>(1182 Review)</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="add_to_cart_buttons">
+                                            <div><a href="#" class="btn btn-primary">Add to Cart</a></div>
+                                            <div class="d-lg-block d-none"><a href="#" class="btn btn-outline-primary">Buy Now</a></div>
+                                            <div class="d-lg-none"><a href="product_details.html" class="btn btn-outline-primary">Read more</a></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="bars">
+                        <div class="product-slider owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="product_details.html">
+                                    <div class="product-item">
+                                        <!--sale-top-->
+                                        <div class="ns-points">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="img/ns-points/ns.svg"> 20
+                                                </div>
+                                                <div class="col-4">
+                                                    <img src="img/ns-points/cashback.svg"> 30%
+                                                </div>
+                                                <div class="col-4">
+                                                    <img src="img/ns-points/donate.svg"> 170
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flash_sale_time">
+                                            <div><img src="img/sale/sale_1.png" alt=""/></div>
+                                            <div class="unit_pending"><span class="las la-people-carry"></span> 20 Unit</div>
+                                            <div class="sale_time">
+                                                <span>30:09:11</span>
+                                            </div>
+                                        </div>
+                                        <!--.sale-top-->
+                                        <!--product image-->
+                                        <div class="product-thumb-wrap">
+                                            <div class="verified">
+                                                <img src="img/sale/sale_2.png" alt="" />
+                                            </div>
+                                            <img src="img/products.png" alt="" class="product-thumb" />
+                                            <div class="wishlist_icon">
+                                                <span class="lar la-heart"></span>
+                                            </div>
+                                            <div class="hover-content">
+                                                <div class="top">
+                                                    <div><i class="fas fa-bullhorn"></i><span>Contains WPI</span></div>
+                                                    <div><i class="fas fa-bullhorn"></i><span>Helps in Muscle Building</span></div>
+                                                    <div><i class="fas fa-bullhorn"></i><span>Consume with Water or Milk</span></div>
+                                                </div>
+                                                <div class="bottom">
+                                                    <div><span>30gm of 66 servings contains</span></div>
+                                                    <div class="row no-gutters mt-3">
+                                                        <div class="col-3">
+                                                            <span>25gm Protein</span>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <span>5.5gm BCAA</span>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <span>11.75gm EAA</span>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <span>4.38gm Glutamic acid</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--product image-->
+                                        <h3 class="product_title">MuscleBlaze Whey Gold Protein,<br> 4 lb Rich Milk Chocolate</h3>
+                                        <div class="change-view">
+                                            <div class="price_box">
+                                                <div class="price">
+                                                    <span class="sale_price"><span class="las la-rupee-sign"></span>3,999</span>
+                                                    <span class="real_price"><span class="las la-rupee-sign"></span>5749</span>
+                                                </div>
+                                                <div class="discount">30% off</div>
+                                            </div>
+                                            <div class="star_rating">
+                                                <ul>
+                                                    <li><span class="las la-star"></span></li>
+                                                    <li><span class="las la-star"></span></li>
+                                                    <li><span class="las la-star"></span></li>
+                                                    <li><span class="las la-star"></span></li>
+                                                    <li><span class="las la-star-half-alt"></span></li>
+                                                    <li class="review">
+                                                        <p>(1182 Review)</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="add_to_cart_buttons">
+                                            <div><a href="#" class="btn btn-primary">Add to Cart</a></div>
+                                            <div class="d-lg-block d-none"><a href="#" class="btn btn-outline-primary">Buy Now</a></div>
+                                            <div class="d-lg-none"><a href="product_details.html" class="btn btn-outline-primary">Read more</a></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="amino_acids">
+                        <div class="product-slider owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="product_details.html">
+                                    <div class="product-item">
+                                        <!--sale-top-->
+                                        <div class="ns-points">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="img/ns-points/ns.svg"> 20
+                                                </div>
+                                                <div class="col-4">
+                                                    <img src="img/ns-points/cashback.svg"> 30%
+                                                </div>
+                                                <div class="col-4">
+                                                    <img src="img/ns-points/donate.svg"> 170
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flash_sale_time">
+                                            <div><img src="img/sale/sale_1.png" alt=""/></div>
+                                            <div class="unit_pending"><span class="las la-people-carry"></span> 20 Unit</div>
+                                            <div class="sale_time">
+                                                <span>30:09:11</span>
+                                            </div>
+                                        </div>
+                                        <!--.sale-top-->
+                                        <!--product image-->
+                                        <div class="product-thumb-wrap">
+                                            <div class="verified">
+                                                <img src="img/sale/sale_2.png" alt="" />
+                                            </div>
+                                            <img src="img/products.png" alt="" class="product-thumb" />
+                                            <div class="wishlist_icon">
+                                                <span class="lar la-heart"></span>
+                                            </div>
+                                            <div class="hover-content">
+                                                <div class="top">
+                                                    <div><i class="fas fa-bullhorn"></i><span>Contains WPI</span></div>
+                                                    <div><i class="fas fa-bullhorn"></i><span>Helps in Muscle Building</span></div>
+                                                    <div><i class="fas fa-bullhorn"></i><span>Consume with Water or Milk</span></div>
+                                                </div>
+                                                <div class="bottom">
+                                                    <div><span>30gm of 66 servings contains</span></div>
+                                                    <div class="row no-gutters mt-3">
+                                                        <div class="col-3">
+                                                            <span>25gm Protein</span>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <span>5.5gm BCAA</span>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <span>11.75gm EAA</span>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <span>4.38gm Glutamic acid</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--product image-->
+                                        <h3 class="product_title">MuscleBlaze Whey Gold Protein,<br> 4 lb Rich Milk Chocolate</h3>
+                                        <div class="change-view">
+                                            <div class="price_box">
+                                                <div class="price">
+                                                    <span class="sale_price"><span class="las la-rupee-sign"></span>3,999</span>
+                                                    <span class="real_price"><span class="las la-rupee-sign"></span>5749</span>
+                                                </div>
+                                                <div class="discount">30% off</div>
+                                            </div>
+                                            <div class="star_rating">
+                                                <ul>
+                                                    <li><span class="las la-star"></span></li>
+                                                    <li><span class="las la-star"></span></li>
+                                                    <li><span class="las la-star"></span></li>
+                                                    <li><span class="las la-star"></span></li>
+                                                    <li><span class="las la-star-half-alt"></span></li>
+                                                    <li class="review">
+                                                        <p>(1182 Review)</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="add_to_cart_buttons">
+                                            <div><a href="#" class="btn btn-primary">Add to Cart</a></div>
+                                            <div class="d-lg-block d-none"><a href="#" class="btn btn-outline-primary">Buy Now</a></div>
+                                            <div class="d-lg-none"><a href="product_details.html" class="btn btn-outline-primary">Read more</a></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="drinks">
+                        <div class="product-slider owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="product_details.html">
+                                    <div class="product-item">
+                                        <!--sale-top-->
+                                        <div class="ns-points">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="img/ns-points/ns.svg"> 20
+                                                </div>
+                                                <div class="col-4">
+                                                    <img src="img/ns-points/cashback.svg"> 30%
+                                                </div>
+                                                <div class="col-4">
+                                                    <img src="img/ns-points/donate.svg"> 170
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flash_sale_time">
+                                            <div><img src="img/sale/sale_1.png" alt=""/></div>
+                                            <div class="unit_pending"><span class="las la-people-carry"></span> 20 Unit</div>
+                                            <div class="sale_time">
+                                                <span>30:09:11</span>
+                                            </div>
+                                        </div>
+                                        <!--.sale-top-->
+                                        <!--product image-->
+                                        <div class="product-thumb-wrap">
+                                            <div class="verified">
+                                                <img src="img/sale/sale_2.png" alt="" />
+                                            </div>
+                                            <img src="img/products.png" alt="" class="product-thumb" />
+                                            <div class="wishlist_icon">
+                                                <span class="lar la-heart"></span>
+                                            </div>
+                                            <div class="hover-content">
+                                                <div class="top">
+                                                    <div><i class="fas fa-bullhorn"></i><span>Contains WPI</span></div>
+                                                    <div><i class="fas fa-bullhorn"></i><span>Helps in Muscle Building</span></div>
+                                                    <div><i class="fas fa-bullhorn"></i><span>Consume with Water or Milk</span></div>
+                                                </div>
+                                                <div class="bottom">
+                                                    <div><span>30gm of 66 servings contains</span></div>
+                                                    <div class="row no-gutters mt-3">
+                                                        <div class="col-3">
+                                                            <span>25gm Protein</span>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <span>5.5gm BCAA</span>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <span>11.75gm EAA</span>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <span>4.38gm Glutamic acid</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--product image-->
+                                        <h3 class="product_title">MuscleBlaze Whey Gold Protein,<br> 4 lb Rich Milk Chocolate</h3>
+                                        <div class="change-view">
+                                            <div class="price_box">
+                                                <div class="price">
+                                                    <span class="sale_price"><span class="las la-rupee-sign"></span>3,999</span>
+                                                    <span class="real_price"><span class="las la-rupee-sign"></span>5749</span>
+                                                </div>
+                                                <div class="discount">30% off</div>
+                                            </div>
+                                            <div class="star_rating">
+                                                <ul>
+                                                    <li><span class="las la-star"></span></li>
+                                                    <li><span class="las la-star"></span></li>
+                                                    <li><span class="las la-star"></span></li>
+                                                    <li><span class="las la-star"></span></li>
+                                                    <li><span class="las la-star-half-alt"></span></li>
+                                                    <li class="review">
+                                                        <p>(1182 Review)</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="add_to_cart_buttons">
+                                            <div><a href="#" class="btn btn-primary">Add to Cart</a></div>
+                                            <div class="d-lg-block d-none"><a href="#" class="btn btn-outline-primary">Buy Now</a></div>
+                                            <div class="d-lg-none"><a href="product_details.html" class="btn btn-outline-primary">Read more</a></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--owl-carousel item -->
+            </div>
+        </div>
+    </section>
+
+    <section id="deal_section" class="product-tabs">
+        <div class="container">
+            <div class="deal-header border-0 text-center">
+                <h1>Popular in Categories</h1>
             </div>
             <ul class="nav nav-tabs mt-4">
                 <div class="product-tabs-slider owl-carousel owl-theme">
@@ -2673,7 +3130,7 @@
 
     <section id="deal_section">
         <div class="container">
-            <div class="deal-header">
+            <div class="deal-header text-center">
                 <h1>Newly Launched</h1>
             </div>
             <div class="product_deals products">
@@ -2802,7 +3259,7 @@
     <!--Instagram-->
     <section id="instagram" class="instagram">
         <div class="container">
-            <div class="deal-header">
+            <div class="deal-header text-center">
                 <h1>Instagram</h1>
             </div>
             <div class="py-5">
@@ -2835,7 +3292,7 @@
     <!--Testimoinals-->
     <section id="testimonial">
         <div class="container">
-            <div class="deal-header">
+            <div class="deal-header text-center">
                 <h1>Testimonial</h1>
             </div>
             <div class="testimonial_posts">
