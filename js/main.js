@@ -23,7 +23,7 @@ $('document').ready(function(){
     });
 
     /* Cart dropdown */
-    $('.mini-cart, .dropdown-access').hover(function () {
+    $('.sub-menu').hover(function () {
         $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeIn(300);
     }, function () {
         $(this).find('.dropdown-menu').stop(true, true).delay(50).fadeOut(300);

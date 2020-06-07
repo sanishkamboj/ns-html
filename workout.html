@@ -356,7 +356,8 @@
                             </div>
                         </li>
                         <li><a href="#"><span class="lar la-user"></span> Profile</a></li>
-                        <li class="dropdown mini-cart"><a href="#"><span class="las la-shopping-bag"></span> Cart  <strong>2</strong></a>
+                        <li class="sub-menu mini-cart">
+                            <a href="#"><span class="las la-shopping-bag"></span> Cart <strong>2</strong></a>
                             <div class="dropdown-menu dropdown-menu-right">
                                 <div class="mini-cart-item">
                                     <div class="product_image">
@@ -383,9 +384,9 @@
                                     </div>
                                 </div>
                                 <div class="total_drop">
-                                    <div class="clearfix total_value">
+                                    <div class="total_value">
                                         <span>Total</span>
-                                        <span class="align-right">$200.00</span>
+                                        <span class="fw-600">$200.00</span>
                                     </div>
                                     <div class="checkout">
                                         <a href="cart.html" class="btn btn-outline-primary btn-block">View Cart</a>
@@ -508,948 +509,794 @@
 
     <section class="pb-5">
         <div class="container">
-            <div class="boxed-tabs">
-                <ul class="nav row gutters-1 text-center">
-                    <li class="nav-item col-lg col-md-4 col-sm-6 col-12">
-                        <a class="nav-link active" data-toggle="tab" href="#workout">Workout</a>
-                    </li>
-                    <li class="nav-item col-lg col-md-4 col-sm-6 col-12 mt-4 mt-sm-0">
-                        <a class="nav-link" data-toggle="tab" href="#diet_plans">Diet Plans</a>
-                    </li>
-                    <li class="nav-item col-lg col-md-4 col-sm-6 col-12 mt-4 mt-md-0">
-                        <a class="nav-link" data-toggle="tab" href="#nutrition_tips">Nutrition Tips</a>
-                    </li>
-                    <li class="nav-item col-lg col-md-4 col-sm-6 col-12 mt-4 mt-lg-0">
-                        <a class="nav-link" data-toggle="tab" href="#health_recepies">Health Recepies</a>
-                    </li>
-                    <li class="nav-item col-lg col-md-4 col-12 mt-4 mt-lg-0">
-                        <a class="nav-link" data-toggle="tab" href="#blogs">Blogs</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane active" id="workout">
-                        <div class="row mt-4">
-                            <div class="col-lg-6">
-                                <div class="video btn-round">
-                                    <img src="https://via.placeholder.com/1200x700" class="img-fluid" alt="">
-                                    <div class="video-button">
-                                        <a data-fancybox="" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
-                                            <i class="fa fa-play"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="video btn-round new">
-                                    <div class="upload">
-                                        <h3>Upload your Video</h3>
-                                        <ul class="mt-4">
-                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        <a href="#" class="btn btn-outline-primary mt-3">Upload Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card my-5">
-                            <div class="card-body">
-                                <form class="form">
-                                    <div class="row gutters-1">
-                                        <div class="col-lg col-md-3 form-group">
-                                            <label>Gender</label>
-                                            <select class="form-control">
-                                                <option value="male">Male</option>
-                                                <option value="female">Female</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg col-md-3 form-group">
-                                            <label>Muscle</label>
-                                            <select class="form-control">
-                                                <option value="">Option 1</option>
-                                                <option value="">Option 2</option>
-                                                <option value="">Option 3</option>
-                                                <option value="">Option 4</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg col-md-3 form-group">
-                                            <label>Exercise</label>
-                                            <select class="form-control">
-                                                <option value="">Option 1</option>
-                                                <option value="">Option 2</option>
-                                                <option value="">Option 3</option>
-                                                <option value="">Option 4</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg col-md-3 form-group">
-                                            <label>Frequency</label>
-                                            <select class="form-control">
-                                                <option value="">Option 1</option>
-                                                <option value="">Option 2</option>
-                                                <option value="">Option 3</option>
-                                                <option value="">Option 4</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg">
-                                            <label class="d-none d-lg-block">&nbsp;</label>
-                                            <button class="btn btn-outline-primary btn-block">Submit</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="alert alert-info">
-                            <strong>Disclaimer:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Quisque eu nibh ac arcu porttitor consectetur et sit amet nisi. Phasellussed justo vel nulla vestibulum dapibus. Curabitur consequat lacus risus, ac tempus metus porttitor a. Quisquelobortis faucibus mauris, et consequat eros vehicula a. Quisque hendrerit pharetra augue sed fermentum. Orci varius natoquepenatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur quis tellus interdum, rutrum mi id, consectetur est.
-                        </div>
-                        <section>
-                            <div class="exercise">
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-center mt-5">
-                                    <a href="#" class="btn btn-outline-primary text-uppercase">Load More</a>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="tab-pane fade" id="diet_plans">
-                        <div class="row mt-4">
-                            <div class="col-lg-6">
-                                <div class="video btn-round">
-                                    <img src="https://via.placeholder.com/1200x700" class="img-fluid" alt="">
-                                    <div class="video-button">
-                                        <a data-fancybox="" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
-                                            <i class="fa fa-play"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="video btn-round new">
-                                    <div class="upload">
-                                        <h3>Upload your Video</h3>
-                                        <ul class="mt-4">
-                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        <a href="#" class="btn btn-outline-primary mt-3">Upload Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card my-5">
-                            <div class="card-body">
-                            <form class="form">
-                                <div class="row gutters-1">
-                                    <div class="col-lg col-md-3 form-group">
-                                        <label>Gender</label>
-                                        <select class="form-control">
-                                            <option value="male">Male</option>
-                                            <option value="female">Female</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg col-md-3 form-group">
-                                        <label>Diet</label>
-                                        <select class="form-control">
-                                            <option value="">Option 1</option>
-                                            <option value="">Option 2</option>
-                                            <option value="">Option 3</option>
-                                            <option value="">Option 4</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg col-md-3 form-group">
-                                        <label>Goal</label>
-                                        <select class="form-control">
-                                            <option value="">Option 1</option>
-                                            <option value="">Option 2</option>
-                                            <option value="">Option 3</option>
-                                            <option value="">Option 4</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg col-md-3 form-group">
-                                        <label>Frequency</label>
-                                        <select class="form-control">
-                                            <option value="">Option 1</option>
-                                            <option value="">Option 2</option>
-                                            <option value="">Option 3</option>
-                                            <option value="">Option 4</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-lg">
-                                        <label class="d-none d-lg-block">&nbsp;</label>
-                                        <button class="btn btn-outline-primary btn-block">Submit</button>
-                                    </div>
-                                </div>
-                            </form>
-                            </div>
-                        </div>
-                        <div class="alert alert-info">
-                            <strong>Disclaimer:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Quisque eu nibh ac arcu porttitor consectetur et sit amet nisi. Phasellussed justo vel nulla vestibulum dapibus. Curabitur consequat lacus risus, ac tempus metus porttitor a. Quisquelobortis faucibus mauris, et consequat eros vehicula a. Quisque hendrerit pharetra augue sed fermentum. Orci varius natoquepenatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur quis tellus interdum, rutrum mi id, consectetur est.
-                        </div>
-                        <section>
-                            <div class="exercise">
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-center mt-5">
-                                    <a href="#" class="btn btn-outline-primary text-uppercase">Load More</a>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="tab-pane fade" id="nutrition_tips">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-3 col-sm-6 mt-5">
-                                <a data-fancybox="gallery" href="https://via.placeholder.com/1080x1080?text=Nutrition Tips Images">
-                                    <img src="https://via.placeholder.com/1080x1080?text=Nutrition Tips Images" alt="">
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-3 col-sm-6 mt-5">
-                                <a data-fancybox="gallery" href="https://via.placeholder.com/1080x1080?text=Nutrition Tips Images">
-                                    <img src="https://via.placeholder.com/1080x1080?text=Nutrition Tips Images" alt="">
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-3 col-sm-6 mt-5">
-                                <a data-fancybox="gallery" href="https://via.placeholder.com/1080x1080?text=Nutrition Tips Images">
-                                    <img src="https://via.placeholder.com/1080x1080?text=Nutrition Tips Images" alt="">
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-3 col-sm-6 mt-5">
-                                <a data-fancybox="gallery" href="https://via.placeholder.com/1080x1080?text=Nutrition Tips Images">
-                                    <img src="https://via.placeholder.com/1080x1080?text=Nutrition Tips Images" alt="">
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-3 col-sm-6 mt-5">
-                                <a data-fancybox="gallery" href="https://via.placeholder.com/1080x1080?text=Nutrition Tips Images">
-                                    <img src="https://via.placeholder.com/1080x1080?text=Nutrition Tips Images" alt="">
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-md-3 col-sm-6 mt-5">
-                                <a data-fancybox="gallery" href="https://via.placeholder.com/1080x1080?text=Nutrition Tips Images">
-                                    <img src="https://via.placeholder.com/1080x1080?text=Nutrition Tips Images" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="health_recepies">
-                        <section class="mt-5">
-                            <div class="exercise">
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="exercise-item">
-                                    <div class="exercise-thumbnail">
-                                        <img src="https://via.placeholder.com/200x130">
-                                    </div>
-                                    <div class="exercise-content">
-                                        <div class="content">
-                                            <h3><a href="workout-detail.html">Rickshaw Carry</a></h3>
-                                            <p>Muscle Targeted: <a href="#">Forearms</a></p>
-                                            <p>Equipment Type: <a href="#">other</a></p>
-                                        </div>
-                                        <div class="exercise-rating">
-                                            <div class="badge">9.6</div>
-                                            <span>Average</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-center mt-5">
-                                    <a href="#" class="btn btn-outline-primary text-uppercase">Load More</a>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="tab-pane fade" id="blogs">
-                        <div class="row mt-5">
-                            <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
-                                <div id="accordion">
-                                    <div class="widget">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <h2 class="card-title d-flex justify-content-between align-items-center">Category
-                                                    <a data-toggle="collapse" href="#category">
-                                                        <i class="fa fa-chevron-down"></i>
-                                                    </a>
-                                                </h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="boxed-tabs">
+                        <ul class="nav row gutters-1 text-center">
+                            <li class="nav-item col-sm-4 col-12">
+                                <a class="nav-link active" data-toggle="tab" href="#workout">Workout</a>
+                            </li>
+                            <li class="nav-item col-sm-4 col-12 mt-4 mt-sm-0">
+                                <a class="nav-link" data-toggle="tab" href="#diet_plans">Diet Plans</a>
+                            </li>
+                            <!-- <li class="nav-item col-lg col-md-4 col-sm-6 col-12 mt-4 mt-md-0">
+                                <a class="nav-link" data-toggle="tab" href="#nutrition_tips">Nutrition Tips</a>
+                            </li>
+                            <li class="nav-item col-lg col-md-4 col-sm-6 col-12 mt-4 mt-lg-0">
+                                <a class="nav-link" data-toggle="tab" href="#health_recepies">Health Recepies</a>
+                            </li> -->
+                            <li class="nav-item col-sm-4 mt-4 mt-sm-0">
+                                <a class="nav-link" data-toggle="tab" href="#articles">Articles</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="workout">
+                                <div class="row mt-4">
+                                    <div class="col-lg-6">
+                                        <div class="video overlay btn-round">
+                                            <img src="https://via.placeholder.com/1200x700" class="img-fluid" alt="">
+                                            <div class="video-button sm">
+                                                <a data-fancybox="" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
                                             </div>
-                                            <div id="category" class="collapse show">
-                                                <div class="card-body">
-                                                    <div class="custom-checkbox custom-checkbox-block">
-                                                        <div class="d-flex justify-content-between align-items-center">
-                                                            <div class="checkboxes">
-                                                                <label>
-                                                                    <input type="checkbox" class="form-check-input" name="category">
-                                                                    <i class="form-icon"></i> Advice
-                                                                </label>
-                                                            </div>
-                                                            <div>12</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="video btn-round new">
+                                            <div class="upload">
+                                                <h3>Upload your Video</h3>
+                                                <ul class="mt-4">
+                                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                                </ul>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                <a href="#" class="btn btn-outline-primary mt-3">Upload Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card my-5">
+                                    <div class="card-body">
+                                        <form class="form">
+                                            <div class="row gutters-1">
+                                                <div class="col-lg col-md-3 form-group">
+                                                    <label>Gender</label>
+                                                    <select class="form-control">
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Female</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg col-md-3 form-group">
+                                                    <label>Muscle</label>
+                                                    <select class="form-control">
+                                                        <option value="">Option 1</option>
+                                                        <option value="">Option 2</option>
+                                                        <option value="">Option 3</option>
+                                                        <option value="">Option 4</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg col-md-3 form-group">
+                                                    <label>Exercise</label>
+                                                    <select class="form-control">
+                                                        <option value="">Option 1</option>
+                                                        <option value="">Option 2</option>
+                                                        <option value="">Option 3</option>
+                                                        <option value="">Option 4</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg col-md-3 form-group">
+                                                    <label>Frequency</label>
+                                                    <select class="form-control">
+                                                        <option value="">Option 1</option>
+                                                        <option value="">Option 2</option>
+                                                        <option value="">Option 3</option>
+                                                        <option value="">Option 4</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg">
+                                                    <label class="d-none d-lg-block">&nbsp;</label>
+                                                    <button class="btn btn-outline-primary btn-block">Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="alert alert-info">
+                                    <strong>Disclaimer:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Quisque eu nibh ac arcu porttitor consectetur et sit amet nisi. Phasellussed justo vel nulla vestibulum dapibus. Curabitur consequat lacus risus, ac tempus metus porttitor a. Quisquelobortis faucibus mauris, et consequat eros vehicula a. Quisque hendrerit pharetra augue sed fermentum. Orci varius natoquepenatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur quis tellus interdum, rutrum mi id, consectetur est.
+                                </div>
+                                <div class="catWorkout">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2>Workouts by Gender</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row gutters-2">
+                                                <div class="col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/workouts/workouts-for-men.jpg" alt="">
                                                         </div>
-                                                        <div class="d-flex justify-content-between align-items-center">
-                                                            <div class="checkboxes">
-                                                                <label>
-                                                                    <input type="checkbox" class="form-check-input" name="category">
-                                                                    <i class="form-icon"></i> Food Supplements
-                                                                </label>
-                                                            </div>
-                                                            <div>22</div>
+                                                        <div class="user-review-content">
+                                                            <h3>Workouts For Men</h3>
+                                                            <p>Free downloadable workouts for men! Find the best workouts for muscle building, fat loss, abs, chest and more.</p>
                                                         </div>
-                                                        <div class="d-flex justify-content-between align-items-center">
-                                                            <div class="checkboxes">
-                                                                <label>
-                                                                    <input type="checkbox" class="form-check-input" name="category">
-                                                                    <i class="form-icon"></i> Training
-                                                                </label>
-                                                            </div>
-                                                            <div>23</div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://cdn.muscleandstrength.com/sites/default/files/taxonomy/image/workouts/workouts-for-women.jpg" alt="">
                                                         </div>
-                                                        <div class="d-flex justify-content-between align-items-center">
-                                                            <div class="checkboxes">
-                                                                <label>
-                                                                    <input type="checkbox" class="form-check-input" name="category">
-                                                                    <i class="form-icon"></i> Lifestyle
-                                                                </label>
-                                                            </div>
-                                                            <div>10</div>
+                                                        <div class="cat-content">
+                                                            <h3>Workouts For Women</h3>
+                                                            <p>Find the best free workout plans for women! Download workouts for weight loss, fitness, toning, arms, legs and more.</p>
                                                         </div>
-                                                        <div class="d-flex justify-content-between align-items-center">
-                                                            <div class="checkboxes">
-                                                                <label>
-                                                                    <input type="checkbox" class="form-check-input" name="category">
-                                                                    <i class="form-icon"></i> Nutrition
-                                                                </label>
-                                                            </div>
-                                                            <div>15</div>
-                                                        </div>
-                                                        <div class="d-flex justify-content-between align-items-center">
-                                                            <div class="checkboxes">
-                                                                <label>
-                                                                    <input type="checkbox" class="form-check-input" name="category">
-                                                                    <i class="form-icon"></i> Health
-                                                                </label>
-                                                            </div>
-                                                            <div>17</div>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="widget">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <h2 class="card-title d-flex justify-content-between align-items-center">Most Visited
-                                                    <a data-toggle="collapse" href="#mostVisited">
-                                                        <i class="fa fa-chevron-down"></i>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2>Workouts Categories</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row gutters-2">
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="user-review-content">
+                                                            <h3>Muscle Building</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
                                                     </a>
-                                                </h2>
-                                            </div>
-                                            <div id="mostVisited" class="collapse show">
-                                                <div class="card-body">
-                                                    <div class="recent-post">
-                                                        <div class="recent-post-item">
-                                                            <a href="blog-detail.html">Looking thinner but at a 7 heavier weight? Is that possible?</a>
-                                                            <p>17/04/2020</p>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
                                                         </div>
-                                                        <div class="recent-post-item">
-                                                            <a href="blog-detail.html">Looking thinner but at a 7 heavier weight? Is that possible?</a>
-                                                            <p>17/04/2020</p>
+                                                        <div class="cat-content">
+                                                            <h3>Fat Loss</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
                                                         </div>
-                                                        <div class="recent-post-item">
-                                                            <a href="blog-detail.html">Looking thinner but at a 7 heavier weight? Is that possible?</a>
-                                                            <p>17/04/2020</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
                                                         </div>
-                                                        <div class="recent-post-item">
-                                                            <a href="blog-detail.html">Looking thinner but at a 7 heavier weight? Is that possible?</a>
-                                                            <p>17/04/2020</p>
+                                                        <div class="cat-content">
+                                                            <h3>Increase Strength</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
                                                         </div>
-                                                        <div class="recent-post-item">
-                                                            <a href="blog-detail.html">Looking thinner but at a 7 heavier weight? Is that possible?</a>
-                                                            <p>17/04/2020</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
                                                         </div>
-                                                        <a href="#" class="btn btn-outline-primary btn-block mt-5">View more popular items</a>
-                                                    </div>
+                                                        <div class="cat-content">
+                                                            <h3>Ab Workouts</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="user-review-content">
+                                                            <h3>Muscle Building</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>Fat Loss</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="user-review-content">
+                                                            <h3>Muscle Building</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>Fat Loss</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>Increase Strength</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mt-5">
-                                        <a href="#">
-                                            <img src="https://via.placeholder.com/500x400/09f/fff?Tool Box">
-                                        </a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="diet_plans">
+                                <div class="row mt-4">
+                                    <div class="col-lg-6">
+                                        <div class="video overlay btn-round">
+                                            <img src="https://via.placeholder.com/1200x700" class="img-fluid" alt="">
+                                            <div class="video-button sm">
+                                                <a data-fancybox="" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="video btn-round new">
+                                            <div class="upload">
+                                                <h3>Upload your Video</h3>
+                                                <ul class="mt-4">
+                                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                                </ul>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                <a href="#" class="btn btn-outline-primary mt-3">Upload Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card my-5">
+                                    <div class="card-body">
+                                    <form class="form">
+                                        <div class="row gutters-1">
+                                            <div class="col-lg col-md-3 form-group">
+                                                <label>Gender</label>
+                                                <select class="form-control">
+                                                    <option value="male">Male</option>
+                                                    <option value="female">Female</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg col-md-3 form-group">
+                                                <label>Diet</label>
+                                                <select class="form-control">
+                                                    <option value="">Option 1</option>
+                                                    <option value="">Option 2</option>
+                                                    <option value="">Option 3</option>
+                                                    <option value="">Option 4</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg col-md-3 form-group">
+                                                <label>Goal</label>
+                                                <select class="form-control">
+                                                    <option value="">Option 1</option>
+                                                    <option value="">Option 2</option>
+                                                    <option value="">Option 3</option>
+                                                    <option value="">Option 4</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg col-md-3 form-group">
+                                                <label>Frequency</label>
+                                                <select class="form-control">
+                                                    <option value="">Option 1</option>
+                                                    <option value="">Option 2</option>
+                                                    <option value="">Option 3</option>
+                                                    <option value="">Option 4</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg">
+                                                <label class="d-none d-lg-block">&nbsp;</label>
+                                                <button class="btn btn-outline-primary btn-block">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    </div>
+                                </div>
+                                <div class="alert alert-info">
+                                    <strong>Disclaimer:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Quisque eu nibh ac arcu porttitor consectetur et sit amet nisi. Phasellussed justo vel nulla vestibulum dapibus. Curabitur consequat lacus risus, ac tempus metus porttitor a. Quisquelobortis faucibus mauris, et consequat eros vehicula a. Quisque hendrerit pharetra augue sed fermentum. Orci varius natoquepenatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur quis tellus interdum, rutrum mi id, consectetur est.
+                                </div>
+                                <div class="catWorkout">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2>Diet Plan Guides</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row gutters-2">
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="diet-detail.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="user-review-content">
+                                                            <h3>Clean Eating</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="diet-detail.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>IIFYM & Flexible Dieting</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="diet-detail.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>Ketogenic & Low Carb</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="diet-detail.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>Intermittent Fasting</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="diet-detail.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="user-review-content">
+                                                            <h3>Carb Cycling</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="diet-detail.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>Paleolithic (Paleo)</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="diet-detail.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="user-review-content">
+                                                            <h3>Mediterranean</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="diet-detail.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>Vegan, Vegetarian, & Pescatarian</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="diet-detail.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>Gluten Free</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="diet-detail.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>Zone</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2>Healthy Recipes</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row gutters-2">
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="user-review-content">
+                                                            <h3>Protein Shakes</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>Protein Bars</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>High Protein</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="user-review-content">
+                                                            <h3>Low Carb</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>Snacks</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>Vegetarian</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>Breakfast</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>Lunch</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>Dinner</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <a href="muscle-building.html" class="catBox">
+                                                        <div class="video btn-round">
+                                                            <img src="https://via.placeholder.com/800x500" alt="">
+                                                        </div>
+                                                        <div class="cat-content">
+                                                            <h3>BBQ/Grill</h3>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-9 col-md-8"> 
-                                <div class="alert alert-danger alert-dismissible fade show">
-                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
-                                    <h3>Want to upload your blog?</h3>
-                                    <ul class="mt-4">
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                    </ul>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <a href="#" class="btn btn-outline-primary">Upload Now</a>
-                                </div>
-                                <div class="blog">
-                                    <div class="blog-item">
-                                        <div class="blog-thumbnail">
-                                            <img src="https://via.placeholder.com/500x300">
-                                        </div>
-                                        <div class="blog-content">
-                                            <div class="blog-meta">
-                                                <span class="date">Dec 17, 2020</span> <a href="#">Fitness Product</a>
+                            <div class="tab-pane fade" id="articles">
+                                <div class="row mt-5">
+                                    <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                                        <div id="accordion">
+                                            <div class="widget">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h2 class="card-title d-flex justify-content-between align-items-center">Category
+                                                            <a data-toggle="collapse" href="#category">
+                                                                <i class="fa fa-chevron-down"></i>
+                                                            </a>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="category" class="collapse show">
+                                                        <div class="card-body">
+                                                            <div class="custom-checkbox custom-checkbox-block">
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div class="checkboxes">
+                                                                        <label>
+                                                                            <input type="checkbox" class="form-check-input" name="category">
+                                                                            <i class="form-icon"></i> Advice
+                                                                        </label>
+                                                                    </div>
+                                                                    <div>12</div>
+                                                                </div>
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div class="checkboxes">
+                                                                        <label>
+                                                                            <input type="checkbox" class="form-check-input" name="category">
+                                                                            <i class="form-icon"></i> Food Supplements
+                                                                        </label>
+                                                                    </div>
+                                                                    <div>22</div>
+                                                                </div>
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div class="checkboxes">
+                                                                        <label>
+                                                                            <input type="checkbox" class="form-check-input" name="category">
+                                                                            <i class="form-icon"></i> Training
+                                                                        </label>
+                                                                    </div>
+                                                                    <div>23</div>
+                                                                </div>
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div class="checkboxes">
+                                                                        <label>
+                                                                            <input type="checkbox" class="form-check-input" name="category">
+                                                                            <i class="form-icon"></i> Lifestyle
+                                                                        </label>
+                                                                    </div>
+                                                                    <div>10</div>
+                                                                </div>
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div class="checkboxes">
+                                                                        <label>
+                                                                            <input type="checkbox" class="form-check-input" name="category">
+                                                                            <i class="form-icon"></i> Nutrition
+                                                                        </label>
+                                                                    </div>
+                                                                    <div>15</div>
+                                                                </div>
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div class="checkboxes">
+                                                                        <label>
+                                                                            <input type="checkbox" class="form-check-input" name="category">
+                                                                            <i class="form-icon"></i> Health
+                                                                        </label>
+                                                                    </div>
+                                                                    <div>17</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <h3><a href="blog-detail.html">Muscleblaze whey gol</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                            <div>
-                                                <a href="blog-detail.html" class="btn btn-outline-primary">Continue Reading <i class="la la-arrow-right"></i></a>
+                                            <div class="widget">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h2 class="card-title d-flex justify-content-between align-items-center">Most Visited
+                                                            <a data-toggle="collapse" href="#mostVisited">
+                                                                <i class="fa fa-chevron-down"></i>
+                                                            </a>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="mostVisited" class="collapse show">
+                                                        <div class="card-body">
+                                                            <div class="recent-post">
+                                                                <div class="recent-post-item">
+                                                                    <a href="blog-detail.html">Looking thinner but at a 7 heavier weight? Is that possible?</a>
+                                                                    <p>17/04/2020</p>
+                                                                </div>
+                                                                <div class="recent-post-item">
+                                                                    <a href="blog-detail.html">Looking thinner but at a 7 heavier weight? Is that possible?</a>
+                                                                    <p>17/04/2020</p>
+                                                                </div>
+                                                                <div class="recent-post-item">
+                                                                    <a href="blog-detail.html">Looking thinner but at a 7 heavier weight? Is that possible?</a>
+                                                                    <p>17/04/2020</p>
+                                                                </div>
+                                                                <div class="recent-post-item">
+                                                                    <a href="blog-detail.html">Looking thinner but at a 7 heavier weight? Is that possible?</a>
+                                                                    <p>17/04/2020</p>
+                                                                </div>
+                                                                <div class="recent-post-item">
+                                                                    <a href="blog-detail.html">Looking thinner but at a 7 heavier weight? Is that possible?</a>
+                                                                    <p>17/04/2020</p>
+                                                                </div>
+                                                                <a href="#" class="btn btn-outline-primary btn-block mt-5">View more popular items</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-5">
+                                                <a href="#">
+                                                    <img src="https://via.placeholder.com/500x400/09f/fff?Tool Box">
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="blog-item">
-                                        <div class="blog-thumbnail">
-                                            <img src="https://via.placeholder.com/500x300">
+                                    <div class="col-lg-9 col-md-8"> 
+                                        <div class="alert alert-danger alert-dismissible fade show">
+                                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                            <h3>Want to upload your blog?</h3>
+                                            <ul class="mt-4">
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                            </ul>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <a href="#" class="btn btn-outline-primary">Upload Now</a>
                                         </div>
-                                        <div class="blog-content">
-                                            <div class="blog-meta">
-                                                <span class="date">Dec 17, 2020</span> <a href="#">Fitness Product</a>
+                                        <div class="blog">
+                                            <div class="blog-item">
+                                                <div class="blog-thumbnail">
+                                                    <img src="https://via.placeholder.com/500x300">
+                                                </div>
+                                                <div class="blog-content">
+                                                    <div class="blog-meta">
+                                                        <span class="date">Dec 17, 2020</span> <a href="#">Fitness Product</a>
+                                                    </div>
+                                                    <h3><a href="blog-detail.html">Muscleblaze whey gol</a></h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                    <div>
+                                                        <a href="blog-detail.html" class="btn btn-outline-primary">Continue Reading <i class="la la-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <h3><a href="blog-detail.html">Muscleblaze whey gol</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                            <div>
-                                                <a href="blog-detail.html" class="btn btn-outline-primary">Continue Reading <i class="la la-arrow-right"></i></a>
+                                            <div class="blog-item">
+                                                <div class="blog-thumbnail">
+                                                    <img src="https://via.placeholder.com/500x300">
+                                                </div>
+                                                <div class="blog-content">
+                                                    <div class="blog-meta">
+                                                        <span class="date">Dec 17, 2020</span> <a href="#">Fitness Product</a>
+                                                    </div>
+                                                    <h3><a href="blog-detail.html">Muscleblaze whey gol</a></h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                    <div>
+                                                        <a href="blog-detail.html" class="btn btn-outline-primary">Continue Reading <i class="la la-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="blog-item">
+                                                <div class="blog-thumbnail">
+                                                    <img src="https://via.placeholder.com/500x300">
+                                                </div>
+                                                <div class="blog-content">
+                                                    <div class="blog-meta">
+                                                        <span class="date">Dec 17, 2020</span> <a href="#">Fitness Product</a>
+                                                    </div>
+                                                    <h3><a href="blog-detail.html">Muscleblaze whey gol</a></h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                    <div>
+                                                        <a href="blog-detail.html" class="btn btn-outline-primary">Continue Reading <i class="la la-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="blog-item">
+                                                <div class="blog-thumbnail">
+                                                    <img src="https://via.placeholder.com/500x300">
+                                                </div>
+                                                <div class="blog-content">
+                                                    <div class="blog-meta">
+                                                        <span class="date">Dec 17, 2020</span> <a href="#">Fitness Product</a>
+                                                    </div>
+                                                    <h3><a href="blog-detail.html">Muscleblaze whey gol</a></h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                    <div>
+                                                        <a href="blog-detail.html" class="btn btn-outline-primary">Continue Reading <i class="la la-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="blog-item">
+                                                <div class="blog-thumbnail">
+                                                    <img src="https://via.placeholder.com/500x300">
+                                                </div>
+                                                <div class="blog-content">
+                                                    <div class="blog-meta">
+                                                        <span class="date">Dec 17, 2020</span> <a href="#">Fitness Product</a>
+                                                    </div>
+                                                    <h3><a href="blog-detail.html">Muscleblaze whey gol</a></h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                    <div>
+                                                        <a href="blog-detail.html" class="btn btn-outline-primary">Continue Reading <i class="la la-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-center mt-5 w-100">
+                                                <a href="#" class="btn btn-outline-primary text-uppercase">Load More</a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="blog-item">
-                                        <div class="blog-thumbnail">
-                                            <img src="https://via.placeholder.com/500x300">
-                                        </div>
-                                        <div class="blog-content">
-                                            <div class="blog-meta">
-                                                <span class="date">Dec 17, 2020</span> <a href="#">Fitness Product</a>
-                                            </div>
-                                            <h3><a href="blog-detail.html">Muscleblaze whey gol</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                            <div>
-                                                <a href="blog-detail.html" class="btn btn-outline-primary">Continue Reading <i class="la la-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item">
-                                        <div class="blog-thumbnail">
-                                            <img src="https://via.placeholder.com/500x300">
-                                        </div>
-                                        <div class="blog-content">
-                                            <div class="blog-meta">
-                                                <span class="date">Dec 17, 2020</span> <a href="#">Fitness Product</a>
-                                            </div>
-                                            <h3><a href="blog-detail.html">Muscleblaze whey gol</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                            <div>
-                                                <a href="blog-detail.html" class="btn btn-outline-primary">Continue Reading <i class="la la-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item">
-                                        <div class="blog-thumbnail">
-                                            <img src="https://via.placeholder.com/500x300">
-                                        </div>
-                                        <div class="blog-content">
-                                            <div class="blog-meta">
-                                                <span class="date">Dec 17, 2020</span> <a href="#">Fitness Product</a>
-                                            </div>
-                                            <h3><a href="blog-detail.html">Muscleblaze whey gol</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                            <div>
-                                                <a href="blog-detail.html" class="btn btn-outline-primary">Continue Reading <i class="la la-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-center mt-5 w-100">
-                                        <a href="#" class="btn btn-outline-primary text-uppercase">Load More</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                      </div>  
+                    <div class="mt-5">
+                        <div class="refer-widget media">
+                            <div class="d-flex">
+                                <i class="la la-weight"></i>
+                            </div>
+                            <div class="media-body mr-3">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary">Calculate</a>
+                        </div>
                     </div>
-                </div>
-              </div>  
-            <div class="mt-5">
-                <div class="refer-widget media">
-                    <div class="d-flex">
-                        <i class="la la-weight"></i>
-                    </div>
-                    <div class="media-body mr-3">
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing</span>
-                    </div>
-                    <a href="#" class="btn btn-outline-primary">Calculate</a>
                 </div>
             </div>
         </div>
