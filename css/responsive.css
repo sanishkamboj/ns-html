@@ -485,10 +485,16 @@
     .navigation ul li.search input[type="text"] {
         width: 360px;
     }
+    .premium-price {
+        font-size: inherit;
+    }
 }
 @media (min-width: 1400px) {
     .navigation ul li.search input[type="text"] {
-        width: 400px;
+        width: 380px;
+    }
+    .premium-price {
+        font-size: 12px;
     }
 }
 @media (min-width:1600px) {

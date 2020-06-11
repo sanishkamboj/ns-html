@@ -2460,6 +2460,15 @@ footer h3 {
     opacity: 1;
     left: -5px;
 }
+.user-menu .dropdown-menu {
+    width: 250px;
+}
+.user-menu .btn-outline-primary {
+    color: #dd121f;
+}
+.user-menu .btn-outline-primary:hover {
+    color: #fff;
+}
 .mini-cart .dropdown-menu {
     width: 300px;
 }
