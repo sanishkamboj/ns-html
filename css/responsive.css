@@ -362,6 +362,23 @@
     .icon-tabs .nav-link span {
         display: block;
     }
+    .charity-winner {
+        margin: 100px 0;
+        background-size: 125%;
+    }
+    .charity-winner .winner {
+        transform: scale(1);
+        margin-bottom: 60px;
+    }
+    .charity-winner .leaf {
+        bottom: -44px;
+    }
+    .total-charity .hashtag {
+        width: 350px;
+    }
+    .total-charity p {
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 992px) {
