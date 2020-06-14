@@ -16,6 +16,7 @@
     <link href="css/owl/owl.carousel.min.css" type="text/css" rel="stylesheet" />
     <link href="css/owl/owl.theme.default.min.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/nobleclem/jQuery-MultiSelect/master/jquery.multiselect.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/custom-slider.css">
@@ -43,17 +44,28 @@
                         <li class="mega-menu cat">
                             <a href="#"><span class="las la-store-alt"></span> Store</a>
                             <ul class="sub-mega-menu">
-                                <div class="nav flex-column nav-pills" role="tablist">
+                                <!-- <div class="nav flex-column nav-pills" role="tablist">
                                     <a class="nav-link active" data-toggle="pill" href="#news-0" role="tab" aria-expanded="true">Best Sellers</a>
                                     <a class="nav-link" data-toggle="pill" href="#news-1" role="tab" aria-expanded="false">Promos</a>
                                     <a class="nav-link" data-toggle="pill" href="#news-2" role="tab" aria-expanded="false">New</a>
                                     <a class="nav-link" data-toggle="pill" href="#news-3" role="tab" aria-expanded="false">Discovery Boxes</a>
-                                </div>
+                                </div> -->
 
                                 <div class="tab-content">
                                     <div class="tab-pane active" id="news-0" role="tabpanel" aria-expanded="true">
+                                        <div class="search my-4">
+                                            <form method="post" action="#">
+                                                <div class="input-group">
+                                                    <input type="text" name="" class="form-control" placeholder="Search Products">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary" type="submit">Search</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
                                         <div class="row">
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">Protein</li>
                                                     <li><a href="#">Casein</a></li>
@@ -63,14 +75,14 @@
                                                     <li><a href="#">Whey</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">Bars</li>
                                                     <li><a href="#">Energy</a></li>
                                                     <li><a href="#">Protein</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">Amino Acids</li>
                                                     <li><a href="#">Liquid</a></li>
@@ -78,7 +90,7 @@
                                                     <li><a href="#">Powders</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">Drinks</li>
                                                     <li><a href="#">Energy</a></li>
@@ -87,7 +99,7 @@
                                                     <li><a href="#">L-Carnitine</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">Vitamins</li>
                                                     <li><a href="#">Capsules</a></li>
@@ -95,7 +107,7 @@
                                                     <li><a href="#">Shots</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">L-Carnitine</li>
                                                     <li><a href="#">Ready to drink</a></li>
@@ -103,28 +115,7 @@
                                                     <li><a href="#">Shots</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
-                                                <ul class="list-inline">
-                                                    <li class="menu-title">Fat Burner</li>
-                                                    <li><a href="#">Capsules</a></li>
-                                                    <li><a href="#">Liquid</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-4">
-                                                <ul class="list-inline">
-                                                    <li class="menu-title">Accessories</li>
-                                                    <li><a href="#">Belts</a></li>
-                                                    <li><a href="#">Gloves</a></li>
-                                                    <li><a href="#">Others</a></li>
-                                                    <li><a href="#">Shakers</a></li>
-                                                    <li><a href="#">T-shirts</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="news-1" role="tabpanel" aria-expanded="false">
-                                        <div class="row">
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">Protein</li>
                                                     <li><a href="#">Casein</a></li>
@@ -134,77 +125,132 @@
                                                     <li><a href="#">Whey</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">Bars</li>
                                                     <li><a href="#">Energy</a></li>
                                                     <li><a href="#">Protein</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">Amino Acids</li>
                                                     <li><a href="#">Liquid</a></li>
                                                     <li><a href="#">Capsules</a></li>
                                                     <li><a href="#">Powders</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Drinks</li>
+                                                    <li><a href="#">Energy</a></li>
+                                                    <li><a href="#">Protein</a></li>
+                                                    <li><a href="#">Amino Acids</a></li>
+                                                    <li><a href="#">L-Carnitine</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Vitamins</li>
+                                                    <li><a href="#">Capsules</a></li>
+                                                    <li><a href="#">Ready to drink</a></li>
+                                                    <li><a href="#">Shots</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">L-Carnitine</li>
+                                                    <li><a href="#">Ready to drink</a></li>
+                                                    <li><a href="#">Capsules</a></li>
+                                                    <li><a href="#">Shots</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane" id="news-2" role="tabpanel" aria-expanded="false">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <ul class="list-inline">
-                                                    <li class="menu-title">Protein</li>
-                                                    <li><a href="#">Casein</a></li>
-                                                    <li><a href="#">Gainer</a></li>
-                                                    <li><a href="#">Isolate</a></li>
-                                                    <li><a href="#">Vegan</a></li>
-                                                    <li><a href="#">Whey</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-4">
-                                                <ul class="list-inline">
-                                                    <li class="menu-title">Bars</li>
-                                                    <li><a href="#">Energy</a></li>
-                                                    <li><a href="#">Protein</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-4">
-                                                <ul class="list-inline">
-                                                    <li class="menu-title">Amino Acids</li>
-                                                    <li><a href="#">Liquid</a></li>
-                                                    <li><a href="#">Capsules</a></li>
-                                                    <li><a href="#">Powders</a></li>
-                                                </ul>
-                                            </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="mega-menu cat">
+                            <a href="#">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
+                                    <g>
+                                        <path d="M77.1,11.2H22.9c-6.4,0-11.6,5.2-11.6,11.6v54.3c0,6.4,5.2,11.6,11.6,11.6h54.3c6.4,0,11.6-5.2,11.6-11.6V22.9C88.8,16.5,83.5,11.2,77.1,11.2z M83.9,76.2c0,4.3-3.5,7.8-7.8,7.8H23.8c-4.3,0-7.8-3.5-7.8-7.8V23.8c0-4.3,3.5-7.8,7.8-7.8h52.3c4.3,0,7.8,3.5,7.8,7.8V76.2z"/>
+                                        <path d="M41.8,3.4L3.4,41.8c-4.5,4.5-4.5,11.9,0,16.4l38.4,38.4c4.5,4.5,11.9,4.5,16.4,0l38.4-38.4c4.5-4.5,4.5-11.9,0-16.4L58.2,3.4C53.7-1.1,46.3-1.1,41.8,3.4z M92.5,44.5c3,3,3,8,0,11l-37,37c-3,3-8,3-11,0l-37-37c-3-3-3-8,0-11l37-37c3-3,8-3,11,0L92.5,44.5z"/>
+                                    </g>
+                                    <g>
+                                        <path d="M42.9,37.5c2,1.3,3.5,3.1,4.7,5.4c1.1,2.3,1.7,4.9,1.7,7.9c0,2.9-0.6,5.6-1.7,7.9c-1.2,2.3-2.7,4.2-4.7,5.5c-2,1.3-4.2,2-6.6,2c-2.4,0-4.6-0.7-6.6-2c-2-1.3-3.5-3.1-4.7-5.5c-1.2-2.3-1.7-5-1.7-7.9c0-2.9,0.6-5.6,1.7-7.9c1.2-2.3,2.7-4.1,4.7-5.4c2-1.3,4.2-2,6.6-2C38.7,35.5,40.9,36.2,42.9,37.5z M31.4,44.5c-1.2,1.5-1.8,3.6-1.8,6.3c0,2.6,0.6,4.7,1.8,6.2c1.2,1.5,2.8,2.3,4.9,2.3c2,0,3.6-0.8,4.8-2.3c1.2-1.5,1.8-3.6,1.8-6.2c0-2.6-0.6-4.7-1.8-6.2c-1.2-1.5-2.8-2.3-4.9-2.3C34.2,42.2,32.6,43,31.4,44.5z"/>
+                                        <path d="M75.7,65.8h-6.2L59,47.5v18.3h-6.2V36H59l10.4,18.5V36h6.2V65.8z"/>
+                                    </g>
+                                </svg>
+                                Brand
+                            </a>
+                            <ul class="sub-mega-menu">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" role="tabpanel" aria-expanded="true">
+                                        <div class="search my-4">
+                                            <form method="post" action="#">
+                                                <div class="input-group">
+                                                    <input type="text" name="" class="form-control" placeholder="Search Brands">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary" type="submit">Search</button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
-                                    </div>
-                                    <div class="tab-pane" id="news-3" role="tabpanel" aria-expanded="false">
+
                                         <div class="row">
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
-                                                    <li class="menu-title">Protein</li>
-                                                    <li><a href="#">Casein</a></li>
-                                                    <li><a href="#">Gainer</a></li>
-                                                    <li><a href="#">Isolate</a></li>
-                                                    <li><a href="#">Vegan</a></li>
-                                                    <li><a href="#">Whey</a></li>
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">Brand 5</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
-                                                    <li class="menu-title">Bars</li>
-                                                    <li><a href="#">Energy</a></li>
-                                                    <li><a href="#">Protein</a></li>
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">Brand 5</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
-                                                    <li class="menu-title">Amino Acids</li>
-                                                    <li><a href="#">Liquid</a></li>
-                                                    <li><a href="#">Capsules</a></li>
-                                                    <li><a href="#">Powders</a></li>
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">Brand 5</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">Brand 5</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">Brand 5</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">View More</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -253,53 +299,6 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="mega-menu">
-                            <a href="#">
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M77.1,11.2H22.9c-6.4,0-11.6,5.2-11.6,11.6v54.3c0,6.4,5.2,11.6,11.6,11.6h54.3c6.4,0,11.6-5.2,11.6-11.6V22.9C88.8,16.5,83.5,11.2,77.1,11.2z M83.9,76.2c0,4.3-3.5,7.8-7.8,7.8H23.8c-4.3,0-7.8-3.5-7.8-7.8V23.8c0-4.3,3.5-7.8,7.8-7.8h52.3c4.3,0,7.8,3.5,7.8,7.8V76.2z"/>
-                                        <path d="M41.8,3.4L3.4,41.8c-4.5,4.5-4.5,11.9,0,16.4l38.4,38.4c4.5,4.5,11.9,4.5,16.4,0l38.4-38.4c4.5-4.5,4.5-11.9,0-16.4L58.2,3.4C53.7-1.1,46.3-1.1,41.8,3.4z M92.5,44.5c3,3,3,8,0,11l-37,37c-3,3-8,3-11,0l-37-37c-3-3-3-8,0-11l37-37c3-3,8-3,11,0L92.5,44.5z"/>
-                                    </g>
-                                    <g>
-                                        <path d="M42.9,37.5c2,1.3,3.5,3.1,4.7,5.4c1.1,2.3,1.7,4.9,1.7,7.9c0,2.9-0.6,5.6-1.7,7.9c-1.2,2.3-2.7,4.2-4.7,5.5c-2,1.3-4.2,2-6.6,2c-2.4,0-4.6-0.7-6.6-2c-2-1.3-3.5-3.1-4.7-5.5c-1.2-2.3-1.7-5-1.7-7.9c0-2.9,0.6-5.6,1.7-7.9c1.2-2.3,2.7-4.1,4.7-5.4c2-1.3,4.2-2,6.6-2C38.7,35.5,40.9,36.2,42.9,37.5z M31.4,44.5c-1.2,1.5-1.8,3.6-1.8,6.3c0,2.6,0.6,4.7,1.8,6.2c1.2,1.5,2.8,2.3,4.9,2.3c2,0,3.6-0.8,4.8-2.3c1.2-1.5,1.8-3.6,1.8-6.2c0-2.6-0.6-4.7-1.8-6.2c-1.2-1.5-2.8-2.3-4.9-2.3C34.2,42.2,32.6,43,31.4,44.5z"/>
-                                        <path d="M75.7,65.8h-6.2L59,47.5v18.3h-6.2V36H59l10.4,18.5V36h6.2V65.8z"/>
-                                    </g>
-                                </svg>
-                                Brand
-                            </a>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <img src="https://via.placeholder.com/250x150">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="https://via.placeholder.com/250x150">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="https://via.placeholder.com/250x150">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="https://via.placeholder.com/250x150">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="https://via.placeholder.com/250x150">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="https://via.placeholder.com/250x150">
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
                         <li class="mega-menu offer">
                             <a href="#">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
@@ -342,7 +341,33 @@
                             </ul>
                         </li>
                         <li><a href="#"><span class="lar la-edit"></span> i-Nutrition</a></li>
-                        <li><a href="workout.html"><span class="las la-dumbbell"></span> Workouts</a></li>
+                        <li class="sub-menu sm">
+                            <a href="workout.html"><span class="las la-dumbbell"></span> Workouts</a>
+                            <div class="dropdown-menu">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul>
+                                            <li><a href="workout-plans.html" class="title">Workout Plan</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul>
+                                            <li><a href="diet-plans.html" class="title">Diet Plan</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <li><a href="franchise.html"><span class="las la-warehouse"></span> Franchise</a></li>
                         <li><a href="#"><span class="las la-question"></span> Why us</a></li>
                     </ul>
@@ -350,13 +375,38 @@
                         <li class="search">
                             <div class="search-box">
                                 <form method="post">
-                                    <input type="text" name="search" id="search" class="search" placeholder="search for products, Brand and more" />
+                                    <input type="text" name="search" id="search" class="search" placeholder="Search for Products, Brand and more" />
                                     <input type="submit" value="&#xf002" />
                                 </form>
                             </div>
                         </li>
-                        <li><a href="#"><span class="lar la-user"></span> Profile</a></li>
-                        <li class="dropdown mini-cart"><a href="#"><span class="las la-shopping-bag"></span> Cart  <strong>2</strong></a>
+                        <li class="sub-menu user-menu">
+                            <a href="#"><span class="lar la-user"></span> Profile</a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <h3 class="title">Welcome</h3>
+                                <p>To access account and manage orders</p>
+                                <div class="row gutters-1">
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-outline-primary btn-block">Sign in</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-outline-primary btn-block">Sign up</a>
+                                    </div>
+                                </div>
+                                <hr class="mt-4">
+                                <ul>
+                                    <li><a href="#">My Profile</a></li>
+                                    <li><a href="#">Order</a></li>
+                                    <li><a href="#">Wishlist</a></li>
+                                    <li><hr></li>
+                                    <li><a href="#">Coupons</a></li>
+                                    <li><a href="#">Referrals</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sub-menu mini-cart">
+                            <a href="#"><span class="las la-shopping-bag"></span> Cart <strong>2</strong></a>
                             <div class="dropdown-menu dropdown-menu-right">
                                 <div class="mini-cart-item">
                                     <div class="product_image">
@@ -383,9 +433,9 @@
                                     </div>
                                 </div>
                                 <div class="total_drop">
-                                    <div class="clearfix total_value">
+                                    <div class="total_value">
                                         <span>Total</span>
-                                        <span class="align-right">$200.00</span>
+                                        <span class="fw-600"><i class="la la-rupee-sign"></i>200.00</span>
                                     </div>
                                     <div class="checkout">
                                         <a href="cart.html" class="btn btn-outline-primary btn-block">View Cart</a>
@@ -469,7 +519,7 @@
                 </div>
                 <div class="left_side_toogle_menu col-3 text-right">
                     <ul>
-                        <li><a href="#"><i class="lar la-user"></i></a></li>
+                        <li><a href="user-account.html"><i class="lar la-user"></i></a></li>
                         <li><a href="cart.html"><span class="cart-count">2</span><i class="las la-shopping-bag"></i></a></li>
                     </ul>
                 </div>
@@ -477,7 +527,7 @@
             <div class="search">
                 <form method="post" action="#">
                     <div class="input-group">
-                        <input type="text" name="" class="form-control" placeholder="search for products, Brand and more">
+                        <input type="text" name="" class="form-control" placeholder="Search for Products, Brand and more">
                         <div class="input-group-append">
                             <button class="btn btn-primary" type="submit"><i class="las la-search"></i></button>
                         </div>
@@ -488,14 +538,14 @@
         <!--/Mobile Navigation-->
     </header>
     <!--header end here-->
-    
+
     <!--breadcrumb content-->
     <section class="breadcrumb-wrapper">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="home.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Franchise</li>
+                    <li class="breadcrumb-item active" aria-current="page">Charity</li>
                 </ol>
             </nav>
         </div>
@@ -503,20 +553,14 @@
     <!--breadcrumb content end here-->
     <section class="header-img">
         <img src="https://via.placeholder.com/1920x400">
-        <h2 class="title">NS Franchise</h2>
+        <h2 class="title">1% NS Charity</h2>
     </section>
 
     <section class="py-5 jobs">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <div class="row flex-md-row flex-column-reverse">
-                        <div class="col-md-6">
-                            <h2>Get a Nutrition Systems Supplement Store Franchise</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <a href="javascript:" class="btn btn-outline-primary page-scroll" data-target="#enquiryForm">Apply Now</a>
-                        </div>
+                    <div class="row">
                         <div class="col-md-6">
                             <div class="video overlay btn-round mt-0">
                                 <img src="https://via.placeholder.com/1200x700" class="img-fluid" alt="">
@@ -527,81 +571,22 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <h2>What is 1% NS Support/Community</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
                     </div>
-                    <div class="row gutters-2 my-5">
-                        <div class="col-12">
-                            <h2 class="fw-700">Our USP's</h2>
-                            <hr>
-                        </div>
-                        <div class="col-md-4 my-3">
-                            <a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
-                                <img src="https://via.placeholder.com/1920x1080" class="btn-round" alt="">
-                            </a>
-                            <div class="mt-4">
-                                <h3 class="fw-600">Lorem Ipsum doler</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 my-3">
-                            <a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
-                                <img src="https://via.placeholder.com/1920x1080" class="btn-round" alt="">
-                            </a>
-                            <div class="mt-4">
-                                <h3 class="fw-600">Lorem Ipsum doler</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 my-3">
-                            <a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
-                                <img src="https://via.placeholder.com/1920x1080" class="btn-round" alt="">
-                            </a>
-                            <div class="mt-4">
-                                <h3 class="fw-600">Lorem Ipsum doler</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 my-3">
-                            <a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
-                                <img src="https://via.placeholder.com/1920x1080" class="btn-round" alt="">
-                            </a>
-                            <div class="mt-4">
-                                <h3 class="fw-600">Lorem Ipsum doler</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 my-3">
-                            <a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
-                                <img src="https://via.placeholder.com/1920x1080" class="btn-round" alt="">
-                            </a>
-                            <div class="mt-4">
-                                <h3 class="fw-600">Lorem Ipsum doler</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 my-3">
-                            <a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
-                                <img src="https://via.placeholder.com/1920x1080" class="btn-round" alt="">
-                            </a>
-                            <div class="mt-4">
-                                <h3 class="fw-600">Lorem Ipsum doler</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
+                    <div class="my-5">
+                        <img src="https://via.placeholder.com/1920x400?text=Health charity related image" class="btn-round" alt="">
                     </div>
                     <div class="row">
                         <div class="col-12 my-3">
-                            <h2 class="fw-700">Benefits of having NS Franchise</h2>
+                            <h2 class="fw-700">Why we are doing this</h2>
                             <hr>
                         </div>
                         <div class="col-md-6">
-                            <div class="video overlay btn-round mt-0 height">
-                                <img src="https://via.placeholder.com/1200x700" class="img-fluid" alt="">
-                                <div class="video-button sm">
-                                    <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
-                                        <i class="fa fa-play"></i>
-                                    </a>
-                                </div>
-                            </div>
+                            <img src="https://via.placeholder.com/1200x700" class="btn-round mb-3" alt="">
                         </div>
                         <div class="col-md-6">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -611,153 +596,107 @@
                     </div>
                     <div class="row my-5">
                         <div class="col-12 my-3">
-                            <h2 class="fw-700">Nutrition Systems profile and requirements</h2>
+                            <h2 class="fw-700">How does it works and impact the Health & Fitness community</h2>
                             <hr>
                         </div>
                         <div class="col-md-6">
-                            <div class="video overlay btn-round mt-0 height">
-                                <img src="https://via.placeholder.com/1200x700" class="img-fluid" alt="">
-                                <div class="video-button sm">
-                                    <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
-                                        <i class="fa fa-play"></i>
-                                    </a>
+                            <img src="https://via.placeholder.com/1200x700" class="btn-round mb-3" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 my-3">
+                            <img src="https://via.placeholder.com/1200x700" class="btn-round mb-3" alt="">
+                            <div class="mt-4">
+                                <h3 class="fw-600">Lorem Ipsum doler</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <img src="https://via.placeholder.com/1200x700" class="btn-round mb-3" alt="">
+                            <div class="mt-4">
+                                <h3 class="fw-600">Lorem Ipsum doler</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <img src="https://via.placeholder.com/1200x700" class="btn-round mb-3" alt="">
+                            <div class="mt-4">
+                                <h3 class="fw-600">Lorem Ipsum doler</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-5">
+                        <div class="charity-winner">
+                            <div class="winner">
+                                <img src="img/golden-leaf.svg" class="leaf" alt="">
+                                <img src="https://avatars0.githubusercontent.com/u/27196542?s=460&u=dae32e07729ede5f87566406d03136751ae79308&v=4" class="winner-image" alt="">
+                                <img src="img/golden-leaf.svg" class="leaf right" alt="">
+                            </div>
+                            <h3>Winner of the Month</h3>
+                            <h2>June 2020</h2>
+                        </div>
+                    </div>
+                    <div class="row align-items-lg-center">
+                        <div class="col-lg-5 col-md-6 mb-5 mb-lg-0">
+                            <div class="total-charity">
+                                <div class="content">
+                                    <div class="hashtag">#DilMangeOriginal</div>
+                                    <p>Help more than 200 people around the<br class="d-none d-md-block"> globle by January 1st 2020.</p>
+                                    <h2><i class="la la-rupee-sign"></i>5,200.00</h2>
+                                    <span class="text-uppercase">Total Donation</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div>
-                    <div class="row gutters-2 mb-5">
-                        <div class="col-12">
-                            <h2 class="fw-700">Store Concept Design</h2>
-                            <hr>
-                        </div>
-                        <div class="col-md-6 my-3">
-                            <a data-fancybox="Storegallery" href="https://via.placeholder.com/1920x1080">
-                                <img src="https://via.placeholder.com/1920x1080" class="btn-round" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md-6 my-3">
-                            <a data-fancybox="Storegallery" href="https://via.placeholder.com/1920x1080">
-                                <img src="https://via.placeholder.com/1920x1080" class="btn-round" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md-6 my-3">
-                            <a data-fancybox="Storegallery" href="https://via.placeholder.com/1920x1080">
-                                <img src="https://via.placeholder.com/1920x1080" class="btn-round" alt="">
-                            </a>
-                        </div>
-                        <div class="col-md-6 my-3">
-                            <a data-fancybox="Storegallery" href="https://via.placeholder.com/1920x1080">
-                                <img src="https://via.placeholder.com/1920x1080" class="btn-round" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row" id="enquiryForm">
-                        <div class="col-md-6">
-                            <h2 class="fw-700">About Us</h2>
-                            <p>Nutrition Systems is looking forward to expanding its operations through brick and mortar stores on a pan india scale with the help of franchising</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                        <div class="col-md-6 mt-3 mt-md-0">
-                            <div class="alert alert-danger">
-                                <h2>Franchise Facts</h2>
-                                <p class="text-lg"><span class="fw-600">Area Required</span> – 200-250 Sq. Ft.</p>
-                                <p class="text-lg"><span class="fw-600">Total Investment</span> – INR 10 to 12 Lakhs</p>
-                                <p class="text-lg"><span class="fw-600">Payback Period</span> – 1 to 1.5 Years</p>
+                        <div id="SVGNonStandardHeroShape" class="col-lg-7 col-md-6">
+                            <div class="px-lg-5">
+                                <!-- SVG Illustration -->
+                                <figure class="ie-non-standard-hero-shape">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 878.9 907" style="enable-background:new 0 0 878.9 907;" xml:space="preserve" class="injected-svg js-svg-injector" data-img-paths="[
+                                        {&quot;targetId&quot;: &quot;#SVGNonStandardHeroShapeImg1&quot;, &quot;newPath&quot;: &quot;../../assets/img/900x900/img2.jpg&quot;},
+                                        {&quot;targetId&quot;: &quot;#SVGNonStandardHeroShapeImg2&quot;, &quot;newPath&quot;: &quot;../../assets/img/900x900/img2.jpg&quot;}
+                                        ]" data-parent="#SVGNonStandardHeroShape">
+                                        <style type="text/css">
+                                            .non-standard-her-shape-0{fill:none;stroke:#dd121f;}
+                                            .non-standard-her-shape-1{fill:#dd121f;}
+                                            .non-standard-her-shape-2{fill:none;stroke:#dd121f;}
+                                        </style>
+                                        <path class="non-standard-her-shape-0 fill-none stroke-success" stroke-width="4" stroke-miterlimit="10" d="M804.6,750.3c-0.1-1.9-1-3.6-2.5-4.7c-2.3-1.7-6.1-2.2-11.4,5.5c-8.4,12.2-0.5,11.7,0.6,11.6c0.1,0,0.2,0,0.3,0  l7.3-0.5c3.5-0.2,6.2-3.3,6-6.8L804.6,750.3z"></path>
+                                        <path class="non-standard-her-shape-1 fill-primary" opacity=".05" d="M120.7,273c-19.4-25.9-31.8-57.8-28.8-90.1c2.9-32.6,21.7-61.6,46.3-84.4c1.5-1.5,3.1-2.8,4.6-4.2  c32.1-28,70.1-49.7,110.7-65C308,8.9,367.1-0.5,425.4,0c72.3,0.6,146.5,15.1,206.8,52.7C677.1,80.6,712.7,120,736.5,165  c22.8,43.1,35.6,90.8,39.4,138.9C786.5,436.2,735.4,571,646.6,675c-38.6,45.1-84.5,84.8-135.5,117.4c-88.9,56.7-195.4,84.6-302,76.7  c-55.2-4.1-117.3-17.4-154.9-58.3C17,770.3,15.2,708.4,49.7,665c20.6-26,49.1-44.7,72.2-68.6c22.4-23.4,41.2-51.4,54.3-80.2  c13.5-29.6,20.8-61.7,18.8-93.7c0-1-0.1-2-0.2-3c-2.1-25-9.3-49.4-20.6-72.1c-11.3-22.8-28-40.7-43.4-61  C127.6,281.9,124.2,277.5,120.7,273z"></path>
+                                        <g>
+                                            <defs>
+                                                <path id="nonStandardHeroShapeID1" d="M208.7,289.2c-15.6-28.6-23.1-62.2-15.5-93.9c7.7-31.9,30.5-58.1,58.4-77.1c1.7-1.2,3.5-2.3,5.2-3.5    c35.9-23.1,76.8-39.2,119.3-48.4c57.1-12.3,117-13,174.9-3.9c71.7,11.3,143.2,36.6,197.6,82.8c40.4,34.3,70.1,78.8,87.1,127    c16.4,46.2,22.2,95.6,18.9,144c-8.8,133.1-79.1,259.8-182.4,350.1c-44.8,39.3-96.2,72-151.7,96.8    c-96.6,43.3-206.3,55.4-311,31.8c-54.3-12.2-114.1-34.4-145.4-80.7c-18-26.5-22.4-61.1-13.6-92c9.6-33.6,32.9-57.9,61.3-77    c29.4-19.7,58.4-38.6,83.3-64.1c23.1-23.8,42.5-51.5,54-82.7c2-5.3,3.7-10.7,5.2-16.2c10-36.7,8.3-75.3-3.5-111.4    c-7.8-24.4-21.8-44.5-34.2-67C214.1,299,211.3,294.1,208.7,289.2z"></path>
+                                            </defs>
+                                            <clipPath id="nonStandardHeroShapeID2">
+                                                <use xlink:href="#nonStandardHeroShapeID1" style="overflow:visible;"></use>
+                                            </clipPath>
+                                            <g clip-path="url(#nonStandardHeroShapeID2)">
+                                                <image id="SVGNonStandardHeroShapeImg1" style="overflow:visible;" width="900" height="900" xlink:href="img/charity.jpg" transform="matrix(0.9488 0 0 0.9488 25 53.1187)"></image>
+                                            </g>
+                                        </g>
+                                        <circle class="non-standard-her-shape-0 fill-none stroke-success" stroke-width="4" stroke-miterlimit="10" cx="164.9" cy="284.4" r="7"></circle>
+                                        <path class="non-standard-her-shape-2 fill-none stroke-primary" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" d="M668.2,76.1c0,0,257,93.1,123.1,570.9"></path>
+                                        <g>
+                                            <defs>
+                                                <path id="nonStandardHeroShapeID3" d="M169.4,334.7C211,368.7,234,428.8,227,481c-4.5,33.1-24.8,59.5-47.3,83.1c-16.6,17.4-35.2,32.7-54.9,46.4    c-6.9,4.8-14.9,11.2-23.4,11.5c-8.4,0.3-16.5-3.2-21.5-10.1c-3.6-4.9-5.1-10.9-4.6-16.9c0-0.4,0.1-0.9,0.1-1.4    c1.9-18.2,7.6-35.5,12.6-53c13.7-47.7,22.4-100.5,10.1-149.5c-5.1-20.3-11.8-52.5,4.9-69.8c13.3-13.7,34.4-7,48.7,1.1    C157.9,326,163.9,330.1,169.4,334.7z"></path>
+                                            </defs>
+                                            <clipPath id="nonStandardHeroShapeID4">
+                                                <use xlink:href="#nonStandardHeroShapeID3" style="overflow:visible;"></use>
+                                            </clipPath>
+                                            <g transform="matrix(1 0 0 1 0 0)" clip-path="url(#nonStandardHeroShapeID4)">
+                                                <image id="SVGNonStandardHeroShapeImg2" style="overflow:visible;" width="900" height="900" xlink:href="img/charity.jpg" transform="matrix(0.9488 0 0 0.9488 25 53.1187)"> </image>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </figure>
+                                <!-- End SVG Illustration -->
                             </div>
                         </div>
-                        <div class="col-12 mt-4">
-                            <h2 class="fw-700">Franchise Enquiry Form</h2>
-                            <hr>
-                        </div>
-                        <div class="col-12">
-                            <form class="form">
-                                <div class="row">
-                                    <div class="form-group col-lg-4 col-md-6">
-                                        <label>Name</label>
-                                        <input type="text" name="name" class="form-control">
-                                    </div>
-                                    <div class="form-group col-lg-4 col-md-6">
-                                        <label>Email</label>
-                                        <input type="email" name="email" class="form-control">
-                                    </div>
-                                    <div class="form-group col-lg-4 col-md-6">
-                                        <label>Phone</label>
-                                        <input type="text" name="phone" class="form-control">
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label>City</label>
-                                        <input type="text" name="city" class="form-control">
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label>Investment</label>
-                                        <select class="form-control">
-                                            <option value="">Select Your Investment</option>
-                                            <option value="10 to 15 Lakhs">10 to 15 Lakhs</option>
-                                            <option value="15 to 20 Lakhs">15 to 20 Lakhs</option>
-                                            <option value="20 to 25 Lakhs">20 to 25 Lakhs</option>
-                                            <option value="25 Lakhs & above">25 Lakhs & above</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label>Are you currently selling supplements?</label>
-                                        <div class="custom-radio mt-3">
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="form-check-input" name="sell_supplements" checked="checked">
-                                                    <i class="form-icon"></i> Yes
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="form-check-input" name="sell_supplements">
-                                                    <i class="form-icon"></i> No
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label>Do you own a supplement store?</label>
-                                        <div class="custom-radio mt-3">
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="form-check-input" name="supplements_store" checked="checked">
-                                                    <i class="form-icon"></i> Yes
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="form-check-input" name="supplements_store">
-                                                    <i class="form-icon"></i> No
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-12">
-                                        <label>Message</label>
-                                        <textarea class="form-control" rows="4"></textarea>
-                                    </div>
-                                    <div class="form-group col-12">
-                                        <button type="button" class="btn btn-outline-primary">Submit</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="mt-5">
-                        <h3>Lorem ipsum dolor sit</h3>
-                        <ul class="mt-4">
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
             </div>
@@ -874,6 +813,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://rawgit.com/nobleclem/jQuery-MultiSelect/master/jquery.multiselect.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/slider_function.js"></script>

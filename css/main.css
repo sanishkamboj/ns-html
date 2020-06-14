@@ -3259,7 +3259,6 @@ to {
 }
 .progress-bar {
     background-color: #dd121f;
-    border-radius: 50px;
 }
 .nutritions-info  .title {
     background-color: #DD121F;
@@ -4599,6 +4598,85 @@ a.catBox:hover .video img {
 .catDetail .catBox h3 {
     margin: 0;
     font-size: 14px;
+}
+.charity-winner {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/winner-bg.svg);
+    background-size: cover;
+    background-position: center;
+}
+.charity-winner .winner {
+    position: relative;
+    transform: scale(0.7);
+    margin-bottom: 10px;
+}
+.charity-winner .winner-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 24px rgba(0,0,0,0.2);
+}
+.charity-winner .leaf {
+    height: 313px;
+    position: absolute;
+    left: -55px;
+    bottom: -45px;
+}
+.charity-winner .leaf.right {
+    left: initial;
+    right: -55px;
+    transform: scaleX(-1);
+}
+.charity-winner h2 {
+    font-size: 26px;
+    font-weight: 800;
+}
+.total-charity {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.total-charity .content {
+    max-width: 600px;
+}
+.total-charity .hashtag {
+    font-size: 18px;
+    padding: 16px;
+    min-width: 250px;
+    color: #fff;
+    position: relative;
+    width: 270px;
+    margin: 30px auto;
+}
+.total-charity .hashtag:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #DD121F;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skew(-20deg);
+    z-index: -1;
+}
+.total-charity p {
+    font-size: 16px;
+    font-weight: 400;
+}
+.total-charity h2 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.total-charity span {
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 @media (max-width:767px) {
     .common-under-section ul.del-ul {
