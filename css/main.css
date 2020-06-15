@@ -1378,6 +1378,9 @@ header{
     font-weight: 600;
     width: 100%;
 }
+.premium-price > div:nth-child(2) {
+    font-size: 14px;
+}
 .premium-price .icon {
     background-color: #008000;
     width: 22px;
@@ -1941,6 +1944,7 @@ header{
 .toolbox .progress-bar {
     position: relative;
     overflow: visible;
+     border-radius: 50px;
 }
 .toolbox .progress-bar:after {
     content: '';
