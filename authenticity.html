@@ -24,6 +24,58 @@
     <!-- 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" /> -->
     <style>
+        .circle-image  {
+            border-radius: 50%;
+            max-width: 300px;
+            height: 300px;
+            border: 10px solid #fff;
+        }
+        * {box-sizing: border-box}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #fff;
+  background-color: #fff;
+  width: 30%;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: #000;
+ padding: .75rem 1.25rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid rgba(0,0,0,.125);
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #007bff;
+  color: #fff
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+.desc.row .col-sm-2 i {
+    margin-right: 6px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
     </style>
 </head>
 
@@ -571,6 +623,7 @@
                         </div>
                     </div>
                     <hr class="my-5">
+                    <h1 class="fw-700 text-center mb-5">Authenticity Your Products</h1>
                     <div class="row justify-content-center mb-5">
                         <div class="col-lg-6 col-md-8">
                             <div class="input-group">
@@ -581,6 +634,7 @@
                             </div>
                         </div>
                     </div>
+                    <h1 class="fw-700 text-center mb-5">Our Process</h1>
                     <div class="timeline my-5">
                         <div class="timeline-block">
                             <span class="timeline-icon">
@@ -642,7 +696,363 @@
         </div>
     </section>
 
+
     <section class="bg-gray py-5">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="mb-5">Effects of Such Products</h2>
+                            <p>Spurious ingredients mixed with steroids make for cheap supplements. Such supplements are made to look like their real counterparts in colour and texture, but the pump in muscle and the mass gain are directly because of the steroids in the fake supplements.</p>
+                            <p>As for the permanent damage, you can get cancer and severe impotence without smoking like a chimney; skin diseases and rashes without being infected; kidney and liver damage without consuming alcohol; hormonal imbalance without having stress, mood swings; hair loss; and permanent organ damage. That's what anabolic steroids do in a nutshell.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <img src="https://img8.hkrtcdn.com/react/static/media/authenticity/effects.png" class="btn-round" alt="">
+                        </div>
+                    </div>
+                    <hr class="my-5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" py-5">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                    </div>
+
+                    <div id="London" class="tabcontent">
+                        <img src="https://cdn.healthxp.in/wp-content/uploads/2019/02/kar_entp.jpg">
+                        <div class="desc row">
+                            <div class="col-sm-2 "><i class="fa fa-envelope-o"></i> Email:</div>
+                            <div class="col-sm-10"><a href="mailto:#">hello@gmail.com</a></div>
+                            <div class="col-sm-2 "><i class="fa fa-phone"></i>Phone:</div>
+                            <div class="col-sm-10"><a href="tel:#">9874563210</a></div>
+                            <div class="col-sm-2 ">Website:</div>
+                            <div class="col-sm-10"><a href="#/" target="new">www.demo.in</a></div>
+                            <div class="col-sm-2 ">About US:</div>
+                            <div class="col-sm-10">We are one of India's leading distributors for wholesale supplements, both health and sports based, as well as offering a great range of products. We are official distributors for all of the leading brands such as Ultimate Nutrition and BioX.</div>
+                        </div>
+                    </div>
+
+                    <div id="Paris" class="tabcontent">
+                        <img src="https://cdn.healthxp.in/wp-content/uploads/2019/02/kar_entp.jpg">
+                        <div class="desc row">
+                        <div class="col-sm-2 "><i class="fa fa-envelope-o"></i> Email:</div>
+                            <div class="col-sm-10"><a href="mailto:#">hello@gmail.com</a></div>
+                            <div class="col-sm-2 "><i class="fa fa-phone"></i>Phone:</div>
+                            <div class="col-sm-10"><a href="tel:#">9874563210</a></div>
+                            <div class="col-sm-2 ">Website:</div>
+                            <div class="col-sm-10"><a href="#/" target="new">www.demo.in</a></div>
+                            <div class="col-sm-2 ">About US:</div>
+                            <div class="col-sm-10">We are one of India's leading distributors for wholesale supplements, both health and sports based, as well as offering a great range of products. We are official distributors for all of the leading brands such as Ultimate Nutrition and BioX.</div>
+                        </div>
+                    </div>
+
+                    <div id="Tokyo" class="tabcontent">
+                        <img src="https://cdn.healthxp.in/wp-content/uploads/2019/02/kar_entp.jpg">
+                        <div class="desc row">
+                            <div class="col-sm-2 "><i class="fa fa-envelope-o"></i> Email:</div>
+                            <div class="col-sm-10"><a href="mailto:#">hello@gmail.com</a></div>
+                            <div class="col-sm-2 "><i class="fa fa-phone"></i>Phone:</div>
+                            <div class="col-sm-10"><a href="tel:#">9874563210</a></div>
+                            <div class="col-sm-2 ">Website:</div>
+                            <div class="col-sm-10"><a href="#/" target="new">www.demo.in</a></div>
+                            <div class="col-sm-2 ">About US:</div>
+                            <div class="col-sm-10">We are one of India's leading distributors for wholesale supplements, both health and sports based, as well as offering a great range of products. We are official distributors for all of the leading brands such as Ultimate Nutrition and BioX.</div>
+                        </div>
+                    </div>
+
+                    <hr class="my-5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5 bg-gray">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-md-12 my-3">
+                            <h1 class="fw-700 mb-5">Lorem ipsum</h1>
+                            <p class="width-70">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
+                                <img src="https://via.placeholder.com/1920x1080" class="btn-round circle-image" alt="">
+                            </a>
+                            <div class="mt-4 text-center">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
+                                <img src="https://via.placeholder.com/1920x1080" class="btn-round circle-image" alt="">
+                            </a>
+                            <div class="mt-4 text-center">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-3">
+                            <a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
+                                <img src="https://via.placeholder.com/1920x1080" class="btn-round circle-image" alt="">
+                            </a>
+                            <div class="mt-4 text-center">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Testimoinals-->
+    <section id="testimonial">
+        <div class="container">
+            <div class="deal-header text-center">
+                <h1>Testimonial</h1>
+            </div>
+            <div class="testimonial_posts">
+                <!--owl-carousel item -->
+                <div class="testimonial-slider owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="testimonial_user">
+                            <img src="img/user.png" alt="" />
+                            <h3>Rashmi Sharma</h3>
+                            <div class="star_rating">
+                                <ul>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star-half-alt"></span></li>
+                                </ul>
+                            </div>
+                            <img src="img/video.png" alt="" />
+                            <p class="review_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, molestiae voluptatibus sed ex reprehenderit odio a tenetur labore provident! Veritatis?</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial_user">
+                            <img src="img/user.png" alt="" />
+                            <h3>Rashmi Sharma</h3>
+                            <div class="star_rating">
+                                <ul>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star-half-alt"></span></li>
+                                </ul>
+                            </div>
+                            <img src="img/video.png" alt="" />
+                            <p class="review_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, molestiae voluptatibus sed ex reprehenderit odio a tenetur labore provident! Veritatis?</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial_user">
+                            <img src="img/user.png" alt="" />
+                            <h3>Rashmi Sharma</h3>
+                            <div class="star_rating">
+                                <ul>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star-half-alt"></span></li>
+                                </ul>
+                            </div>
+                            <img src="img/video.png" alt="" />
+                            <p class="review_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, molestiae voluptatibus sed ex reprehenderit odio a tenetur labore provident! Veritatis?</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial_user">
+                            <img src="img/user.png" alt="" />
+                            <h3>Rashmi Sharma</h3>
+                            <div class="star_rating">
+                                <ul>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star-half-alt"></span></li>
+                                </ul>
+                            </div>
+                            <img src="img/video.png" alt="" />
+                            <p class="review_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, molestiae voluptatibus sed ex reprehenderit odio a tenetur labore provident! Veritatis?</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial_user">
+                            <img src="img/user.png" alt="" />
+                            <h3>Rashmi Sharma</h3>
+                            <div class="star_rating">
+                                <ul>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star-half-alt"></span></li>
+                                </ul>
+                            </div>
+                            <img src="img/video.png" alt="" />
+                            <p class="review_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, molestiae voluptatibus sed ex reprehenderit odio a tenetur labore provident! Veritatis?</p>
+                        </div>
+                    </div>
+                </div>
+                <!--owl-carousel item -->
+            </div>
+        </div>
+    </section>
+    <!--Instagram end here-->
+
+    <section class="py-5 jobs">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div id="accordion" class="faq mt-5">
+                        <h2 class="fw-700">FAQ's</h2>
+                        <hr>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link active" data-toggle="collapse" href="#one" aria-expanded="false">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="one" class="collapse show" data-parent="#accordion" style="">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#two" aria-expanded="false">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="two" class="collapse" data-parent="#accordion" style="">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#three">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="three" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#four">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="four" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#five">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="five" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#six">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="six" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#seven">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="seven" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#eight">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="eight" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#nine">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="nine" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#ten" aria-expanded="false">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="ten" class="collapse" data-parent="#accordion" style="">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="bg-gray py-5">
         <div class="container my-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
@@ -685,7 +1095,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!--footer-->
     <footer>
@@ -802,6 +1212,24 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/slider_function.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+       function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+    </script>
 </body>
 
 </html>

@@ -4612,6 +4612,7 @@ a.catBox:hover .video img {
     background-image: url(../img/winner-bg.svg);
     background-size: cover;
     background-position: center;
+    margin: 20px 0 !important;
 }
 .charity-winner .winner {
     position: relative;
@@ -4657,6 +4658,7 @@ a.catBox:hover .video img {
     position: relative;
     width: 270px;
     margin: 30px auto;
+    transform: skew(-20deg);
 }
 .total-charity .hashtag:before {
     content: '';
@@ -4666,7 +4668,6 @@ a.catBox:hover .video img {
     position: absolute;
     top: 0;
     left: 0;
-    transform: skew(-20deg);
     z-index: -1;
 }
 .total-charity p {
