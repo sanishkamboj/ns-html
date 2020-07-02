@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/margin_padding_helper.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- Stylesheet -->
+    <link href="css/owl/owl.carousel.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/owl/owl.theme.default.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/nobleclem/jQuery-MultiSelect/master/jquery.multiselect.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/custom-slider.css">
+    <title>Home Page</title>
+    <!-- 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" /> -->
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <!--header-->
+    <header class="Sticky">
+        <div class="container">
+            <div id="header">
+                <!--logo-->
+                <div class="logo">
+                    <h1 class="navbar-brand navbar-brand_"><a href="home.html"><img src="img/logo.svg" alt="" width="164px"/></a></h1>
+                </div>
+                <!--.logo-->
+                <!--Navigation-->
+                <div class="navigation">
+                    <ul>
+                        <li class="mega-menu cat">
+                            <a href="#"><span class="las la-store-alt"></span> Store</a>
+                            <ul class="sub-mega-menu">
+                                <!-- <div class="nav flex-column nav-pills" role="tablist">
+                                    <a class="nav-link active" data-toggle="pill" href="#news-0" role="tab" aria-expanded="true">Best Sellers</a>
+                                    <a class="nav-link" data-toggle="pill" href="#news-1" role="tab" aria-expanded="false">Promos</a>
+                                    <a class="nav-link" data-toggle="pill" href="#news-2" role="tab" aria-expanded="false">New</a>
+                                    <a class="nav-link" data-toggle="pill" href="#news-3" role="tab" aria-expanded="false">Discovery Boxes</a>
+                                </div> -->
+
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="news-0" role="tabpanel" aria-expanded="true">
+                                        <div class="search my-4">
+                                            <form method="post" action="#">
+                                                <div class="input-group">
+                                                    <input type="text" name="" class="form-control" placeholder="Search Products">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary" type="submit">Search</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Protein</li>
+                                                    <li><a href="#">Casein</a></li>
+                                                    <li><a href="#">Gainer</a></li>
+                                                    <li><a href="#">Isolate</a></li>
+                                                    <li><a href="#">Vegan</a></li>
+                                                    <li><a href="#">Whey</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Bars</li>
+                                                    <li><a href="#">Energy</a></li>
+                                                    <li><a href="#">Protein</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Amino Acids</li>
+                                                    <li><a href="#">Liquid</a></li>
+                                                    <li><a href="#">Capsules</a></li>
+                                                    <li><a href="#">Powders</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Drinks</li>
+                                                    <li><a href="#">Energy</a></li>
+                                                    <li><a href="#">Protein</a></li>
+                                                    <li><a href="#">Amino Acids</a></li>
+                                                    <li><a href="#">L-Carnitine</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Vitamins</li>
+                                                    <li><a href="#">Capsules</a></li>
+                                                    <li><a href="#">Ready to drink</a></li>
+                                                    <li><a href="#">Shots</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">L-Carnitine</li>
+                                                    <li><a href="#">Ready to drink</a></li>
+                                                    <li><a href="#">Capsules</a></li>
+                                                    <li><a href="#">Shots</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Protein</li>
+                                                    <li><a href="#">Casein</a></li>
+                                                    <li><a href="#">Gainer</a></li>
+                                                    <li><a href="#">Isolate</a></li>
+                                                    <li><a href="#">Vegan</a></li>
+                                                    <li><a href="#">Whey</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Bars</li>
+                                                    <li><a href="#">Energy</a></li>
+                                                    <li><a href="#">Protein</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Amino Acids</li>
+                                                    <li><a href="#">Liquid</a></li>
+                                                    <li><a href="#">Capsules</a></li>
+                                                    <li><a href="#">Powders</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Drinks</li>
+                                                    <li><a href="#">Energy</a></li>
+                                                    <li><a href="#">Protein</a></li>
+                                                    <li><a href="#">Amino Acids</a></li>
+                                                    <li><a href="#">L-Carnitine</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Vitamins</li>
+                                                    <li><a href="#">Capsules</a></li>
+                                                    <li><a href="#">Ready to drink</a></li>
+                                                    <li><a href="#">Shots</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">L-Carnitine</li>
+                                                    <li><a href="#">Ready to drink</a></li>
+                                                    <li><a href="#">Capsules</a></li>
+                                                    <li><a href="#">Shots</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="mega-menu cat">
+                            <a href="#">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
+                                    <g>
+                                        <path d="M77.1,11.2H22.9c-6.4,0-11.6,5.2-11.6,11.6v54.3c0,6.4,5.2,11.6,11.6,11.6h54.3c6.4,0,11.6-5.2,11.6-11.6V22.9C88.8,16.5,83.5,11.2,77.1,11.2z M83.9,76.2c0,4.3-3.5,7.8-7.8,7.8H23.8c-4.3,0-7.8-3.5-7.8-7.8V23.8c0-4.3,3.5-7.8,7.8-7.8h52.3c4.3,0,7.8,3.5,7.8,7.8V76.2z"/>
+                                        <path d="M41.8,3.4L3.4,41.8c-4.5,4.5-4.5,11.9,0,16.4l38.4,38.4c4.5,4.5,11.9,4.5,16.4,0l38.4-38.4c4.5-4.5,4.5-11.9,0-16.4L58.2,3.4C53.7-1.1,46.3-1.1,41.8,3.4z M92.5,44.5c3,3,3,8,0,11l-37,37c-3,3-8,3-11,0l-37-37c-3-3-3-8,0-11l37-37c3-3,8-3,11,0L92.5,44.5z"/>
+                                    </g>
+                                    <g>
+                                        <path d="M42.9,37.5c2,1.3,3.5,3.1,4.7,5.4c1.1,2.3,1.7,4.9,1.7,7.9c0,2.9-0.6,5.6-1.7,7.9c-1.2,2.3-2.7,4.2-4.7,5.5c-2,1.3-4.2,2-6.6,2c-2.4,0-4.6-0.7-6.6-2c-2-1.3-3.5-3.1-4.7-5.5c-1.2-2.3-1.7-5-1.7-7.9c0-2.9,0.6-5.6,1.7-7.9c1.2-2.3,2.7-4.1,4.7-5.4c2-1.3,4.2-2,6.6-2C38.7,35.5,40.9,36.2,42.9,37.5z M31.4,44.5c-1.2,1.5-1.8,3.6-1.8,6.3c0,2.6,0.6,4.7,1.8,6.2c1.2,1.5,2.8,2.3,4.9,2.3c2,0,3.6-0.8,4.8-2.3c1.2-1.5,1.8-3.6,1.8-6.2c0-2.6-0.6-4.7-1.8-6.2c-1.2-1.5-2.8-2.3-4.9-2.3C34.2,42.2,32.6,43,31.4,44.5z"/>
+                                        <path d="M75.7,65.8h-6.2L59,47.5v18.3h-6.2V36H59l10.4,18.5V36h6.2V65.8z"/>
+                                    </g>
+                                </svg>
+                                Brand
+                            </a>
+                            <ul class="sub-mega-menu">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" role="tabpanel" aria-expanded="true">
+                                        <div class="search my-4">
+                                            <form method="post" action="#">
+                                                <div class="input-group">
+                                                    <input type="text" name="" class="form-control" placeholder="Search Brands">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary" type="submit">Search</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">Brand 5</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">Brand 5</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">Brand 5</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">Brand 5</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">Brand 5</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">View More</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="mega-menu img-text">
+                            <a href="#"><span class="las la-bullseye"></span> Goal</a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                        <span>Endurance</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                        <span>Energy</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                        <span>Muscle</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                        <span>Strength</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                        <span>Weight Loss</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/250x150">
+                                        <span>Wellness</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mega-menu offer">
+                            <a href="#">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <path d="M477.958,262.633c-2.06-4.215-2.06-9.049,0-13.263l19.096-39.065c10.632-21.751,2.208-47.676-19.178-59.023l-38.41-20.38c-4.144-2.198-6.985-6.11-7.796-10.729l-7.512-42.829c-4.183-23.846-26.241-39.87-50.208-36.479l-43.053,6.09c-4.647,0.656-9.242-0.838-12.613-4.099l-31.251-30.232c-17.401-16.834-44.661-16.835-62.061,0L193.72,42.859c-3.372,3.262-7.967,4.753-12.613,4.099l-43.053-6.09c-23.975-3.393-46.025,12.633-50.208,36.479l-7.512,42.827c-0.811,4.62-3.652,8.531-7.795,10.73l-38.41,20.38c-21.386,11.346-29.81,37.273-19.178,59.024l19.095,39.064c2.06,4.215,2.06,9.049,0,13.263l-19.096,39.064c-10.632,21.751-2.208,47.676,19.178,59.023l38.41,20.38c4.144,2.198,6.985,6.11,7.796,10.729l7.512,42.829c3.808,21.708,22.422,36.932,43.815,36.93c2.107,0,4.245-0.148,6.394-0.452l43.053-6.09c4.643-0.659,9.241,0.838,12.613,4.099l31.251,30.232c8.702,8.418,19.864,12.626,31.03,12.625c11.163-0.001,22.332-4.209,31.03-12.625l31.252-30.232c3.372-3.261,7.968-4.751,12.613-4.099l43.053,6.09c23.978,3.392,46.025-12.633,50.208-36.479l7.513-42.827c0.811-4.62,3.652-8.531,7.795-10.73l38.41-20.38c21.386-11.346,29.81-37.273,19.178-59.024L477.958,262.633z M464.035,334.635l-38.41,20.38c-12.246,6.499-20.645,18.057-23.04,31.713l-7.512,42.828c-1.415,8.068-8.874,13.487-16.987,12.342l-43.053-6.09c-13.73-1.945-27.316,2.474-37.281,12.113L266.5,478.152c-5.886,5.694-15.109,5.694-20.997,0l-31.251-30.232c-8.422-8.147-19.432-12.562-30.926-12.562c-2.106,0-4.229,0.148-6.355,0.449l-43.053,6.09c-8.106,1.146-15.571-4.274-16.987-12.342l-7.513-42.829c-2.396-13.656-10.794-25.215-23.041-31.712l-38.41-20.38c-7.236-3.839-10.086-12.61-6.489-19.969l19.096-39.065c6.088-12.456,6.088-26.742,0-39.198l-19.096-39.065c-3.597-7.359-0.747-16.13,6.489-19.969l38.41-20.38c12.246-6.499,20.645-18.057,23.04-31.713l7.512-42.828c1.416-8.068,8.874-13.488,16.987-12.342l43.053,6.09c13.725,1.943,27.316-2.474,37.281-12.113l31.252-30.232c5.886-5.694,15.109-5.694,20.997,0l31.251,30.232c9.965,9.64,23.554,14.056,37.281,12.113l43.053-6.09c8.107-1.147,15.572,4.274,16.987,12.342l7.512,42.829c2.396,13.656,10.794,25.215,23.041,31.712l38.41,20.38c7.236,3.839,10.086,12.61,6.489,19.969l-19.096,39.064c-6.088,12.455-6.088,26.743,0,39.198l19.096,39.064C474.121,322.024,471.271,330.796,464.035,334.635z"/>
+                                    </g>
+                                    <g>
+                                        <path d="M363.886,148.116c-5.765-5.766-15.115-5.766-20.881,0L148.116,343.006c-5.766,5.766-5.766,15.115,0,20.881c2.883,2.883,6.662,4.325,10.44,4.325c3.778,0,7.558-1.441,10.44-4.325l194.889-194.889C369.653,163.231,369.653,153.883,363.886,148.116z"/>
+                                        <path d="M196.941,123.116c-29.852,0-54.139,24.287-54.139,54.139s24.287,54.139,54.139,54.139s54.139-24.287,54.139-54.139S226.793,123.116,196.941,123.116z M196.941,201.863c-13.569,0-24.608-11.039-24.608-24.609c0-13.569,11.039-24.608,24.608-24.608c13.569,0,24.609,11.039,24.609,24.608C221.549,190.824,210.51,201.863,196.941,201.863z"/>
+                                        <path d="M315.061,280.61c-29.852,0-54.139,24.287-54.139,54.139s24.287,54.139,54.139,54.139c29.852,0,54.139-24.287,54.139-54.139S344.913,280.61,315.061,280.61zM315.061,359.357c-13.569,0-24.609-11.039-24.609-24.608s11.039-24.608,24.609-24.608c13.569,0,24.608,11.039,24.608,24.608S328.63,359.357,315.061,359.357z"/>
+                                    </g>
+                                </svg>
+                                Offers
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/40x40">
+                                        <span>Flash Sale</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/40x40">
+                                        <span>Crazy Deals</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/40x40">
+                                        <span>Wipe Out Sale</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://via.placeholder.com/40x40">
+                                        <span>Half Price Store</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span class="lar la-edit"></span> i-Nutrition</a></li>
+                        <li class="sub-menu sm">
+                            <a href="workout.html"><span class="las la-dumbbell"></span> Workouts</a>
+                            <div class="dropdown-menu">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul>
+                                            <li><a href="workout-plans.html" class="title">Workout Plan</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul>
+                                            <li><a href="diet-plans.html" class="title">Diet Plan</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="franchise.html"><span class="las la-warehouse"></span> Franchise</a></li>
+                        <li><a href="#"><span class="las la-question"></span> Why us</a></li>
+                    </ul>
+                    <ul>
+                        <li class="search">
+                            <div class="search-box">
+                                <form method="post">
+                                    <input type="text" name="search" id="search" class="search" placeholder="Search for Products, Brand and more" />
+                                    <input type="submit" value="&#xf002" />
+                                </form>
+                            </div>
+                        </li>
+                        <li class="sub-menu user-menu">
+                            <a href="#"><span class="lar la-user"></span> Profile</a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <h3 class="title">Welcome</h3>
+                                <p>To access account and manage orders</p>
+                                <div class="row gutters-1">
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-outline-primary btn-block">Sign in</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-outline-primary btn-block">Sign up</a>
+                                    </div>
+                                </div>
+                                <hr class="mt-4">
+                                <ul>
+                                    <li><a href="#">My Profile</a></li>
+                                    <li><a href="#">Order</a></li>
+                                    <li><a href="#">Wishlist</a></li>
+                                    <li><hr></li>
+                                    <li><a href="#">Coupons</a></li>
+                                    <li><a href="#">Referrals</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sub-menu mini-cart">
+                            <a href="#"><span class="las la-shopping-bag"></span> Cart <strong>2</strong></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="mini-cart-item">
+                                    <div class="product_image">
+                                        <a href="#">
+                                            <img src="img/products.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product_des">
+                                        <span>1x MuscleBlaze Whey Protein</span>
+                                        <p>900.00</p>
+                                        <a href="#" class="action"><span class="lar la-trash-alt"></span></a>
+                                    </div>
+                                </div>
+                                <div class="mini-cart-item">
+                                    <div class="product_image">
+                                        <a href="#">
+                                            <img src="img/products.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product_des">
+                                        <span>1x MuscleBlaze Whey Protein</span>
+                                        <p>900.00</p>
+                                        <a href="#" class="action"><span class="lar la-trash-alt"></span></a>
+                                    </div>
+                                </div>
+                                <div class="total_drop">
+                                    <div class="total_value">
+                                        <span>Total</span>
+                                        <span class="fw-600"><i class="la la-rupee-sign"></i>200.00</span>
+                                    </div>
+                                    <div class="checkout">
+                                        <a href="cart.html" class="btn btn-outline-primary btn-block">View Cart</a>
+                                        <a href="checkout.html" class="btn btn-primary btn-block mt-3">Checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--.Navigation-->
+            </div>
+        </div>
+
+        <!--Mobile Navigation-->
+        <div class="mobile_navigation">
+            <div class="navbar no-gutters">
+                <div class="col-3">
+                    <button data-toggle="collapse-side" data-target=".side-collapse" type="button" class="navbar-toggle"> <span class="las la-bars"></span></button>
+                    <div class="side-collapse">
+                        <h1>Hello, User</h1>
+                        <span class="las la-times close_btn"></span>
+                        <div class="user_btn">
+                            <div class="row gutters-1">
+                                <div class="col-6">
+                                    <a href="#" class="btn btn-outline-primary btn-block">Sign in</a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="btn btn-primary btn-block">Sign up</a>
+                                </div>
+                            </div>
+                        </div>
+                        <nav role="navigation" class="navbar-collapse">
+                            <ul>
+                                <li class="active"><a href="#"><span class="las la-store-alt"></span> Store</a></li>
+                                <li><a href="#"><span class="las la-bullseye"></span> Goal</a></li>
+                                <li>
+                                    <a href="#">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
+                                            <g>
+                                                <path d="M77.1,11.2H22.9c-6.4,0-11.6,5.2-11.6,11.6v54.3c0,6.4,5.2,11.6,11.6,11.6h54.3c6.4,0,11.6-5.2,11.6-11.6V22.9C88.8,16.5,83.5,11.2,77.1,11.2z M83.9,76.2c0,4.3-3.5,7.8-7.8,7.8H23.8c-4.3,0-7.8-3.5-7.8-7.8V23.8c0-4.3,3.5-7.8,7.8-7.8h52.3c4.3,0,7.8,3.5,7.8,7.8V76.2z"/>
+                                                <path d="M41.8,3.4L3.4,41.8c-4.5,4.5-4.5,11.9,0,16.4l38.4,38.4c4.5,4.5,11.9,4.5,16.4,0l38.4-38.4c4.5-4.5,4.5-11.9,0-16.4L58.2,3.4C53.7-1.1,46.3-1.1,41.8,3.4z M92.5,44.5c3,3,3,8,0,11l-37,37c-3,3-8,3-11,0l-37-37c-3-3-3-8,0-11l37-37c3-3,8-3,11,0L92.5,44.5z"/>
+                                            </g>
+                                            <g>
+                                                <path d="M42.9,37.5c2,1.3,3.5,3.1,4.7,5.4c1.1,2.3,1.7,4.9,1.7,7.9c0,2.9-0.6,5.6-1.7,7.9c-1.2,2.3-2.7,4.2-4.7,5.5c-2,1.3-4.2,2-6.6,2c-2.4,0-4.6-0.7-6.6-2c-2-1.3-3.5-3.1-4.7-5.5c-1.2-2.3-1.7-5-1.7-7.9c0-2.9,0.6-5.6,1.7-7.9c1.2-2.3,2.7-4.1,4.7-5.4c2-1.3,4.2-2,6.6-2C38.7,35.5,40.9,36.2,42.9,37.5z M31.4,44.5c-1.2,1.5-1.8,3.6-1.8,6.3c0,2.6,0.6,4.7,1.8,6.2c1.2,1.5,2.8,2.3,4.9,2.3c2,0,3.6-0.8,4.8-2.3c1.2-1.5,1.8-3.6,1.8-6.2c0-2.6-0.6-4.7-1.8-6.2c-1.2-1.5-2.8-2.3-4.9-2.3C34.2,42.2,32.6,43,31.4,44.5z"/>
+                                                <path d="M75.7,65.8h-6.2L59,47.5v18.3h-6.2V36H59l10.4,18.5V36h6.2V65.8z"/>
+                                            </g>
+                                        </svg>
+                                        Brand
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                                            <g>
+                                                <path d="M477.958,262.633c-2.06-4.215-2.06-9.049,0-13.263l19.096-39.065c10.632-21.751,2.208-47.676-19.178-59.023l-38.41-20.38c-4.144-2.198-6.985-6.11-7.796-10.729l-7.512-42.829c-4.183-23.846-26.241-39.87-50.208-36.479l-43.053,6.09c-4.647,0.656-9.242-0.838-12.613-4.099l-31.251-30.232c-17.401-16.834-44.661-16.835-62.061,0L193.72,42.859c-3.372,3.262-7.967,4.753-12.613,4.099l-43.053-6.09c-23.975-3.393-46.025,12.633-50.208,36.479l-7.512,42.827c-0.811,4.62-3.652,8.531-7.795,10.73l-38.41,20.38c-21.386,11.346-29.81,37.273-19.178,59.024l19.095,39.064c2.06,4.215,2.06,9.049,0,13.263l-19.096,39.064c-10.632,21.751-2.208,47.676,19.178,59.023l38.41,20.38c4.144,2.198,6.985,6.11,7.796,10.729l7.512,42.829c3.808,21.708,22.422,36.932,43.815,36.93c2.107,0,4.245-0.148,6.394-0.452l43.053-6.09c4.643-0.659,9.241,0.838,12.613,4.099l31.251,30.232c8.702,8.418,19.864,12.626,31.03,12.625c11.163-0.001,22.332-4.209,31.03-12.625l31.252-30.232c3.372-3.261,7.968-4.751,12.613-4.099l43.053,6.09c23.978,3.392,46.025-12.633,50.208-36.479l7.513-42.827c0.811-4.62,3.652-8.531,7.795-10.73l38.41-20.38c21.386-11.346,29.81-37.273,19.178-59.024L477.958,262.633z M464.035,334.635l-38.41,20.38c-12.246,6.499-20.645,18.057-23.04,31.713l-7.512,42.828c-1.415,8.068-8.874,13.487-16.987,12.342l-43.053-6.09c-13.73-1.945-27.316,2.474-37.281,12.113L266.5,478.152c-5.886,5.694-15.109,5.694-20.997,0l-31.251-30.232c-8.422-8.147-19.432-12.562-30.926-12.562c-2.106,0-4.229,0.148-6.355,0.449l-43.053,6.09c-8.106,1.146-15.571-4.274-16.987-12.342l-7.513-42.829c-2.396-13.656-10.794-25.215-23.041-31.712l-38.41-20.38c-7.236-3.839-10.086-12.61-6.489-19.969l19.096-39.065c6.088-12.456,6.088-26.742,0-39.198l-19.096-39.065c-3.597-7.359-0.747-16.13,6.489-19.969l38.41-20.38c12.246-6.499,20.645-18.057,23.04-31.713l7.512-42.828c1.416-8.068,8.874-13.488,16.987-12.342l43.053,6.09c13.725,1.943,27.316-2.474,37.281-12.113l31.252-30.232c5.886-5.694,15.109-5.694,20.997,0l31.251,30.232c9.965,9.64,23.554,14.056,37.281,12.113l43.053-6.09c8.107-1.147,15.572,4.274,16.987,12.342l7.512,42.829c2.396,13.656,10.794,25.215,23.041,31.712l38.41,20.38c7.236,3.839,10.086,12.61,6.489,19.969l-19.096,39.064c-6.088,12.455-6.088,26.743,0,39.198l19.096,39.064C474.121,322.024,471.271,330.796,464.035,334.635z"/>
+                                            </g>
+                                            <g>
+                                                <path d="M363.886,148.116c-5.765-5.766-15.115-5.766-20.881,0L148.116,343.006c-5.766,5.766-5.766,15.115,0,20.881c2.883,2.883,6.662,4.325,10.44,4.325c3.778,0,7.558-1.441,10.44-4.325l194.889-194.889C369.653,163.231,369.653,153.883,363.886,148.116z"/>
+                                                <path d="M196.941,123.116c-29.852,0-54.139,24.287-54.139,54.139s24.287,54.139,54.139,54.139s54.139-24.287,54.139-54.139S226.793,123.116,196.941,123.116z M196.941,201.863c-13.569,0-24.608-11.039-24.608-24.609c0-13.569,11.039-24.608,24.608-24.608c13.569,0,24.609,11.039,24.609,24.608C221.549,190.824,210.51,201.863,196.941,201.863z"/>
+                                                <path d="M315.061,280.61c-29.852,0-54.139,24.287-54.139,54.139s24.287,54.139,54.139,54.139c29.852,0,54.139-24.287,54.139-54.139S344.913,280.61,315.061,280.61zM315.061,359.357c-13.569,0-24.609-11.039-24.609-24.608s11.039-24.608,24.609-24.608c13.569,0,24.608,11.039,24.608,24.608S328.63,359.357,315.061,359.357z"/>
+                                            </g>
+                                        </svg>
+                                        Offer
+                                    </a>
+                                </li>
+                                <li><a href="#"><span class="lar la-edit"></span> i-Nutrition</a></li>
+                                <li><a href="workout.html"><span class="las la-dumbbell"></span> Workouts</a></li>
+                                <li><a href="franchise.html"><span class="las la-warehouse"></span> Franchise</a></li>
+                                <li><a href="#"><span class="las la-question"></span> Why us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-6 text-center">
+                    <div class="navbar-brand">
+                        <a href="home.html">
+                            <img src="img/logo.png" alt="Nutrition systems"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="left_side_toogle_menu col-3 text-right">
+                    <ul>
+                        <li><a href="user-account.html"><i class="lar la-user"></i></a></li>
+                        <li><a href="cart.html"><span class="cart-count">2</span><i class="las la-shopping-bag"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search">
+                <form method="post" action="#">
+                    <div class="input-group">
+                        <input type="text" name="" class="form-control" placeholder="Search for Products, Brand and more">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit"><i class="las la-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--/Mobile Navigation-->
+    </header>
+    <!--header end here-->
+
+    <section class="banner-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content-banner">
+                        <img src="img/member.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="priceing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="under-price">
+                        <p class="price-1">Limited time offer</p>
+                        <p class="price-2"><img class="pri" src="img/pri.png">Annual Membership</p>
+                        <p class="price-3" class="price-1">Spend year रु 10,000 In a year</p>
+                        <button class="btn bt-adtocart" value="button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="benifit">
+                        <h1 class="mem">Member Benefits</h1>
+                        <ul class="ul-m">
+                            <li>
+                                <p>Unlock Extra Discounts</p>
+                            </li>
+                            <li>
+                                <p>Get Extra Cashback in the form of HK cash</p>
+                            </li>
+                            <li>
+                                <p>Instant Extra Discounts During Flash Sales/Deals</p>
+                            </li>
+                            <li>
+                                <p>Additional Saving On launch offers</p>
+                            </li>
+                            <li>
+                                <p>Resuced Price Than Buy 1 Get Deals</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    
+                    <div class="media-all">
+                        <div class="how-do">
+                        <p class="how-do-p">How Do Identify Membership Benefits?</p>
+                        <p class="how-do-p1">All the products showcase Membership price below the basic price</p>
+                    </div>
+                        <div class="media">
+                          <div class="media-left">
+                            <img src="img/products.png" class="media-object">
+                          </div>
+                          <div class="media-body">
+                            <p class="me-1">MuscleBlaze Whey Gold Protein,</p>
+                            <p class="me-2"> 4 lb Rich Milk Chocolate</p>
+                            <div class="change-view">
+                            <div class="price_box">
+                                
+                                <div class="discount"> <p class="pri-c">रु1818</p><p class="pri-c1">रु1818</p><p class="pri-c3">30% off</p></div>
+                            </div>
+                            <div class="star_rating">
+                                <ul>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star"></span></li>
+                                    <li><span class="las la-star-half-alt"></span></li>
+                                    <li class="review">
+                                        <p>(1182 Review)</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="primium-bt">
+                            <button class="btn same-btn" value="button">Premium रु1818</button>
+                            <button class="btn same-btn" value="button">Membership Price</button>
+                        </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="custom-accordian">
+                        <h1 class="faq">FAQ</h1>
+                        <div class="accordion" id="accordionExample">
+                          <div class="card">
+                            <div class="card-header" id="headingOne">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Collapsible Group Item #1
+                                </button>
+                              </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                              <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingTwo">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Collapsible Group Item #2
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                              <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingThree">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Collapsible Group Item #3
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                              <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="term-condition">
+                        <h1 class="term-con">Terms & Conditions</h1>
+                        <div class="bor"></div>
+                        <p class="click">Click <a href="#">here</a> to view Terms & Conditions of the HealthKart's Loyalty Program</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row gutters-2">
+                <div class="col-xl-9 col-lg-8">
+                    <div class="row gutters-1">
+                        <div class="widget col-md-3 col-6">
+                            <h3 class="widget-title">Nutritions Systems</h3>
+                            <ul class="links">
+                                <li><a href="about-us.html">About us</a></li>
+                                <li><a href="refer-and-earn.html">Refer & Earn</a></li>
+                                <li><a href="career.html">Careers</a></li>
+                                <li><a href="policy.html">Terms & Conditions</a></li>
+                                <li><a href="policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="widget col-md-3 col-6">
+                            <h3 class="widget-title">Support</h3>
+                            <ul class="links">
+                                <li><a href="user-account.html">Your Account</a></li>
+                                <li><a href="store-locator.html">Store Locator</a></li>
+                                <li><a href="policy.html">Delivery Policies</a></li>
+                                <li><a href="policy.html">Return Policy</a></li>
+                                <li><a href="policy.html">FAQ's & Help</a></li>
+                                <li><a href="contact-us">Contact us</a></li>
+                                <li><a href="#">Sell on Nutiritions</a></li>
+                            </ul>
+                        </div>
+                        <div class="widget col-md-3 col-6">
+                            <h3 class="widget-title">Categories</h3>
+                            <ul class="links">
+                                <li><a href="#">Body Building</a></li>
+                                <li><a href="#">Weight Loss</a></li>
+                                <li><a href="#">Health Living</a></li>
+                                <li><a href="#">Hair & Skin Care</a></li>
+                                <li><a href="#">Sports Nutritions</a></li>
+                            </ul class="links">
+                        </div>
+                        <div class="widget col-md-3 col-6">
+                            <h3 class="widget-title">Optional</h3>
+                            <ul class="links">
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                                <li><a href="#">Lorem Ipsum</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget col-xl-3 col-lg-4 mt-5 mt-lg-0">
+                    <h3 class="widget-title">SIGN UP FOR NEWSLETTER</h3>
+                    <p>Be the first one to receive amazing offers, deals and news from Nutrition systems</p>
+                    <form method="post" action="#" id="newsletter" class="mb-4">
+                        <div class="input-group">
+                            <input type="text" name="newsletter" class="form-control" placeholder="Enter Your Email id" />
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="row gutters-2 justify-content-between">
+                <div class="col-lg-8">
+                    <h3>Pay Using</h3>
+                    <img src="img/payment.svg" alt="payment" class="my-4 my-md-0 pr-lg-5">
+                    <p><span class="fw-600">About Nutritionsystems:</span> Nutritionsystems.com is India's largest online health & fitness store for men and women. Shop online from the latest collections of health, fitness and similar products featuring the best brands.</p>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <h3>Connect with us</h3>
+                    <div class="social-media circle mt-4">
+                        <ul>
+                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                            <li><a href="#"><span class="fa fa-youtube-play"></span></a></li>
+                            <li>
+                                <a href="#">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
+                                    <path class="st1" d="M50.2,35.5c0-10.7,0-21.4,0-32.1c0-2.1,1.3-3.4,3.3-3.4c5,0,10,0,15.1,0c2,0,3.1,1.2,3.2,3.1 c0.1,2.1,0.3,4.2,1.1,6.2c1.4,3.6,3.5,6.6,6.6,8.9c2.1,1.6,4.4,2.6,6.9,3.3c1.6,0.5,3.2,0.4,4.8,0.6c1.4,0.2,2.6,1.4,2.6,2.8c0,5.3,0,10.6,0,15.9c0,1.5-1.3,2.8-3,2.9c-1.5,0.1-3-0.2-4.6-0.3c-1-0.1-1.9-0.3-2.9-0.4c-2.8-0.5-5.5-1.4-8.2-2.4c-0.9-0.4-1.8-0.7-2.6-1.2c-0.7-0.5-0.8-0.3-0.8,0.5c0,6.5,0,12.9,0,19.4c0,3.3,0,6.5,0,9.8c0,2.6-0.6,5.2-1.3,7.7c-0.9,2.9-2.1,5.7-3.8,8.2c-1.4,2.2-2.9,4.2-4.8,6c-2.8,2.6-5.9,4.8-9.4,6.4c-3,1.3-6.1,2.2-9.3,2.7c-2.3,0.3-4.6,0.3-6.9,0.1c-1.8-0.1-3.5-0.5-5.3-0.9c-1.7-0.4-3.4-1-5-1.7c-2.3-1-4.4-2.2-6.4-3.7c-2-1.5-3.7-3.2-5.3-5c-1.5-1.7-2.8-3.6-3.9-5.5c-1.1-2-1.9-4.1-2.6-6.2c-1-3.4-1.5-6.9-1.4-10.5c0.1-2.1,0.4-4.2,0.8-6.2c0.8-3.5,2.1-6.8,4-9.9c2.2-3.5,4.9-6.5,8.2-9c2.8-2.2,6-3.8,9.3-5c2.3-0.8,4.7-1.2,7.2-1.5c1-0.1,2-0.1,3-0.1c2-0.1,3.1,1.5,3.1,3.1c0.1,5.2,0.1,10.3,0,15.5c0,1.6-1.3,3-3.1,3c-3.6,0-6.5,1.5-8.7,4.4c-1.4,1.8-2.1,3.7-2.3,6c-0.3,4.5,1.5,7.9,5.2,10.3c2.2,1.4,4.6,1.9,7.3,1.6c2.7-0.3,5-1.5,6.8-3.5c1.8-2,2.9-4.4,2.9-7.1C50.2,57,50.2,46.2,50.2,35.5z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li><a href="#"><span class="fa fa-google-plus-g"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/footer-->
+
+    <!--Copyright-->
+    <div class="copyright">
+        <div class="container">
+            <p><span class="fw-600 text-primary">Disclaimer:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Quisque eu nibh ac arcu porttitor consectetur et sit amet nisi. Phasellussed justo vel nulla vestibulum dapibus. Curabitur consequat lacus risus, ac tempus metus porttitor a. Quisquelobortis faucibus mauris, et consequat eros vehicula a. Quisque hendrerit pharetra augue sed fermentum. Orci varius natoquepenatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur quis tellus interdum, rutrum mi id, consectetur est.</p>
+            <p class="mb-0">Copyright &copy; 2020. All Rights Reserved</p>
+        </div>
+    </div>
+    <!--/copyright-->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://rawgit.com/nobleclem/jQuery-MultiSelect/master/jquery.multiselect.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slider_function.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
