@@ -23,59 +23,6 @@
     <!-- 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" /> -->
     <style>
-
-.pricing .card {
-  border: none;
-  border-radius: 1rem;
-  transition: all 0.2s;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-}
-
-.pricing hr {
-  margin: 1.5rem 0;
-}
-
-.pricing .card-title {
-  margin: 0.5rem 0;
-  letter-spacing: .1rem;
-  font-weight: bold;
-}
-
-.pricing .card-price {
-  font-size: 4rem !important;
-  margin: 0;
-}
-
-.pricing .card-price .period {
-  font-size: 1.8rem !important;
-}
-
-.pricing ul li {
-  margin-bottom: 1rem;
-}
-
-.pricing .text-muted {
-  opacity: 0.7;
-}
-
-.pricing .btn {
-  letter-spacing: .1rem;
-  font-weight: bold;
-  padding: 1rem;
-  opacity: 0.7;
-  transition: all 0.2s;
-}
-
-/* Hover Effects on Card */
-
-@media (min-width: 992px) {
-  .pricing .card:hover {
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-  }
-  .pricing .card:hover .btn {
-    opacity: 1;
-  }
-}
     </style>
 </head>
 
@@ -541,185 +488,98 @@
         <!--/Mobile Navigation-->
     </header>
     <!--header end here-->
-    
+
     <!--breadcrumb content-->
     <section class="breadcrumb-wrapper">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="home.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Sponsorship</li>
+                    <li class="breadcrumb-item active" aria-current="page">Coupons</li>
                 </ol>
             </nav>
         </div>
     </section>
     <!--breadcrumb content end here-->
-    <section class="header-img">
-        <img src="https://via.placeholder.com/1920x400">
-        <h2 class="title fw-700">Sponsorship</h2>
-    </section>
 
-    <section class="mb-5 pricing">
-        <div class="container">
+    <section class="user-dasboard">
+        <div class="side-bar">
+            <h3 class="title">Coupons</h3>
+            <ul class="side-nav">
+                <li><a href="#"><i class="la la-home"></i>Dasboard</a></li>
+                <li><a href="order-history.html"><i class="la la-box"></i>Orders</a></li>
+                <li><a href="user-address.html"><i class="la la-map-signs"></i></i>Address</a></li>
+                <li><a href="user-account.html"><i class="la la-user"></i>Account Details</a></li>
+                <li><a href="user-cashback.html" class="active"><i class="la la-money-bill-wave"></i>Cashback History</a></li>
+                <li><a href="user-referrals.html"><i class="la la-user-friends"></i>Referral</a></li>
+                <li><a href="user-coupons.html" ><i class="la la-ticket-alt"></i>Coupons</a></li>
+                <li><a href="user-wishlist.html"><i class="la la-heart"></i>Wishlist</a></li>
+                <li><a href="home.html" class="log-out"><i class="la la-sign-out"></i>Log Out</a></li>
+            </ul>
+        </div>
+        <div class="dasboard-wrapper">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="card-header text-center">
-                                <h1>Message for CEO</h1>
-                            </div>
-                            <div class="video btn-round">
-                                <img src="https://via.placeholder.com/1233x400" class="img-fluid" alt="">
-                                <div class="video-button">
-                                    <a data-fancybox="" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
-                                        <i class="fa fa-play"></i>
-                                    </a>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="coupons">
+                                <div class="coupon-item">
+                                    <div class="top">
+                                        <div class="coupon">
+                                            <span>353.15</span>
+                                        </div>
+                                        <div class="coupon-content mt-3">
+                                            <p>Your Cashback Amount is Here.</p>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="bottom">
+                                        <span>Expiry: <span class="text-primary"><span class="fw-500">OCT 31 2020</span> 11:59:00 PM</span></span>
+                                        <a href="#">Details</a>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12 mt-5 jobs">
-                            <h2>Programmes</h2>
-                            <hr>
+
+                    <div class="card">
+                        <div class="card-header text">
+                            <h2> Cashback History</h2>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="card mb-5 mb-lg-0">
-                                <div class="card-body">
-                                    <!-- <h3 class="card-title text-muted text-uppercase text-center"></h3>
-                                    <h1 class="card-price text-center">Free<span class="period">/month</span></h1> -->
-                                    <h1 class="card-price text-muted text-uppercase text-center">Free</h1>
-                                    <hr>
-                                    <ul class="fa-ul">
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,r</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-block btn-primary text-uppercase">Apply Now</a>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="col-sm-4">
-                            <div class="card mb-5 mb-lg-0">
-                                <div class="card-body">
-                                    <!-- <h3 class="card-title text-muted text-uppercase text-center"></h3>
-                                    <h1 class="card-price text-center">Free<span class="period">/month</span></h1> -->
-                                    <h1 class="card-price text-muted text-uppercase text-center">Free</h1>
-                                    <hr>
-                                    <ul class="fa-ul">
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,r</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-block btn-primary text-uppercase">Apply Now</a>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="col-sm-4">
-                            <div class="card mb-5 mb-lg-0">
-                                <div class="card-body">
-                                    <!-- <h3 class="card-title text-muted text-uppercase text-center"></h3>
-                                    <h1 class="card-price text-center">Free<span class="period">/month</span></h1> -->
-                                    <h1 class="card-price text-muted text-uppercase text-center">Free</h1>
-                                    <hr>
-                                    <ul class="fa-ul">
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,r</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-block btn-primary text-uppercase">Apply Now</a>
-                                </div>
-                            </div>
-                        </div>                   
-                     </div>
-                    <div class="row mt-5">
-                        <div class="col-12 my-3">
-                            <h2 class="fw-700">Affilate Program</h2>
-                            <hr>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="https://via.placeholder.com/1200x700" class="btn-round mb-3" alt="">
-                        </div>
-                        <div class="col-md-6">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="card-body">
+                           <table class="table table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Date & Time</th>
+                                        <th>Order ID</th>
+                                        <th>Cashback Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>OCT 31 2019 11:59:00 PM</td>
+                                    <td>78879AUYJ</td>
+                                    <td>₹ 102.41 </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Jan 04 2020 04:59:00 PM</td>
+                                    <td>AM879A87W</td>
+                                    <td>₹ 172.00 </td>
+                                  </tr>
+                                  <tr>
+                                    <td>June 15 2020 10:15:00 AM</td>
+                                    <td>AM879AUYJ</td>
+                                    <td>₹ 78.74 </td>
+                                  </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <div class="career-form py-5" id="applyForm">
-                        <h2 class="fw-700">Contact Us</h2>
-                        <hr>
-                        <form class="form">
-                            <div class="row">
-                                <div class="form-group col-md-4">
-                                    <label>Name</label>
-                                    <input type="text" name="name" class="form-control">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label>Email</label>
-                                    <input type="email" name="email" class="form-control">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label>Phone</label>
-                                    <input type="text" name="phone" class="form-control">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label>Subject</label>
-                                    <select name="subject" class="form-control" >
-                                        <option>Select Lorem ipsum</option>
-                                        <option>Lorem ipsum</option>
-                                        <option>Lorem ipsum</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label>Facebook</label>
-                                    <input type="text" name="facebook" class="form-control">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label>Instagram</label>
-                                    <input type="text" name="instagram" class="form-control">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label>Twitter</label>
-                                    <input type="text" name="twitter" class="form-control">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label>Facebook</label>
-                                    <input type="text" name="facebook" class="form-control">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label>Google +</label>
-                                    <input type="text" name="google" class="form-control">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label>Message</label>
-                                    <textarea class="form-control" rows="4"></textarea>
-                                </div>
-                                <div class="form-group col-12">
-                                    <button type="button" class="btn btn-outline-primary">Submit</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+
                 </div>
             </div>
         </div>
     </section>
+    <!--user accout  end-->
 
     <!--footer-->
     <footer>

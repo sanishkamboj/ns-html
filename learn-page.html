@@ -16,6 +16,7 @@
     <link href="css/owl/owl.carousel.min.css" type="text/css" rel="stylesheet" />
     <link href="css/owl/owl.theme.default.min.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/nobleclem/jQuery-MultiSelect/master/jquery.multiselect.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/custom-slider.css">
@@ -23,59 +24,7 @@
     <!-- 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" /> -->
     <style>
-
-.pricing .card {
-  border: none;
-  border-radius: 1rem;
-  transition: all 0.2s;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-}
-
-.pricing hr {
-  margin: 1.5rem 0;
-}
-
-.pricing .card-title {
-  margin: 0.5rem 0;
-  letter-spacing: .1rem;
-  font-weight: bold;
-}
-
-.pricing .card-price {
-  font-size: 4rem !important;
-  margin: 0;
-}
-
-.pricing .card-price .period {
-  font-size: 1.8rem !important;
-}
-
-.pricing ul li {
-  margin-bottom: 1rem;
-}
-
-.pricing .text-muted {
-  opacity: 0.7;
-}
-
-.pricing .btn {
-  letter-spacing: .1rem;
-  font-weight: bold;
-  padding: 1rem;
-  opacity: 0.7;
-  transition: all 0.2s;
-}
-
-/* Hover Effects on Card */
-
-@media (min-width: 992px) {
-  .pricing .card:hover {
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-  }
-  .pricing .card:hover .btn {
-    opacity: 1;
-  }
-}
+       
     </style>
 </head>
 
@@ -87,7 +36,7 @@
             <div id="header">
                 <!--logo-->
                 <div class="logo">
-                    <h1 class="navbar-brand navbar-brand_"><a href="home.html"><img src="img/logo.png" alt="" width="164px"/></a></h1>
+                    <h1 class="navbar-brand navbar-brand_"><a href="home.html"><img src="img/logo.svg" alt="" width="164px"/></a></h1>
                 </div>
                 <!--.logo-->
                 <!--Navigation-->
@@ -96,17 +45,28 @@
                         <li class="mega-menu cat">
                             <a href="#"><span class="las la-store-alt"></span> Store</a>
                             <ul class="sub-mega-menu">
-                                <div class="nav flex-column nav-pills" role="tablist">
+                                <!-- <div class="nav flex-column nav-pills" role="tablist">
                                     <a class="nav-link active" data-toggle="pill" href="#news-0" role="tab" aria-expanded="true">Best Sellers</a>
                                     <a class="nav-link" data-toggle="pill" href="#news-1" role="tab" aria-expanded="false">Promos</a>
                                     <a class="nav-link" data-toggle="pill" href="#news-2" role="tab" aria-expanded="false">New</a>
                                     <a class="nav-link" data-toggle="pill" href="#news-3" role="tab" aria-expanded="false">Discovery Boxes</a>
-                                </div>
+                                </div> -->
 
                                 <div class="tab-content">
                                     <div class="tab-pane active" id="news-0" role="tabpanel" aria-expanded="true">
+                                        <div class="search my-4">
+                                            <form method="post" action="#">
+                                                <div class="input-group">
+                                                    <input type="text" name="" class="form-control" placeholder="Search Products">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary" type="submit">Search</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
                                         <div class="row">
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">Protein</li>
                                                     <li><a href="#">Casein</a></li>
@@ -116,14 +76,14 @@
                                                     <li><a href="#">Whey</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">Bars</li>
                                                     <li><a href="#">Energy</a></li>
                                                     <li><a href="#">Protein</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">Amino Acids</li>
                                                     <li><a href="#">Liquid</a></li>
@@ -131,7 +91,7 @@
                                                     <li><a href="#">Powders</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">Drinks</li>
                                                     <li><a href="#">Energy</a></li>
@@ -140,7 +100,7 @@
                                                     <li><a href="#">L-Carnitine</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">Vitamins</li>
                                                     <li><a href="#">Capsules</a></li>
@@ -148,7 +108,7 @@
                                                     <li><a href="#">Shots</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">L-Carnitine</li>
                                                     <li><a href="#">Ready to drink</a></li>
@@ -156,28 +116,7 @@
                                                     <li><a href="#">Shots</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
-                                                <ul class="list-inline">
-                                                    <li class="menu-title">Fat Burner</li>
-                                                    <li><a href="#">Capsules</a></li>
-                                                    <li><a href="#">Liquid</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-4">
-                                                <ul class="list-inline">
-                                                    <li class="menu-title">Accessories</li>
-                                                    <li><a href="#">Belts</a></li>
-                                                    <li><a href="#">Gloves</a></li>
-                                                    <li><a href="#">Others</a></li>
-                                                    <li><a href="#">Shakers</a></li>
-                                                    <li><a href="#">T-shirts</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="news-1" role="tabpanel" aria-expanded="false">
-                                        <div class="row">
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">Protein</li>
                                                     <li><a href="#">Casein</a></li>
@@ -187,77 +126,132 @@
                                                     <li><a href="#">Whey</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">Bars</li>
                                                     <li><a href="#">Energy</a></li>
                                                     <li><a href="#">Protein</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
                                                     <li class="menu-title">Amino Acids</li>
                                                     <li><a href="#">Liquid</a></li>
                                                     <li><a href="#">Capsules</a></li>
                                                     <li><a href="#">Powders</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Drinks</li>
+                                                    <li><a href="#">Energy</a></li>
+                                                    <li><a href="#">Protein</a></li>
+                                                    <li><a href="#">Amino Acids</a></li>
+                                                    <li><a href="#">L-Carnitine</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">Vitamins</li>
+                                                    <li><a href="#">Capsules</a></li>
+                                                    <li><a href="#">Ready to drink</a></li>
+                                                    <li><a href="#">Shots</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li class="menu-title">L-Carnitine</li>
+                                                    <li><a href="#">Ready to drink</a></li>
+                                                    <li><a href="#">Capsules</a></li>
+                                                    <li><a href="#">Shots</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane" id="news-2" role="tabpanel" aria-expanded="false">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <ul class="list-inline">
-                                                    <li class="menu-title">Protein</li>
-                                                    <li><a href="#">Casein</a></li>
-                                                    <li><a href="#">Gainer</a></li>
-                                                    <li><a href="#">Isolate</a></li>
-                                                    <li><a href="#">Vegan</a></li>
-                                                    <li><a href="#">Whey</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-4">
-                                                <ul class="list-inline">
-                                                    <li class="menu-title">Bars</li>
-                                                    <li><a href="#">Energy</a></li>
-                                                    <li><a href="#">Protein</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-4">
-                                                <ul class="list-inline">
-                                                    <li class="menu-title">Amino Acids</li>
-                                                    <li><a href="#">Liquid</a></li>
-                                                    <li><a href="#">Capsules</a></li>
-                                                    <li><a href="#">Powders</a></li>
-                                                </ul>
-                                            </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="mega-menu cat">
+                            <a href="#">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
+                                    <g>
+                                        <path d="M77.1,11.2H22.9c-6.4,0-11.6,5.2-11.6,11.6v54.3c0,6.4,5.2,11.6,11.6,11.6h54.3c6.4,0,11.6-5.2,11.6-11.6V22.9C88.8,16.5,83.5,11.2,77.1,11.2z M83.9,76.2c0,4.3-3.5,7.8-7.8,7.8H23.8c-4.3,0-7.8-3.5-7.8-7.8V23.8c0-4.3,3.5-7.8,7.8-7.8h52.3c4.3,0,7.8,3.5,7.8,7.8V76.2z"/>
+                                        <path d="M41.8,3.4L3.4,41.8c-4.5,4.5-4.5,11.9,0,16.4l38.4,38.4c4.5,4.5,11.9,4.5,16.4,0l38.4-38.4c4.5-4.5,4.5-11.9,0-16.4L58.2,3.4C53.7-1.1,46.3-1.1,41.8,3.4z M92.5,44.5c3,3,3,8,0,11l-37,37c-3,3-8,3-11,0l-37-37c-3-3-3-8,0-11l37-37c3-3,8-3,11,0L92.5,44.5z"/>
+                                    </g>
+                                    <g>
+                                        <path d="M42.9,37.5c2,1.3,3.5,3.1,4.7,5.4c1.1,2.3,1.7,4.9,1.7,7.9c0,2.9-0.6,5.6-1.7,7.9c-1.2,2.3-2.7,4.2-4.7,5.5c-2,1.3-4.2,2-6.6,2c-2.4,0-4.6-0.7-6.6-2c-2-1.3-3.5-3.1-4.7-5.5c-1.2-2.3-1.7-5-1.7-7.9c0-2.9,0.6-5.6,1.7-7.9c1.2-2.3,2.7-4.1,4.7-5.4c2-1.3,4.2-2,6.6-2C38.7,35.5,40.9,36.2,42.9,37.5z M31.4,44.5c-1.2,1.5-1.8,3.6-1.8,6.3c0,2.6,0.6,4.7,1.8,6.2c1.2,1.5,2.8,2.3,4.9,2.3c2,0,3.6-0.8,4.8-2.3c1.2-1.5,1.8-3.6,1.8-6.2c0-2.6-0.6-4.7-1.8-6.2c-1.2-1.5-2.8-2.3-4.9-2.3C34.2,42.2,32.6,43,31.4,44.5z"/>
+                                        <path d="M75.7,65.8h-6.2L59,47.5v18.3h-6.2V36H59l10.4,18.5V36h6.2V65.8z"/>
+                                    </g>
+                                </svg>
+                                Brand
+                            </a>
+                            <ul class="sub-mega-menu">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" role="tabpanel" aria-expanded="true">
+                                        <div class="search my-4">
+                                            <form method="post" action="#">
+                                                <div class="input-group">
+                                                    <input type="text" name="" class="form-control" placeholder="Search Brands">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary" type="submit">Search</button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
-                                    </div>
-                                    <div class="tab-pane" id="news-3" role="tabpanel" aria-expanded="false">
+
                                         <div class="row">
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
-                                                    <li class="menu-title">Protein</li>
-                                                    <li><a href="#">Casein</a></li>
-                                                    <li><a href="#">Gainer</a></li>
-                                                    <li><a href="#">Isolate</a></li>
-                                                    <li><a href="#">Vegan</a></li>
-                                                    <li><a href="#">Whey</a></li>
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">Brand 5</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
-                                                    <li class="menu-title">Bars</li>
-                                                    <li><a href="#">Energy</a></li>
-                                                    <li><a href="#">Protein</a></li>
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">Brand 5</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
+                                            <div class="col-xl-2 col-lg-3">
                                                 <ul class="list-inline">
-                                                    <li class="menu-title">Amino Acids</li>
-                                                    <li><a href="#">Liquid</a></li>
-                                                    <li><a href="#">Capsules</a></li>
-                                                    <li><a href="#">Powders</a></li>
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">Brand 5</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">Brand 5</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">Brand 5</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xl-2 col-lg-3">
+                                                <ul class="list-inline">
+                                                    <li><a href="#">Brand 1</a></li>
+                                                    <li><a href="#">Brand 2</a></li>
+                                                    <li><a href="#">Brand 3</a></li>
+                                                    <li><a href="#">Brand 4</a></li>
+                                                    <li><a href="#">View More</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -306,53 +300,6 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="mega-menu">
-                            <a href="#">
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M77.1,11.2H22.9c-6.4,0-11.6,5.2-11.6,11.6v54.3c0,6.4,5.2,11.6,11.6,11.6h54.3c6.4,0,11.6-5.2,11.6-11.6V22.9C88.8,16.5,83.5,11.2,77.1,11.2z M83.9,76.2c0,4.3-3.5,7.8-7.8,7.8H23.8c-4.3,0-7.8-3.5-7.8-7.8V23.8c0-4.3,3.5-7.8,7.8-7.8h52.3c4.3,0,7.8,3.5,7.8,7.8V76.2z"/>
-                                        <path d="M41.8,3.4L3.4,41.8c-4.5,4.5-4.5,11.9,0,16.4l38.4,38.4c4.5,4.5,11.9,4.5,16.4,0l38.4-38.4c4.5-4.5,4.5-11.9,0-16.4L58.2,3.4C53.7-1.1,46.3-1.1,41.8,3.4z M92.5,44.5c3,3,3,8,0,11l-37,37c-3,3-8,3-11,0l-37-37c-3-3-3-8,0-11l37-37c3-3,8-3,11,0L92.5,44.5z"/>
-                                    </g>
-                                    <g>
-                                        <path d="M42.9,37.5c2,1.3,3.5,3.1,4.7,5.4c1.1,2.3,1.7,4.9,1.7,7.9c0,2.9-0.6,5.6-1.7,7.9c-1.2,2.3-2.7,4.2-4.7,5.5c-2,1.3-4.2,2-6.6,2c-2.4,0-4.6-0.7-6.6-2c-2-1.3-3.5-3.1-4.7-5.5c-1.2-2.3-1.7-5-1.7-7.9c0-2.9,0.6-5.6,1.7-7.9c1.2-2.3,2.7-4.1,4.7-5.4c2-1.3,4.2-2,6.6-2C38.7,35.5,40.9,36.2,42.9,37.5z M31.4,44.5c-1.2,1.5-1.8,3.6-1.8,6.3c0,2.6,0.6,4.7,1.8,6.2c1.2,1.5,2.8,2.3,4.9,2.3c2,0,3.6-0.8,4.8-2.3c1.2-1.5,1.8-3.6,1.8-6.2c0-2.6-0.6-4.7-1.8-6.2c-1.2-1.5-2.8-2.3-4.9-2.3C34.2,42.2,32.6,43,31.4,44.5z"/>
-                                        <path d="M75.7,65.8h-6.2L59,47.5v18.3h-6.2V36H59l10.4,18.5V36h6.2V65.8z"/>
-                                    </g>
-                                </svg>
-                                Brand
-                            </a>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <img src="https://via.placeholder.com/250x150">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="https://via.placeholder.com/250x150">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="https://via.placeholder.com/250x150">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="https://via.placeholder.com/250x150">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="https://via.placeholder.com/250x150">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="https://via.placeholder.com/250x150">
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
                         <li class="mega-menu offer">
                             <a href="#">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
@@ -395,7 +342,33 @@
                             </ul>
                         </li>
                         <li><a href="#"><span class="lar la-edit"></span> i-Nutrition</a></li>
-                        <li><a href="workout.html"><span class="las la-dumbbell"></span> Workouts</a></li>
+                        <li class="sub-menu sm">
+                            <a href="workout.html"><span class="las la-dumbbell"></span> Workouts</a>
+                            <div class="dropdown-menu">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul>
+                                            <li><a href="workout-plans.html" class="title">Workout Plan</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                            <li><a href="muscle-building.html">Muscle Building</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6">
+                                        <ul>
+                                            <li><a href="diet-plans.html" class="title">Diet Plan</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                            <li><a href="diet-detail.html">Clean Eating Diet</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <li><a href="franchise.html"><span class="las la-warehouse"></span> Franchise</a></li>
                         <li><a href="#"><span class="las la-question"></span> Why us</a></li>
                     </ul>
@@ -403,13 +376,38 @@
                         <li class="search">
                             <div class="search-box">
                                 <form method="post">
-                                    <input type="text" name="search" id="search" class="search" placeholder="search for products, Brand and more" />
+                                    <input type="text" name="search" id="search" class="search" placeholder="Search for Products, Brand and more" />
                                     <input type="submit" value="&#xf002" />
                                 </form>
                             </div>
                         </li>
-                        <li><a href="#"><span class="lar la-user"></span> Profile</a></li>
-                        <li class="dropdown mini-cart"><a href="#"><span class="las la-shopping-bag"></span> Cart  <strong>2</strong></a>
+                        <li class="sub-menu user-menu">
+                            <a href="#"><span class="lar la-user"></span> Profile</a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <h3 class="title">Welcome</h3>
+                                <p>To access account and manage orders</p>
+                                <div class="row gutters-1">
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-outline-primary btn-block">Sign in</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="btn btn-outline-primary btn-block">Sign up</a>
+                                    </div>
+                                </div>
+                                <hr class="mt-4">
+                                <ul>
+                                    <li><a href="#">My Profile</a></li>
+                                    <li><a href="#">Order</a></li>
+                                    <li><a href="#">Wishlist</a></li>
+                                    <li><hr></li>
+                                    <li><a href="#">Coupons</a></li>
+                                    <li><a href="#">Referrals</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sub-menu mini-cart">
+                            <a href="#"><span class="las la-shopping-bag"></span> Cart <strong>2</strong></a>
                             <div class="dropdown-menu dropdown-menu-right">
                                 <div class="mini-cart-item">
                                     <div class="product_image">
@@ -436,9 +434,9 @@
                                     </div>
                                 </div>
                                 <div class="total_drop">
-                                    <div class="clearfix total_value">
+                                    <div class="total_value">
                                         <span>Total</span>
-                                        <span class="align-right">$200.00</span>
+                                        <span class="fw-600"><i class="la la-rupee-sign"></i>200.00</span>
                                     </div>
                                     <div class="checkout">
                                         <a href="cart.html" class="btn btn-outline-primary btn-block">View Cart</a>
@@ -522,7 +520,7 @@
                 </div>
                 <div class="left_side_toogle_menu col-3 text-right">
                     <ul>
-                        <li><a href="#"><i class="lar la-user"></i></a></li>
+                        <li><a href="user-account.html"><i class="lar la-user"></i></a></li>
                         <li><a href="cart.html"><span class="cart-count">2</span><i class="las la-shopping-bag"></i></a></li>
                     </ul>
                 </div>
@@ -530,7 +528,7 @@
             <div class="search">
                 <form method="post" action="#">
                     <div class="input-group">
-                        <input type="text" name="" class="form-control" placeholder="search for products, Brand and more">
+                        <input type="text" name="" class="form-control" placeholder="Search for Products, Brand and more">
                         <div class="input-group-append">
                             <button class="btn btn-primary" type="submit"><i class="las la-search"></i></button>
                         </div>
@@ -541,14 +539,14 @@
         <!--/Mobile Navigation-->
     </header>
     <!--header end here-->
-    
+
     <!--breadcrumb content-->
     <section class="breadcrumb-wrapper">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="home.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Sponsorship</li>
+                    <li class="breadcrumb-item active" aria-current="page">Learn Page</li>
                 </ol>
             </nav>
         </div>
@@ -556,17 +554,17 @@
     <!--breadcrumb content end here-->
     <section class="header-img">
         <img src="https://via.placeholder.com/1920x400">
-        <h2 class="title fw-700">Sponsorship</h2>
+        <h2 class="title">Learn Page </h2>
     </section>
 
-    <section class="mb-5 pricing">
+    <section class="py-5 jobs">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="card-header text-center">
-                                <h1>Message for CEO</h1>
+                                <h1>Demo</h1>
                             </div>
                             <div class="video btn-round">
                                 <img src="https://via.placeholder.com/1233x400" class="img-fluid" alt="">
@@ -578,80 +576,11 @@
                             </div>
                         </div>
                     </div>
+                    <hr class="my-5">
+                </div>
+                <div class="col-lg-10">
                     <div class="row">
-                        <div class="col-12 mt-5 jobs">
-                            <h2>Programmes</h2>
-                            <hr>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card mb-5 mb-lg-0">
-                                <div class="card-body">
-                                    <!-- <h3 class="card-title text-muted text-uppercase text-center"></h3>
-                                    <h1 class="card-price text-center">Free<span class="period">/month</span></h1> -->
-                                    <h1 class="card-price text-muted text-uppercase text-center">Free</h1>
-                                    <hr>
-                                    <ul class="fa-ul">
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,r</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-block btn-primary text-uppercase">Apply Now</a>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="col-sm-4">
-                            <div class="card mb-5 mb-lg-0">
-                                <div class="card-body">
-                                    <!-- <h3 class="card-title text-muted text-uppercase text-center"></h3>
-                                    <h1 class="card-price text-center">Free<span class="period">/month</span></h1> -->
-                                    <h1 class="card-price text-muted text-uppercase text-center">Free</h1>
-                                    <hr>
-                                    <ul class="fa-ul">
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,r</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-block btn-primary text-uppercase">Apply Now</a>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="col-sm-4">
-                            <div class="card mb-5 mb-lg-0">
-                                <div class="card-body">
-                                    <!-- <h3 class="card-title text-muted text-uppercase text-center"></h3>
-                                    <h1 class="card-price text-center">Free<span class="period">/month</span></h1> -->
-                                    <h1 class="card-price text-muted text-uppercase text-center">Free</h1>
-                                    <hr>
-                                    <ul class="fa-ul">
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,r</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-block btn-primary text-uppercase">Apply Now</a>
-                                </div>
-                            </div>
-                        </div>                   
-                     </div>
-                    <div class="row mt-5">
-                        <div class="col-12 my-3">
-                            <h2 class="fw-700">Affilate Program</h2>
-                            <hr>
-                        </div>
+
                         <div class="col-md-6">
                             <img src="https://via.placeholder.com/1200x700" class="btn-round mb-3" alt="">
                         </div>
@@ -661,60 +590,197 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                     </div>
-                    <div class="career-form py-5" id="applyForm">
-                        <h2 class="fw-700">Contact Us</h2>
-                        <hr>
-                        <form class="form">
-                            <div class="row">
-                                <div class="form-group col-md-4">
-                                    <label>Name</label>
-                                    <input type="text" name="name" class="form-control">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label>Email</label>
-                                    <input type="email" name="email" class="form-control">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label>Phone</label>
-                                    <input type="text" name="phone" class="form-control">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label>Subject</label>
-                                    <select name="subject" class="form-control" >
-                                        <option>Select Lorem ipsum</option>
-                                        <option>Lorem ipsum</option>
-                                        <option>Lorem ipsum</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label>Facebook</label>
-                                    <input type="text" name="facebook" class="form-control">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label>Instagram</label>
-                                    <input type="text" name="instagram" class="form-control">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label>Twitter</label>
-                                    <input type="text" name="twitter" class="form-control">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label>Facebook</label>
-                                    <input type="text" name="facebook" class="form-control">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label>Google +</label>
-                                    <input type="text" name="google" class="form-control">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label>Message</label>
-                                    <textarea class="form-control" rows="4"></textarea>
-                                </div>
-                                <div class="form-group col-12">
-                                    <button type="button" class="btn btn-outline-primary">Submit</button>
+                    <hr class="my-5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="py-5 jobs">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h1 class="fw-700 text-center mb-5">Our Process</h1>
+                    <div class="timeline my-5">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <h2 class="fw-700 text-center mb-5">of The Day</h2>
+                                <hr class="my-5">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12 my-3 text-center">
+                                        <a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
+                                            <img src="https://via.placeholder.com/1920x1080" class="btn-round" alt="">
+                                        </a>
+                                        <div class="mt-4">
+                                            <h3 class="fw-600">Lorem Ipsum doler</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+
+                                     <div class="col-md-12 my-5 text-center">
+                                        <a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
+                                            <img src="https://via.placeholder.com/1920x1080" class="btn-round" alt="">
+                                        </a>
+                                        <div class="mt-4">
+                                            <h3 class="fw-600">Lorem Ipsum doler</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
+                            <div class="col-lg-6">
+                                <h2 class="fw-700 text-center mb-5">Topic Video</h2>
+                                <hr class="my-5">
+                                    <div class="row justify-content-center">
+                                    <div class="col-md-12 my-3 text-center">
+                                        <a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
+                                            <img src="https://via.placeholder.com/1920x1080" class="btn-round" alt="">
+                                        </a>
+                                        <div class="mt-4">
+                                            <h3 class="fw-600">Lorem Ipsum doler</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+
+                                     <div class="col-md-12 my-5 text-center">
+                                        <a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
+                                            <img src="https://via.placeholder.com/1920x1080" class="btn-round" alt="">
+                                        </a>
+                                        <div class="mt-4">
+                                            <h3 class="fw-600">Lorem Ipsum doler</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-5">
+                    <div id="accordion" class="faq mt-5">
+                        <h2 class="fw-700">FAQ's</h2>
+                        <hr>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link active" data-toggle="collapse" href="#one" aria-expanded="false">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="one" class="collapse show" data-parent="#accordion" style="">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#two" aria-expanded="false">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="two" class="collapse" data-parent="#accordion" style="">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#three">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="three" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#four">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="four" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#five">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="five" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#six">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="six" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#seven">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="seven" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#eight">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="eight" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#nine">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="nine" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#ten" aria-expanded="false">
+                                    Lorem ipsum doler sit amet
+                                </a>
+                            </div>
+                            <div id="ten" class="collapse" data-parent="#accordion" style="">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -831,6 +897,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://rawgit.com/nobleclem/jQuery-MultiSelect/master/jquery.multiselect.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/slider_function.js"></script>
