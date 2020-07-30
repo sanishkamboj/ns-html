@@ -691,7 +691,7 @@
 }
 @media (max-width:480px) {
     .four_box_section > div.section_four {
-        width: 100%;
+        width: 100% !important;
         height: auto;
         padding: 2rem 0;
         display: flex;

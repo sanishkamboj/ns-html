@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/custom-slider.css">
+
+
+    <link rel="stylesheet" type="text/css" href="file:///C:/Users/neera/Downloads/purecss-circular-progress-bar-master/purecss-circular-progress-bar-master/css-circular-prog-bar.css">
     <title>Home Page</title>
     <!-- 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" /> -->
@@ -506,37 +509,81 @@
         <h2 class="title">NS Tool</h2>
     </section>
 
+    <style type="text/css">
+        .col-md-8.controls {
+            background: #eee;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .row.mgbt-xs-0 {
+            margin-bottom: 10px;
+        }
+
+        label.col-md-4.control-label {
+            padding-top: 3px;
+        }
+        p.col-md-12.control-label {
+            font-size: 15px;
+        }
+    </style>
+
+
     <section class="mb-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="video btn-round">
-                        <img src="https://via.placeholder.com/1200x700" class="img-fluid" alt="">
-                        <div class="video-button">
-                            <a data-fancybox="" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
-                                <i class="fa fa-play"></i>
-                            </a>
+                <div class="col-md-2 text-center">
+                    <div id="apex-circle-chart"></div>
+                </div>
+                <div class="col-md-6" style="margin-top: 18px;">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <div id="apex-circle-chart-protein"></div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div id="apex-circle-chart-carbs"></div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div id="apex-circle-chart-fat"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="video btn-round new">
-                        <div class="upload">
-                            <h3>Nutrition systems Tool</h3>
-                            <ul class="mt-4">
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                            </ul>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
+                <div class="col-md-3">
+                    <div class="row mgbt-xs-0">
+                        <p class="col-md-12 control-label">Macronutrient Targets</p>
+                    </div>
+                    <div class="row mgbt-xs-0">
+                        <label class="col-md-4 control-label">Energy</label>
+                        <div class="col-md-8 controls" >0.0 Kcal / 2246 Kcal (0%)</div>
+                        <!-- col-sm-10 --> 
+                    </div>
+                    <div class="row mgbt-xs-0">
+                        <label class="col-md-4 control-label">Protein</label>
+                        <div class="col-md-8 controls" >0.0 Kcal / 140.4 g (0%)</div>
+                        <!-- col-sm-10 --> 
+                    </div>
+                    <div class="row mgbt-xs-0">
+                        <label class="col-md-4 control-label">Net Carbs</label>
+                        <div class="col-md-8 controls" >0.0 Kcal / 246.0 g (0%)</div>
+                        <!-- col-sm-10 --> 
+                    </div>
+                    <div class="row mgbt-xs-0">
+                        <label class="col-md-4 control-label">Flat</label>
+                        <div class="col-md-8 controls" >0.0 Kcal / 87.3 g (0%)</div>
+                        <!-- col-sm-10 --> 
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
     <section id="red_box_center" class="mb-5">
         <div class="container">
             <div class="toolbox">
@@ -1920,6 +1967,10 @@
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery.min.js"></script>
+
+    <script src="js/lib.vendor.bundle.js"></script>
+    <script src="js/apexcharts.bundle.js"></script>
+    <script src="js/apex.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -1928,5 +1979,4 @@
     <script src="js/slider_function.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>
