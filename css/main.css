@@ -4781,3 +4781,265 @@ a.catBox:hover .video img {
 }
 }
 /* sourabh dhiman end */
+
+
+
+/* sourabh dhiman banner start */
+.banner-section {
+    background: url(../img/banner.png);
+    padding: 86px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content-banner img {
+    max-width: 400px;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+}
+
+
+.content-banner img {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 5.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+
+.priceing {
+    padding: 70px 0;
+    background: #F8F8F8 !important;
+}
+.under-price {
+    background: #cc0033;
+    padding: 50px 30px 25px 30px;
+    max-width: 350px;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    transition: transform .5s;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -o-transition: transform .5s;
+}
+.under-price:hover{
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+}
+.price-1 {
+    color: #c03;
+    font-weight: bold;
+    background: #ffffff;
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 180px;
+    top: -18px;
+    box-shadow: 0 0 8px #ccc;
+}
+.price-2 {
+    font-size: 20px;
+    color: #fff;
+    margin: 0 0 10px 0;
+}
+.price-2 img {
+    max-width: 30px;
+    margin-right: 5px;
+}
+.price-3 {
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    max-width: 180px;
+    margin: auto;
+    line-height: 20px;
+}
+.btn.bt-adtocart {
+    color: #c03;
+    font-weight: bold;
+    background: #ffffff;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 24px;
+    font-size: 14px;
+    margin: 15px 0 0 0;
+    transition: transform .5s;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -o-transition: transform .5s;
+}
+.btn.bt-adtocart:hover{
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+}
+.ul-m{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+} 
+.ul-m li p {
+   font-size: 15px;
+    line-height: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+.mem {
+    font-size: 30px;
+    text-align: center;
+    margin: 40px 0 15px 0;
+}
+.custom-accordian .accordion>.card>.card-header {
+    padding: 0;
+}
+.custom-accordian .btn.btn-link {
+    color: black !important;
+    text-decoration: none;
+}
+.custom-accordian .btn.btn-link:focus,
+.custom-accordian .btn.btn-link:hover{
+    color: black;
+}
+.custom-accordian .faq {
+    font-size: 30px;
+    text-align: center;
+    margin: 40px 0 15px 0;
+}
+.custom-accordian {
+    max-width: 800px;
+    margin: auto;
+}
+.custom-accordian .card {
+    margin-top: 1rem !important;
+}
+.term-condition {
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+}
+h1.term-con {
+    font-size: 30px;
+    background: #f8f8f8;
+    position: relative;
+    z-index: 99;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}
+.bor {
+    border: 1px solid black;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 100%;
+}
+p.click {
+    margin: 20px 0 0 0;
+}
+p.how-do-p {
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+p.how-do-p1 {
+        font-size: 20px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+p.me-1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+p.me-2 {
+    font-size: 16px;
+    margin: 0;
+}
+.media-all .media-body .price {
+    text-align: left !important;
+}
+.media-all .media-body .star_rating ul {
+    justify-content: flex-start;
+}
+.media-all {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 40px;
+}
+.media-all .discount {
+    display: flex;
+}
+.media-all .discount p {
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+.primium-bt {
+    margin-top: 15px;
+}
+button.btn.same-btn {
+    color: #fff;
+    font-weight: bold;
+    background: #c03;
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 14px;
+    margin: auto;
+    max-width: -webkit-fill-available;
+    box-shadow: 0 0 8px #ccc;
+    -webkit-transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -o-transition: transform .5s;
+}
+button.btn.same-btn:hover{
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+}
+.media {
+    align-items: center;
+}
+.media-all .media-object {
+    width: 100%;
+    max-width: 140px;
+    margin-right: 15px;
+}
+p.pri-c1 {
+    text-decoration: line-through;
+}
+/* sourabh dhiman banner end */
