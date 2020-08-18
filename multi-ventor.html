@@ -554,7 +554,7 @@
             padding-top: 12px;
             padding-bottom: 12px;
             text-align: left;
-            background-color: #00bfbf;
+            background-color: #dd121f;
             color: #fff;
         }
         table tr:nth-child(2n) {
@@ -568,11 +568,119 @@
         .market-footer {
             margin: 30px 0;
         }
+        form.form-horizontal.sell .form-group .col-sm-10 p {
+            font-size: 14px;
+        }
+        form.form-horizontal.sell .form-group .col-sm-10 {
+            float: right;
+        }
+        section.mb-5.pricing .form-group {
+            display: flex;
+        }
     </style>
 
     <section class="mb-5 pricing">
         <div class="container">
             <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group success_msg" style="display: none;">
+                                <div class="col-sm-12">
+                                    <div class="alert alert-success"><strong>Success!</strong> We have received your request.</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <h1 class="entry-title"><a href="#">Sell On Nutrition System</a></h1>
+                            </div>
+
+                            <form class="form-horizontal sell_on_hxp_form" method="post">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="company_name">Registered Company Name *:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" name="company_name" placeholder="Registered Company Name" class="form-control" required="" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="company_name">Business Nature *:</label>
+                                    <div class="col-sm-10">
+                                        <p><input type="radio" name="business_nature" value="Manufacturer" checked="" /> Manufacturer</p>
+                                        <p><input type="radio" name="business_nature" value="Importer" /> Importer </p>
+                                        <p><input type="radio" name="business_nature" value="Reseller" /> Reseller</p>
+                                        <p><input type="radio" name="business_nature" value="Distributor" /> Distributor </p>
+                                        <p><input type="radio" name="business_nature" value="Limited" /> Limited</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="company_name">Category Of Your Product Range *:</label>
+                                    <div class="col-sm-10">
+                                        <p><input type="radio" name="product_range" value="Sports Nutrition" checked="" /> Sports Nutrition </p>
+                                        <p><input type="radio" name="product_range" value="Health Nutrition" /> Health Nutrition </p>
+                                        <p><input type="radio" name="product_range" value="Weight loss" /> Weight loss </p>
+                                        <p><input type="radio" name="product_range" value="Ayurveda and Herbs" /> Ayurveda and Herbs </p>
+                                        <p><input type="radio" name="product_range" value="Hair Loss" /> Hair Loss </p>
+                                        <p><input type="radio" name="product_range" value="Acne care" /> Acne care </p>
+                                        <p><input type="radio" name="product_range" value="Fitness accessories" /> Fitness accessories </p>
+                                        <p><input type="radio" name="product_range" value="Other" /> Other </p>
+                                        <p>
+                                            As of now HealthXP is listing in below categories only. If the brand that you wish to sell doesn't fall in the categories mentioned below then select other and write down the category name, We will contact you once we
+                                            start listing in the said category
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="phone_no"> Brand Name To Sell On HealthXP*:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" name="brand_name" placeholder="Name To Sell On HealthXP" class="form-control" required="" />
+                                        <p>Share The Brand Name(s) That You Wish To Sell On HealthXP</p>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="company_name">Monthly Revenue*:</label>
+                                    <div class="col-sm-10">
+                                        <p><input type="radio" name="monthly_revenue" value="0-1lacs" checked="" /> 0-1lacs </p>
+                                        <p><input type="radio" name="monthly_revenue" value="1-5 lacs" /> 1-5 lacs </p>
+                                        <p><input type="radio" name="monthly_revenue" value="5-10 lacs" /> 5-10 lacs </p>
+                                        <p><input type="radio" name="monthly_revenue" value="10 -50 lacs" /> 10 -50 lacs </p>
+                                        <p><input type="radio" name="monthly_revenue" value="1 Crores+" /> 1 Crores+ </p>
+                                        <p>Please share the monthly revenue generated online from these brand(s)</p>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="phone_no">Share The Brand Link :</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" name="brand_link" placeholder="Share The Brand Link" class="form-control" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="phone_no">Share Your Contact Number:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" name="contact_no" placeholder="Share Your Contact Number" class="form-control" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="phone_no">Share Your Email Address:</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" name="email" placeholder="Share Your Email Address" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-offset-2 col-sm-10 text-right">
+                                        <button type="submit" class="btn btn-outline-primary mr-3">Apply Now</button>
+                                        <button type="reset" class="btn btn-outline-primary">Cancel</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-10">
                     <div class="row">
                         <div class="col-lg-12">
